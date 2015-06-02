@@ -8,19 +8,19 @@ class MySite < Sinatra::Base
     send_file './html/home.htm'
   end
 
-  get "/About" do
+  get "/about" do
     send_file './html/about.htm'
   end
 
-  get "/Projects" do
+  get "/projects" do
     send_file './html/projects.htm'
   end
 
-  get "/Blog" do
+  get "/blog" do
     send_file './html/blog.htm'
   end
 
-  get "/Ultimate" do
+  get "/ultimate" do
     send_file './html/ultimate.htm'
   end
 end
