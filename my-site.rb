@@ -5,22 +5,22 @@ class MySite < Sinatra::Base
   register Sinatra::Reloader
 
   get "/" do
-    send_file './public/Home.htm'
+    send_file './html/home.htm'
   end
 
   get "/About" do
-    send_file './public/About.htm'
+    send_file './html/about.htm'
   end
 
   get "/Projects" do
-    send_file './public/Projects.htm'
+    send_file './html/projects.htm'
   end
 
   get "/Blog" do
-    send_file './public/Blog.htm'
+    send_file './html/blog.htm'
   end
 
   get "/Ultimate" do
-    send_file './public/Ultimate.htm'
+    send_file './html/ultimate.htm'
   end
 end
