@@ -4,10 +4,6 @@ require "sinatra/reloader"
 class MySite < Sinatra::Base
  	register Sinatra::Reloader
 
- 	# get "/" do
-	 #  	"<h1>Yay, no restarting. And I can modify it.</h1>"
- 	# end
-
 	get '/' do
 		send_file './stuff/home.html'
 	end
