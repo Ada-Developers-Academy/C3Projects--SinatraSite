@@ -5,6 +5,10 @@ class MySite < Sinatra::Base
   register Sinatra::Reloader
 
   get "/" do
+    send_file 'public/index.html'
+  end
 
+  get "/" do
+    send_file 'public/projects.html'
   end
 end
