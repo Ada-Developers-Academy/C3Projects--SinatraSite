@@ -5,7 +5,7 @@ class MySite < Sinatra::Base
   register Sinatra::Reloader
 
 
-  get '/home' do
+  get '/' do
     send_file 'public/home_page.html'
   end
 
