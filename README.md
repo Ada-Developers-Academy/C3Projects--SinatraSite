@@ -1,4 +1,4 @@
-# SinatraSite
+# Brenna SinatraSite
 
 Hi! This project's requirements are a bit different than the others we've done so far. We will be adding functionality to this project in waves, so, instead of multiple tiers (breakfast/lunch/dinner), I'll be adding requirements in waves.
 
