@@ -5,7 +5,7 @@ require "sinatra/reloader" # makes it so we don't have to restart Sinatra
 class MySite < Sinatra::Base
   register Sinatra::Reloader
 
-  get "/home" do # what hte user is asking
+  get "/" do # what hte user is asking
     send_file "public/home.html" # this is the response
   end
 
