@@ -4,7 +4,7 @@ require "sinatra/reloader"
 class MySite < Sinatra::Base
   register Sinatra::Reloader
 
-  get "/Home" do
+  get "/" do
     send_file './public/Home.htm'
   end
 
