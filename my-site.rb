@@ -6,7 +6,7 @@ class MySite < Sinatra::Base
 # register activates the Reloader
   register Sinatra::Reloader
 
-  get "/home" do
+  get "/" do
     send_file './about_me_html/home_page.html'
   end
 
