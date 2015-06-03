@@ -1,0 +1,30 @@
+body {
+ font-family: times, serif;
+ font-size: 15px;
+ padding: 30px;
+}
+
+div {
+ background: rgba(133, 133, 255, 0.4);
+ margin: 0 auto;
+ width: 400px;
+ padding:20px;
+}
+
+h1 {
+ color: rgba(0, 0, 0, 0.8);
+}
+
+#para {
+ font-size: 25px;
+ color: #ffffff;
+}
+
+p {
+ font-size: 19px;
+}
+
+.quote {
+ text-align: center;
+ color: red;
+}
