@@ -13,7 +13,7 @@ The requirements for this wave are:
   - At least one of the static pages must include at least 2 images
 
 ## Wave 2: Use CSS to apply style and struture to our website
-_The PR for this wave is due by 9am on Friday, June 5th._
+_The PR for this wave is due by 10pm on Sunday, June 7th._
 
 The requirements for this wave are:
 - Add `class` and/or `id` attributes to your html tags where appropriate
