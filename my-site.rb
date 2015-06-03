@@ -8,7 +8,7 @@ class MySite < Sinatra::Base
     send_file 'public/index.html'
   end
 
-  get "/" do
+  get "projects" do
     send_file 'public/projects.html'
   end
 end
