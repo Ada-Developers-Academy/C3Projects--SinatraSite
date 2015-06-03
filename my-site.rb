@@ -12,12 +12,12 @@ class MySite < Sinatra::Base
     send_file 'public/about.html'
   end
 
-  get '/blog' do
-    send_file 'public/blog.html'
+  get '/programming' do
+    send_file 'public/programming.html'
   end
 
-  get '/projects' do
-    send_file 'public/projects.html'
+  get '/writing' do
+    send_file 'public/writing.html'
   end
 
 end
