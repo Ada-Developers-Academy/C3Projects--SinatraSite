@@ -13,7 +13,7 @@ The requirements for this wave are:
   - At least one of the static pages must include at least 2 images
 
 ## Wave 2: Use CSS to apply style and struture to our website
-_The PR for this wave is due by 9am on Friday, June 5th._
+_The PR for this wave is due by 10pm on Sunday, June 7th._
 
 The requirements for this wave are:
 - Add `class` and/or `id` attributes to your html tags where appropriate
@@ -25,3 +25,14 @@ The requirements for this wave are:
   - Add a background color to your repeating page headers and footers.
   - Style your headings (`<h1>`, `<h2>`, etc.) so they are visually distinct.
   - don't use `<br>` tags to separate content; apply `margin` and `padding` where appropriate to space out content.
+
+## Wave 3: DRY up your markup by utilizing layouts and ERB
+_The PR for this wave is due by 10pm on Sunday, June 7th._
+
+The requirements for this wave are:
+- Extract the common elements of your html pages into a _layout_.
+- Change your Sinatra app to serve ERB _views_ instead of static html.
+- Extract your repeating `<header>` and `<footer>` code into a _partial_.
+- Use ERB to include your _partial_ in your _layout_.
+- Add and style a new page to your website using a Sinatra route and ERB view (content your choice).
+- Include a copyright/copyleft statement in your website footer. Utilize Ruby/ERB to ensure the year of the notice will always be current.
