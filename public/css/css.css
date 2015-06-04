@@ -11,6 +11,12 @@ header {
   font-family: "Courier New", serif;
 }
 
+h1:hover {
+  background-color: blue;
+
+
+}
+
 nav {
   position: absolute;
   bottom: 0;
