@@ -35,6 +35,8 @@ nav {
 a:link {
   color: #FFA3A3;
   text-decoration: none;
+  font-family: "Futura", Sans-serif;
+  font-size: 15px;
 }
 
 a:visited {
@@ -58,6 +60,7 @@ a:active {
   font-family: "Futura", Sans-serif;
   font-size: 20px;
   text-align: center;
+  padding: 50px;
 }
 /*to center a list*/
 ul {
@@ -78,4 +81,29 @@ ul {
   font-decoration: italic;
   background: #75A3A3;
   opacity: 0.5;
+  text-align: center;
+}
+
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+
+#container {
+   min-height:100%;
+   position:relative;
+}
+#header {
+   padding:10px;
+}
+#body {
+   padding:10px;
+   padding-bottom:60px;   /* Height of the footer */
+}
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
 }

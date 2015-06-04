@@ -1,11 +1,17 @@
-<html>
+<html id="container">
   <head>
+    <link rel="stylesheet" type="text/css" href="styling.css"/>
     <title>This is a layout</title>
   </head>
-  <body>
-    <header>
+  <body id="body">
+    <header id="header">
       <h5>let's explore the 90's</h5>
     </header>
+    <!-- <div id="container"> -->
+      <!-- <div id="header"></div> -->
+      <!-- <div id="body"></div> -->
+      <!-- <div id="footer"></div> -->
+    <!-- </div> -->
     <nav>
       <a href="/">Home</a>
       <a href="/about">About</a>
@@ -15,10 +21,10 @@
     <div>
       <%= yield%>
     </div>
-    <footer>
-      <p class="foot_note">
+    <footer class="footer">
+      <p>
         <img id="ninja_gif" src="images/ninja.gif">
-        ninja productions
+        Copyright <%= Time.now.year %> CodingNinja productions
       </p>
     </footer>
   </body>
