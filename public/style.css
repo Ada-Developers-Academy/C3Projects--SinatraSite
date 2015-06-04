@@ -1,30 +1,53 @@
+/*
+Name: Blog stylesheet
+Date: June 2015
+Description: Ada Dev Academy website project. I'm trying to
+build a better version of my existing blog!
+Version: 1.0
+Author: Loraine Kanervisto
+*/
+
+/* ---- Global ---- */
+
 body {
- font-family: times, serif;
+ font-family: "Georgia",times, serif;
  font-size: 15px;
- padding: 30px;
+ background: rgb(62, 64, 103);
+ width: 960px;
 }
 
-div {
- background: rgba(133, 133, 255, 0.4);
- margin: 0 auto;
- width: 400px;
- padding:20px;
-}
+/* ---- Headers ---- */
 
 h1 {
- color: rgba(0, 0, 0, 0.8);
+font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+color: rgba(0, 0, 0, 0.8);
 }
 
-#para {
- font-size: 25px;
- color: #ffffff;
+/* ---- Links ---- */
+
+
+
+/* ---- Posts ---- */
+
+ ul {
+  list-style: none;
+  margin: 0;
+  padding:0;
+}
+
+
+
+
+.posts {
+ background: rgb(207, 207, 207);
+ margin: 0 auto;
+ width: 800px;
+ padding:20px;
 }
 
 p {
  font-size: 19px;
 }
 
-.quote {
- text-align: center;
- color: red;
-}
+/* */
+/* ----  ---- */
