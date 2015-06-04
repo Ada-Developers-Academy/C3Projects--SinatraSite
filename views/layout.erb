@@ -2,9 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="website.css">
-<title>Katie</title> 
-
-
+<title>Katie | <%= @title %></title> 
 </head>
 <body>
   <header>
@@ -15,21 +13,12 @@
       <a href="/coffee">coffee</a>
     </nav>
   </header>
-  <center><h2 >Home</h2></center>
-  <center><img src="images/bandw.jpg" height="300"></center>
-
+    <%= yield %>
   <footer>
-    <br>
-    <br>
-    <br>
     <a href="https://github.com/ktrops"><img src="images/github.png" width="100"></a>
-    <a href="https://twitter.com/kjtrops"><img src="images/twitter.png" width="100"></a>
-    <br>
+    <a href="https://twitter.com/kjtrops"><img id="twitter" src="images/twitter.png" width="100"></a>
     <p>Katie Atrops &#174; 2015</p>
 
   </footer>
-
-
-
 </body>
 </html>

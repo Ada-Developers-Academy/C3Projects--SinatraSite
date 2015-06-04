@@ -1,22 +1,88 @@
 body {
-  margin: 2% 5%;
+  width: 960px;
+  margin: 2% auto;
 }
 
-nav {
-  font-size: 14px;
-  font-family: sans-serif;
-  margin: 10px -2%;
+.center {
+  text-align: center;
+}
 
+img {
+
+  width: 50%;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+
+/******************* HEADER ***************************/
+
+header {
+  height: 40%;
+  width: 100%;
+}
+
+/******************* NAVBAR ***************************/
+
+nav {
+  margin: 10px -2%;
+  padding: 3% 2%;
+  border: solid #666699;
+  background-color: #666699;
+  width: 100%;
 }
 
 nav a {
-  color: white;
+  font-size: 16px;
+  margin: 2% 2%;
+  font-family: sans-serif;
+  color: #FFFFFF;
   text-decoration: none;
-  margin: 2% .5%;
-  width: 300px;
-  padding: 1% 2%;
-  border: solid #666699;
-  border-radius: 10%;
-  background-color: #666699;
 }
+
+/******************* FOOTER ***************************/
+
+footer {
+  width: 100%;
+  height: 100px;
+  margin: 100px auto 100px -50px;
+}
+
+#twitter {
+  padding: 0, 0, -50px, 0;
+  margin: -20px 0;
+}
+
+
+footer img {
+  width: 100px;
+  text-align: left;
+
+}
+
+/******************* INDEX ***************************/
+
+/******************* COFFEE ***************************/
+
+.display_img_inline img {
+  width: 250px;
+}
+
+.display_img_inline li {
+  display: inline-block;
+  width: 45%;
+  text-align: center;
+  margin: 6% auto;
+
+}
+
+
+
+
+
+
+
+
 
