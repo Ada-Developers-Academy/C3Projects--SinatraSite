@@ -21,13 +21,13 @@ header {
 
 h1 {
   display: inline;
-  font: bold 2.5em 'Megrim', cursive;
+  font: bold 2em 'Megrim', cursive;
   color: #fff;
   text-transform: uppercase;
 }
 
 nav {
-  padding-top: 17px;
+  padding-top: 12px;
   font-family: 'Quicksand', sans-serif;
   float: right;
 }
@@ -40,4 +40,28 @@ nav a {
 
 nav a:hover {
   color: #7cc6d1;
+}
+
+/* Main Banner --------------------------------------------- */
+
+#banner {
+  background: #fafafa url(../images/sanfran.jpg) no-repeat center;
+  background-size: cover;
+  color: #7cc6d1;
+  text-align: center;
+  height: 550px;
+  padding: 25px 0;
+  background-size: cover;
+}
+
+/* Footer ------------------------------------------------- */
+
+footer {
+  padding: 25px;
+  font: 0.7em "Arial";
+}
+
+footer a:link {
+  color: gray;
+  text-decoration: none
 }
