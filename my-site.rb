@@ -1,26 +1,27 @@
 require "sinatra"
 require "sinatra/reloader"
+require "./lib/ruby.rb"   # NOTE: Should this be require_relative?
 
 class MySite < Sinatra::Base
   register Sinatra::Reloader
 
   get "/" do
-    send_file './mah_html/home.html'
+    erb :home
   end
 
   get "/home" do
-    send_file './mah_html/home.html'
+    erb :home
   end
 
   get "/about" do
-    send_file './mah_html/about.html'
+    erb :about
   end
 
   get "/blog" do
-    send_file './mah_html/blog.html'
+    erb :blog
   end
 
   get "/projects" do
-    send_file './mah_html/projects.html'
+    erb :projects
   end
 end
