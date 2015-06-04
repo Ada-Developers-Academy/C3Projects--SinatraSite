@@ -4,6 +4,10 @@ html {
   min-width: 960px;
 }
 
+section {
+  text-align: center;
+}
+
 footer {
   text-align: center;
 }
