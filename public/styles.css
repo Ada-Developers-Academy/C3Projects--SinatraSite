@@ -1,30 +1,60 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  width: 800px;
-  margin: auto;
-}
-
-img {
-  margin-right: auto;
-  margin-left: auto;
-  display: block;
-}
-
 .nav_bar {
-  padding-top: 40px;
   background-color: #CFDBD5;
+
+  margin-top: 10px;
+  padding: 20px 0 20px 20px;
 }
 
 .nav_bar a {
   margin-right: 20px;
 }
 
+#main_content {
+  margin: auto;
+  width: 725px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 800px;
+
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.blog_descrip {
+  font-style: italic;
+}
+
+.project_name {
+  margin-top: 20px;
+}
+
 footer {
   background-color: #CFDBD5;
+  font-size: 12px;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   text-align: right;
 }
 
 footer a {
-  margin-top: 100px;
+  padding-right: 20px;
+}
 
+#copyright {
+  font-size: 10px;
+  text-align: center;
 }
