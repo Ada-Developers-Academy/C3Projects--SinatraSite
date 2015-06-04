@@ -1,0 +1,27 @@
+body {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  width: 500px;
+
+}
+
+header {
+  background-image: url("./images/clouds.JPG");
+
+}
+
+footer {
+  background-color: blue;
+
+}
+
+.about_me, .home {
+  padding-bottom: 170px;
+
+
+
+}
