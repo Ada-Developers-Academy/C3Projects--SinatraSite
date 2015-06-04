@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 800px;
+  margin: auto;
+}
+
+img {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+
+.nav_bar {
+  padding-top: 40px;
+  background-color: #CFDBD5;
+}
+
+.nav_bar a {
+  margin-right: 20px;
+}
+
+footer {
+  background-color: #CFDBD5;
+  text-align: right;
+}
+
+footer a {
+  margin-top: 100px;
+
+}
