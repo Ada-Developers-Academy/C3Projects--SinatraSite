@@ -1,0 +1,35 @@
+html { width: 960px }
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 50px;
+  /*color: black;
+  background-color: #FFFFFF;*/
+  padding: 10px;
+  margin: auto;
+  /*text-align: center;*/
+}
+
+
+
+nav:link {
+  color: #FFFFFF
+}
+
+nav:visited {
+  color: #FFFFFF;
+}
+
+nav:hover {
+  color: #FFFFFF;
+}
+nav:active {
+  color: #FFFFFF;
+}
+
+nav {
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  /*color: #FFFFFF;*/
+  background-color: #0000FF;
+}
