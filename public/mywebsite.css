@@ -1,41 +1,132 @@
+/*this is a reset of all things!*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, output, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+
 body {
-  width: 960px;
+  line-height: 1;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  /*text-align: center;*/
+  text-align: center;
 }
+
+ol, ul {
+  list-style: none;
+}
+
+/*THIS IS WHERE REAL STYLES START HAPPENING*/
 
 header {
-  background: url("/images/18.lined-paper-texture.jpg");
-  width: auto;
-  height: 150px;
-  margin-top: -5%;
-  padding-top: 65px;
-  padding-bottom: 0px;
+  position: fixed;
+  background: #FFFFFF;
+  width: 100%;
+  height: 50px;
+  margin-top: 5%;
+  border-bottom: 1px;
+  border-bottom-style: solid;
+  border-color: #454544;
   text-align: right;
-  font-size: 28px;
 }
 
-.my_name {
-  font-family: 'Reenie Beanie', cursive;
-  font-size: 80px;
-  margin: 0px;
-  padding: 0px;
+main {
+  width: 860px;
+  padding-top: 170px;
+  z-index: 1;
 }
 
-.local_navs {
-  margin: -25px 0px 0px 5px;
+p {
+  font-family: Verdana, Arial, sans-serif;
+  line-height: 1.6em;
+  color: #848484;
+  font-size: 8pt;
 }
 
-.local_navs a {
+h1 {
+  font-family: 'Droid Serif', Verdana, Arial, sans-serif;
+  line-height: 1.6em;
+  color: #454544;
   text-decoration: none;
-  font-family: "Courier";
-  font-weight: bold;
-  color: black;
-  padding-left: 3px;
+  font-size: 22pt;
+}
+
+h2 {
+  font-family: 'Droid Serif', Verdana, Arial, sans-serif;
+  line-height: 1.6em;
+  color: #454544;
+  text-decoration: none;
+  font-size: 20pt;
+}
+
+section {
+  /*float: center;*/
+  width: 720px;
+  padding: 20px;
+}
+
+section p {
+  text-align: justify;
+}
+
+/*article {*/
+  /*width: 720px;
+  width: 100%;
+  padding: 20px;
+}*/
+
+article p {
+  text-align: justify;
+}
+
+.menu {
+  /*position: fixed;*/
+  float: left;
+  margin-top: -20px;
+  margin-right: 20px;
+  padding-left: 50px;
+  height: 100%;
+  width: 100px;
+  text-align: center;
+}
+
+.menu a {
+  text-decoration: none;
+  font-family: "Droid Serif";
+  font-size: 28pt;
+  color: #454544;
+  margin: 15px 0 15px 0;
+}
+
+a:hover {
+  color: #E35A88;
+}
+
+footer {
 
 }
 
-footer{
+/*THIS IS ABOUT'S CSS*/
 
+.ed {
+  text-align: center;
 }
+
+
+
+
+
+
+
+
+
