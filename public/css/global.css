@@ -1,214 +1,35 @@
-/* Base Styles --------------------------------------- */
+/* Base Style -------------------------------------------- */
 
-body {
-  padding-top: 80px;
-  color: #9893B3;
-  font: .85em 'Open Sans', helvetica, arial, sans-serif;
+html {
+  min-width: 960px;
 }
 
+/* Header & Navigation ----------------------------------- */
 
-/* Navigation Bar ----------------------------------- */
+header {
+  padding: 15px;
+  background-color: #000;
+}
 
-#brand {
-  text-indent: -9000px;
-  background: url(../images/elman.jpg) no-repeat top left;
-  background-size: cover;
-  height: 60px;
-  width: 60px;
-  float: left;
-  margin: 5px;
+h1 {
+  display: inline;
+  font: bold 2.5em 'Megrim', cursive;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: #fcfcfc;
-  border-bottom: 2px solid #ccc;
-  height: 73px;
-  width: 100%;
-  letter-spacing: 1px;
-  font: bold 1.3em 'Amatic SC', cursive;
-}
-
-nav li {
+  padding-top: 17px;
+  font-family: 'Quicksand', sans-serif;
   float: right;
-  width: auto;
 }
 
-nav li a {
-  padding: 25px 10px;
-  display: block;
+nav a {
   text-decoration: none;
   text-transform: uppercase;
-  color: #9893B3;
+  color: gray;
 }
 
-nav li a:hover {
+nav a:hover {
   color: #7cc6d1;
-  background: #dde6ed;
-  text-decoration: underline;
-}
-
-
-/* Main Banner --------------------------------------- */
-
-#hero {
-  background: linear-gradient(#9893B3, transparent 85%),
-              linear-gradient(0deg, #62949F, transparent 85%),
-              #fafafa url(../images/sf.jpg) no-repeat center;
-  background-size: cover;
-  color: #7cc6d1;
-  text-align: center;
-  height: 350px;
-  padding: 25px 0;
-  background-size: cover;
-}
-
-#hero img {
-  width: 150px;
-  -webkit-border-radius: 150px;
-  border-radius: 150px;
-  margin-top: 50px;
-  border: 2.5px solid #DDE6ED;
-}
-
-#hero img:hover {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-}
-
-
-h2 {
-  font: 4.5em 'Reenie Beanie', cursive;
-  line-height: 80%;
-  text-shadow: 1px 1px 3px #38383A;
-}
-
-.city {
-  color: #DDE6ED;
-  font: bold 1.6em 'Amatic SC', cursive;
-  text-shadow: 1px 1px #38383A;
-  letter-spacing: 1px;
-}
-
-
-/* Main Header --------------------------------------- */
-
-h3 {
-  font: bold 1.5em 'Amatic SC', cursive;
-  text-align: center;
-  margin: 16px auto;
-  letter-spacing: 1px;
-}
-
-
-/* Main Content --------------------------------------- */
-
-.container {
-  width: 1024px;
-  margin: 0 auto;
-}
-
-.column {
-  float: left;
-  width: 30%;
-  padding: 15px;
-  text-align: center;
-}
-
-.column img {
-  height: 145px;
-  width: 80%;
-  max-width: 80%;
-  border-radius: 10%;
-  border: 2.5px solid #DDE6ED;
-}
-
-.column a {
-  text-decoration: none;
-  color: #D75365;
-}
-
-.column a:hover {
-  font-style: italic;
-}
-
-h4 {
-  color: #D75365;
-  font: bold 1.8em 'Amatic SC', cursive;
-  letter-spacing: 1px;
-}
-
-
-/* Social --------------------------------------- */
-
-.footer {
-  width: 100%;
-  text-align: center;
-}
-
-h5 {
-  color: #7CC6D1;
-  font: 1.4em 'Amatic SC';
-  text-align: center;
-  letter-spacing: 1px;
-  margin-top: 10px;
-}
-
-#social {
-    background: linear-gradient(180deg,white,rgba(98, 148, 159, .7));
-    color: #fafafa;
-    padding: 2px 0;
-    overflow: hidden;
-    clear: both;
-}
-
-#social li {
-    float: left;
-    width: auto;
-    padding: 13px;
-}
-
-#social ul {
-  width: 365px;
-  margin: 0 auto;
-}
-
-#social img {
-  width: 55%;
-}
-
-
-/* Media Queries --------------------------------- */
-
-/* Smartphones */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  body {
-    padding-top: 0px;
-  }
-
-  nav {
-    position: static;
-  }
-
-  .container {
-    width: 100%;
-  }
-
-  .column {
-    width: 100%;
-  }
-}
-
-
-/* Tablets */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  body {
-    padding-top: 0px;
-  }
-
-  nav {
-    position: static;
-  }
 }
