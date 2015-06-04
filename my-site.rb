@@ -5,7 +5,7 @@ class MySite < Sinatra::Base
   register Sinatra::Reloader
 
   get '/' do
-    send_file 'public/index.html'
+    erb :index
   end
 
   get '/about' do
