@@ -1,24 +1,9 @@
 require "sinatra"
 require "sinatra/reloader"
+require "./lib/pictures"
 
 class MySite < Sinatra::Base
  	register Sinatra::Reloader
-
-	# get '/' do
-	# 	send_file './home.html'
-	# end
-
-	# get '/about' do
-	# 	send_file './about.html'
-	# end
-
-	# get '/blog' do
-	# 	send_file './blog.html'
-	# end
-
-	# get '/projects' do
-	# 	send_file './projects.html'
-	# end
 
 	get '/' do
 		@title			= "Alice Rhomieux"
@@ -27,7 +12,7 @@ class MySite < Sinatra::Base
 	end
 
 	get '/about' do
-		@title			= "Alice Rhomieux -- About"
+		@title			= "Alice Rhomieux | About"
 		@description 	= "About Alice Rhomieux -- a web developer in training in Seattle WA."
 		erb :about
 	end
@@ -39,9 +24,16 @@ class MySite < Sinatra::Base
 	end
 
 	get '/projects' do
-		@title			= "Alice Rhomieux -- Projects"
+		@title			= "Alice Rhomieux | Projects"
 		@description 	= "Classroom projects from Ada Developers Academy."
 		erb :projects
+	end
+
+	get '/pictures' do
+		@pictures 		= Pictures::Picture.all_the_pics
+		@title			= "Pretty Pictures"
+		@description 	= "Some pictures to look at. Mostly landscapes with the occasional fungus."
+		erb :pictures
 	end
 
 end

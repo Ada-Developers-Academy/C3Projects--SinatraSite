@@ -1,13 +1,10 @@
 html {
-    /* Size of largest container or bigger */
-    /*min-width: 960px;*/
     text-align: center;
     }
 
 body {
 	width: 960px;
 	font-family: Arial, sans-serif;
-	text-align: center;
 	margin: 0 auto;
 	padding: 0;
 }
@@ -54,8 +51,21 @@ nav a {
 	font-weight: bold;
 }
 
+nav a:link {
+	color: rgb(21, 12, 80);
+}
+
+nav a:visited {
+	color: rgb(88, 78, 154);
+}
+
 nav a:hover {
 	background-color: rgb(128, 119, 183);
+	color: #ffffff;
+}
+
+nav a:active {
+	background-color: rgb(62, 51, 132);
 	color: #ffffff;
 }
 
@@ -86,6 +96,12 @@ img {
 	margin: 10px;
 }
 
+.landscape-image {
+	width: 800px;
+	height:	600px;
+	display: block;
+	margin: 0 auto;
+}
 
 /*
 Color Palette -- periwinkle-ish

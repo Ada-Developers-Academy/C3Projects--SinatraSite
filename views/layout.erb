@@ -9,23 +9,11 @@
 		<meta name="description" content="<%= @description %>">
 	</head>
 	<body>
-		<header>
-			<h1><%= @title %></h1>
-		</header>
+		<%= erb :header %>
+		<%= erb :nav %>
 
-		<nav>
-			<ul>
-				<li><a href="/">home</a></li>
-				<li><a href="/about">about</a></li>
-				<li><a href="/blog">blog</a></li>
-				<li><a href="/projects">projects</a></li>
-			</ul>
-		</nav>
-
-		<h1>(Proof of layout implementation)</h1>
 		<%= yield %>
-		<footer>
-			<h2>Yo! Ima footer. Copyleft arhx <%= Time.now.year %></h2>
-		</footer>
+
+		<%= erb :footer %>
 	</body>
 </html>
