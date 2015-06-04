@@ -1,28 +1,75 @@
-body {
-  width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-img {
-  width: 500px;
-
-}
-
 header {
   background: url("../../images/clouds.JPG");
   background-size: 960px;
   background-repeat: no-repeat;
-  padding-bottom: 40px;
+  padding-bottom: 25px;
+  padding-top: 20px;
+  margin-top: -10px;
+  position: relative;
+}
+
+nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 20px;
+
+}
+
+.nav-bar a:link {
+  color: #F8F8FF;
+  text-decoration: none;
+}
+
+
+.nav-bar a:visited {
+  color: #F8F8FF;
+  text-decoration: none;
+}
+
+.nav-bar a:hover {
+  background-color: #006699;
+}
+
+body {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+img {
+  width: 450px;
+
 }
 
 footer {
-  background: url("../../images/sand.png");
-  /*background-color: #53C1E6;*/
+  /*background: url("../../images/sand-jpg.JPG");*/
+  background-color: #006699;
+  color: white;
+  padding-bottom: 20px;
 
 }
 
-.about_me, .home {
-  padding-bottom: 120px;
+.about_me {
+  padding-bottom: 140px;
+  background: rgb(0, 206, 209);
+  background: rgba(0, 206, 209, 0.3);
+}
+
+.home-page-festival-photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto ;
+}
+
+.home-h2 {
+  padding-bottom: 10px;
+}
+
+.asian-dad-photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto ;
 
 }
