@@ -6,18 +6,18 @@ class MySite < Sinatra::Base
   register Sinatra::Reloader
 
   get "/" do # what hte user is asking
-    send_file "html/home.html" # this is the response
+    erb :index # this is the response
   end
 
   get "/about" do
-    send_file "html/about.html"
+    erb :about
   end
 
   get "/blog" do
-    send_file "html/blog.html"
+    erb :blog
   end
 
   get "/projects" do
-    send_file "html/projects.html"
+    erb :projects
   end
 end

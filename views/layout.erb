@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" type="text/css" href="bzstyle.css"/>
+  <title>
+    About Brittany
+  </title>
+</head>
+<body>
+
+<header>
+  <img src="images/sunrise.jpg" alt = "sunrise" height = "200" width = "960">
+    <nav class="nav-link">
+      <a class="nav-link" href="/">Home</a>
+      <a class="nav-link" href="projects">Projects</a>
+      <a class="nav-link" href="blog">Blog</a>
+      <a class="nav-link" href="about">About</a>
+    </nav>
+
+<%= yield %>
+
+
+
+<footer>
+  <nav>
+    <p>
+      Brittany L. Walentin (ɔ)
+      <% t =  Time.now %>
+      <%= t.year %>
+    </p>
+  <a href="/">home</a>
+  <a href="projects">projects</a>
+  <a href="blog">blog</a>
+  <a href="about">about</a>
+  </nav>
+</footer>
+</body>

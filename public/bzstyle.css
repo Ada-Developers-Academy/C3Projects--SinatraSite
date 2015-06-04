@@ -4,12 +4,17 @@ body {
   font-family: fantasy;
 }
 
-/*header {
-  background-color: #CCFFFF
-}*/
+header {
+  background-color: #EBFFFF;
+}
+
+.nav-link {
+  display: inline;
+  padding: 10px 10px 10px 10px;
+}
 
 footer {
-  background-color: #CCFFFF;
+  background-color: #EBFFFF;
 }
 
 h1 {
@@ -24,9 +29,4 @@ border-color: #B8DBFF;
 
 h3 {
   color: #8080CC;
-}
-
-#sunrise {
-  opacity: 0.4;
-  /*padding: 20px;*/
 }
