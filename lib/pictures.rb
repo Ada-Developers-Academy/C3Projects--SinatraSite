@@ -13,10 +13,6 @@ module Pictures
       "/images/landscapes/#{name}.jpg"
     end
 
-    # def link_path
-    #   "/#{name}"
-    # end
-
     def self.all_the_pics
       PICTURES.map { |name| Picture.new(name) }
     end
