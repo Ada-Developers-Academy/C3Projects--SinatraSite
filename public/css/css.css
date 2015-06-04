@@ -12,8 +12,7 @@ header {
 }
 
 h1:hover {
-  background-color: blue;
-
+  color: #99FF33;
 
 }
 
@@ -42,11 +41,24 @@ a:hover {
 
 body {
   width: 960px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   font-family: "Courier New", serif;
   color: #F5F5F5;
   background-color: #000000;
+}
+
+h2 {
+  font-size: 1.7em;
+  font-family: "Courier New", serif;
+}
+
+h3 {
+  font-size: 1.17em;
+  font-family: "Courier New", serif;
+}
+
+.home-section {
+  padding-bottom: 20px;
 }
 
 img {
@@ -69,10 +81,6 @@ footer {
     margin-right: auto ;
 }
 
-.home-h2 {
-  padding-bottom: 10px;
-}
-
 .about-me-husky-photo {
   display: block;
   margin-left: auto;
@@ -84,12 +92,19 @@ footer {
   margin-right: auto;
 }
 
-.brazil-section, .netherlands-section {
+.netherlands-section, .brazil-section {
   display: inline-block;
-  /*margin-left: auto;
-  margin-right: auto;*/
+  margin-top: -17px;
 }
 
 .brazil-photo {
   height: 282px;
+  position: relative;
+  width: 470px;
+}
+
+.netherlands-photo {
+  width: 470px;
+  height: 282px;
+
 }
