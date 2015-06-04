@@ -1,7 +1,10 @@
 /*Google Font References:
 font-family: 'Oxygen', sans-serif;
+	300,400,700
 font-family: 'Roboto Condensed', sans-serif;
+	400,700, 300italic
 font-family: 'Lato', sans-serif;
+	100,300,400
 */
 
 /******************** BASE STYLES *******************/
@@ -78,6 +81,7 @@ h1 {
 	display: inline-block;
 	width: 35%;
 	vertical-align: top;
+	padding: 10px;
 }
 
 nav {
@@ -153,11 +157,70 @@ article {
 	border-bottom: 1px solid #B7AE9F;
 }
 
+#first-article {
+	padding-top: 0;
+}
+
+/********************* ABOUT_ME.ERB *********************/
+
+#about_me img {
+	display: block;
+	margin: 30px auto;
+	width: 300px;
+}
+
+/********************* PLACES.ERB *********************/
+
+#images {
+	width: 100%;
+	margin: 0 auto;
+}
+
+#images img {
+	display: block;
+	width: 100%;
+}
+
+
+
 /********************* PICTURES.ERB *********************/
 
 #pictures img {
 	display: block;
 	margin: 10px auto;
+}
+
+/********************* PROJECTS.ERB *********************/
+
+#projects {
+	margin: 0 auto;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+h4 {
+	font-weight: 300;
+	font-style: italic;
+}
+
+#projects > a {
+	display: inline-block;
+	width: 40%;
+	padding: 15px;
+	margin: 20px;
+	font-size: 15px;
+	text-align: center;
+
+	border: 1px solid #000;
+	border-radius: 10px;
+	vertical-align: top;
+}
+
+#projects > a > div {
+	height: 50px;
+
 }
 
 /********************* FOOTER *********************/
@@ -167,9 +230,17 @@ footer {
 	height: 100%;
 	padding: 20px;
 	font-size: 12px;
+	color: #fff;
+}
+
+#copyright {
+	display: inline;
+	padding: 20px;
+	float: left;
 }
 
 footer ul {
+	display: inline-block;
 	float: right;
 	color: #fff;
 }
