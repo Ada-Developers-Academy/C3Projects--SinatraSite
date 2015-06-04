@@ -1,0 +1,41 @@
+body {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  /*text-align: center;*/
+}
+
+header {
+  background: url("/images/18.lined-paper-texture.jpg");
+  width: auto;
+  height: 150px;
+  margin-top: -5%;
+  padding-top: 65px;
+  padding-bottom: 0px;
+  text-align: right;
+  font-size: 28px;
+}
+
+.my_name {
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 80px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.local_navs {
+  margin: -25px 0px 0px 5px;
+}
+
+.local_navs a {
+  text-decoration: none;
+  font-family: "Courier";
+  font-weight: bold;
+  color: black;
+  padding-left: 3px;
+
+}
+
+footer{
+
+}
