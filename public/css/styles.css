@@ -133,7 +133,7 @@ a:hover {
 
 #right-column {
 	display: inline-block;
-	width: 55%;
+	width: 64.5%;
 	vertical-align: top;
 	padding: 20px;
 	border-left: 1px solid #B7AE9F;
@@ -142,11 +142,22 @@ a:hover {
 
 h2 {
 	font-weight: 400;
+	border-bottom: 1px solid #B7AE9F;
+	padding-bottom: 10px;
 }
+
+/********************* INDEX.ERB *********************/
 
 article {
 	padding: 10px 0;
-	border-top: 1px solid #B7AE9F;
+	border-bottom: 1px solid #B7AE9F;
+}
+
+/********************* PICTURES.ERB *********************/
+
+#pictures img {
+	display: block;
+	margin: 10px auto;
 }
 
 /********************* FOOTER *********************/
@@ -156,7 +167,6 @@ footer {
 	height: 100%;
 	padding: 20px;
 	font-size: 12px;
-
 }
 
 footer ul {
