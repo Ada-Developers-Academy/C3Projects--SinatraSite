@@ -6,19 +6,19 @@ class MySite < Sinatra::Base
 # register activates the Reloader
   register Sinatra::Reloader
 
-  get "/" do
-    send_file './about_me_html/home_page.html'
+  get "/" || "/home" do
+    erb :home_page
   end
 
   get "/about" do
-    send_file "about_me_html/about_page.html"
+    erb :about_page
   end
 
   get "/blog" do
-    send_file "about_me_html/blog_post.html"
+    erb :blog_post
   end
 
   get "/projects" do
-    send_file "about_me_html/projects_page.html"
+    erb :projects_page
   end
 end

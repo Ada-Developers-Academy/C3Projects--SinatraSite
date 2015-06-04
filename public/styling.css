@@ -10,20 +10,20 @@ html {
   /*color: #8A5CE6;*/
 /*}*/
 
+
 h1 {
   text-align: center;
-  color: #993399;
+  color: #669999;
   font-style: italic;
 }
 
 #home_page {
   background-image: url("images/beach.jpg");
-  background-color: #000000;
   margin: 100px 100px 100px 100px;
 }
 
 body {
-  background: #B2C2F0;
+  background: #F0F5F5;
 }
 
 nav {
@@ -52,4 +52,30 @@ a:active {
 .textwrap {
   float: right;
   margin: 10px;
+}
+
+.gitpg_font {
+  font-family: "Futura", Sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+/*to center a list*/
+ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#ninja_gif {
+  margin-left: 15px;
+  height: 50px;
+  width: 50px;
+}
+
+.foot_note, h5 {
+  font-family: "Futura", Sans-serif;
+  font-size: 10px;
+  font-decoration: italic;
+  background: #75A3A3;
+  opacity: 0.5;
 }
