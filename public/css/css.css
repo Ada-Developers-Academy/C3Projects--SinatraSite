@@ -6,7 +6,7 @@ header {
   padding-top: 200px;
   margin-top: -50px;
   position: relative;
-  color: #F5F5F5;
+  color: #F8F8FF;
   font-size: 26px;
   font-family: "Courier New", serif;
 }
@@ -19,19 +19,19 @@ nav {
   font-family: "Courier New";
 }
 
-.nav-bar-link a:link {
+a:link {
   color: #F8F8FF;
   text-decoration: none;
 }
 
-.nav-bar-link a:visited {
+a:visited {
   color: #F8F8FF;
   text-decoration: none;
 }
 
-.nav-bar-link a:hover {
+a:hover {
   background-color: #0000CD;
-  font-family: "sans-serif"
+  text-decoration: underline;
 }
 
 body {
@@ -39,23 +39,12 @@ body {
   margin-left: auto;
   margin-right: auto;
   font-family: "Courier New", serif;
-
+  color: #F5F5F5;
+  background-color: #000000;
 }
 
 img {
   width: 450px;
-
-}
-
-.brazil-section, .netherlands-section {
-  display: inline-block;
-  /*margin-left: auto;
-  margin-right: auto;*/
-
-}
-
-.brazil-photo {
-  height: 282px;
 }
 
 footer {
@@ -66,7 +55,6 @@ footer {
   background-position: 0 75px;
   position: relative;
   background-size: 960px, 100px;
-
 }
 
 .home-page-festival-photo {
@@ -79,14 +67,23 @@ footer {
   padding-bottom: 10px;
 }
 
+.about-me-husky-photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .asian-dad-photo {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.about-me-husky-photo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.brazil-section, .netherlands-section {
+  display: inline-block;
+  /*margin-left: auto;
+  margin-right: auto;*/
+}
+
+.brazil-photo {
+  height: 282px;
 }
