@@ -1,0 +1,32 @@
+body {
+  width: 960px;
+  margin: auto;
+  font-family: fantasy;
+}
+
+/*header {
+  background-color: #CCFFFF
+}*/
+
+footer {
+  background-color: #CCFFFF;
+}
+
+h1 {
+font-variant: small-caps;
+}
+
+h2 {
+border-bottom-style: solid;
+color: #99CCFF;
+border-color: #B8DBFF;
+}
+
+h3 {
+  color: #8080CC;
+}
+
+#sunrise {
+  opacity: 0.4;
+  /*padding: 20px;*/
+}
