@@ -1,0 +1,22 @@
+body {
+  margin: 2% 5%;
+}
+
+nav {
+  font-size: 14px;
+  font-family: sans-serif;
+  margin: 10px -2%;
+
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 2% .5%;
+  width: 300px;
+  padding: 1% 2%;
+  border: solid #666699;
+  border-radius: 10%;
+  background-color: #666699;
+}
+
