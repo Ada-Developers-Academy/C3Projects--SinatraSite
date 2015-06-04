@@ -9,15 +9,16 @@ class MySite < Sinatra::Base
   end
 
   get '/about' do
-    send_file 'public/about.html'
+    erb :about
   end
 
   get '/programming' do
-    send_file 'public/programming.html'
+    erb :programming
   end
 
+
   get '/writing' do
-    send_file 'public/writing.html'
+    erb :writing
   end
 
 end
