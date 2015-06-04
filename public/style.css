@@ -14,15 +14,8 @@ body {
  font-size: 12px;
  background: rgb(62, 64, 103);
  width: 960px;
+ margin: 0px;
 }
-
-ul {
- list-style: none;
- margin: 0;
- padding:0;
-}
-
-/* ---- Links ---- */
 
 a:link{
   color: #999;
@@ -45,9 +38,31 @@ h1 {
   color: rgba(0, 0, 0, 0.8);
 }
 
+/* ---- Header and Navigation ---- */
 
+.site_header {
+  background-color: rgb(159, 160, 181);
+  padding: 0;
+}
 
+.navi ul {
+  list-style: none;
+  background-color: rgb(68,68,68);
+  /*text-align: center;*/
+  margin: 0;
+  padding: 0;
+}
 
+.navi li {
+  height: 25px;
+  line-height: 25px;
+  display: inline-block;
+  margin: 10px ;
+}
+
+.navi a:hover {
+  color: #fff;
+}
 
 /* ---- Posts ---- */
 
