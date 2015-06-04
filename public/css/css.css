@@ -10,18 +10,19 @@ img {
 }
 
 header {
-  background-image: url("./images/clouds.JPG");
-
+  background: url("../../images/clouds.JPG");
+  background-size: 960px;
+  background-repeat: no-repeat;
+  padding-bottom: 40px;
 }
 
 footer {
-  background-color: blue;
+  background: url("../../images/sand.png");
+  /*background-color: #53C1E6;*/
 
 }
 
 .about_me, .home {
-  padding-bottom: 170px;
-
-
+  padding-bottom: 120px;
 
 }
