@@ -10,10 +10,31 @@ Author: Loraine Kanervisto
 /* ---- Global ---- */
 
 body {
- font-family: "Georgia",times, serif;
+ font-family: 'IM Fell French Canon', serif;
  font-size: 15px;
  background: rgb(62, 64, 103);
  width: 960px;
+}
+
+ul {
+ list-style: none;
+ margin: 0;
+ padding:0;
+}
+
+/* ---- Links ---- */
+
+a:link{
+
+}
+a:visited {
+
+}
+a:hover {
+
+}
+a:active {
+
 }
 
 /* ---- Headers ---- */
@@ -23,20 +44,11 @@ font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 color: rgba(0, 0, 0, 0.8);
 }
 
-/* ---- Links ---- */
+
 
 
 
 /* ---- Posts ---- */
-
- ul {
-  list-style: none;
-  margin: 0;
-  padding:0;
-}
-
-
-
 
 .posts {
  background: rgb(207, 207, 207);
