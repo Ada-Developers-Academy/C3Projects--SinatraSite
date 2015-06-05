@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= if @title 
+      @title = "Anita Wang | #{@title}"
+      else
+        @title = "Anita Wang"
+      end%></title>
+    <link href="images/icons/favicon.ico" rel="shortcut icon" type="image/x-icon"> 
+    <meta charset="utf-8">
+    <meta name="description" content="Web developer in training at Ada Developers Academy">
+    <link href="css/reset.css" type="text/css" rel="stylesheet">
+    <link href="css/global.css" type="text/css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand|Megrim' rel='stylesheet' type='text/css'>
+  </head>
+  <%= erb :header %>
+  <body>
+    <div class="primary_content">
+     <%= yield %>
+    </div>
+    <%= erb :footer %>
+  </body>
+</html>

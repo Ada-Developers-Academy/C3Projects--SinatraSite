@@ -2,10 +2,15 @@
 
 html {
   min-width: 960px;
-  background: #000;
+  background: #fff url(../images/gplaypattern_@2X.png) repeat center;
+  margin: 5px;
 }
 
 section {
+  text-align: center;
+}
+
+footer {
   text-align: center;
 }
 
@@ -13,13 +18,12 @@ section {
 
 header {
   padding: 17px;
-  background-color: #000;
 }
 
 h1 {
   display: inline;
   font: bold 2em 'Megrim', cursive;
-  color: #fff;
+  color: #000;
   text-transform: uppercase;
 }
 
@@ -39,26 +43,26 @@ nav a:hover {
   color: #7cc6d1;
 }
 
-/* Main Banner --------------------------------------------- */
+/* Main Content ------------------------------------------- */
 
-#banner {
-  background: #fafafa url(../images/sanfran.jpg) no-repeat center;
-  background-size: cover;
-  color: #7cc6d1;
-  text-align: center;
-  height: 550px;
-  padding: 25px 0;
+#banner img {
+  width: 200px;
+  -webkit-border-radius: 200px;
+  border-radius: 200px;
+  margin-top: 50px;
+  border: 2px solid #000;
+}
+
+#banner img:hover {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 /* Footer ------------------------------------------------- */
 
 footer {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 0.75em;
-  text-transform: uppercase;
-  text-align: center;
-  color: gray;
-  vertical-align: text-bottom;
+  padding: 25px;
+  font: 0.7em "Arial";
 }
 
 footer a:link {
