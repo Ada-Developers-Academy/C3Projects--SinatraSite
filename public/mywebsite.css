@@ -28,23 +28,29 @@ ol, ul {
 
 /*THIS IS WHERE REAL STYLES START HAPPENING*/
 
-header {
+.header_wrapper {
   position: fixed;
-  background: #FFFFFF;
+  background-color: #FFF;
   width: 100%;
-  height: 50px;
-  margin-top: 5%;
+  height: 150px;
   border-bottom: 1px;
   border-bottom-style: solid;
-  border-color: #454544;
+  border-bottom-color: black;
+  z-index: 10;
+}
+
+#header_text {
+  /*width: 100%*/
   text-align: right;
+  margin-top: 100px;
+  padding-right: 10px;
 }
 
 main {
-  width: 860px;
+  width: 100%;
   padding-top: 170px;
-  /*margin-left: 240px;*/
-  z-index: 1;
+  z-index: 5;
+  overflow: auto;
 }
 
 p {
@@ -57,7 +63,7 @@ p {
 h1 {
   font-family: 'Droid Serif', Verdana, Arial, sans-serif;
   line-height: 1.6em;
-  color: #454544;
+  color: #161718;
   text-decoration: none;
   font-size: 22pt;
 }
@@ -72,8 +78,9 @@ h2 {
 
 section {
   /*float: center;*/
-  width: 720px;
-  padding: 20px;
+  width: 100%;
+  /*padding: 20px;*/
+  text-align: center;
   /*margin-left: px;*/
 }
 
@@ -82,9 +89,9 @@ section p {
 }
 
 article {
-  width: 620px;
-  margin-left: 240px;
-  /*padding: 150px;*/
+  /*text-align: justify;*/
+  margin: 0px 0px 0px 10%;
+  padding: 20px 10% 20px 15%;
 }
 
 article p {
@@ -92,9 +99,7 @@ article p {
 }
 
 .menu {
-  /*position: fixed;*/
   float: left;
-  margin-top: -20px;
   margin-right: 20px;
   padding-left: 50px;
   height: 100%;
@@ -115,10 +120,11 @@ a:hover {
 }
 
 footer {
-  /*position: relative;*/
-  width: 720px;
-  padding: 20px;
-  margin-left: 100px;
+  min-height: 100%
+  margin: 0 auto -150px 10%;
+  padding: 10px 0px 30px 0px;
+  width: 100%;
+  text-align: center;
 
 }
 
@@ -126,6 +132,7 @@ footer {
 
 .ed {
   text-align: center;
+  padding-bottom: 20px;
 }
 
 
