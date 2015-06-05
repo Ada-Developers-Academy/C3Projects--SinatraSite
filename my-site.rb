@@ -8,20 +8,24 @@ class MySite < Sinatra::Base
     erb :home
   end
 
-  # get "/home" do
-  #   erb :home
-  # end
+  get "/home" do
+    erb :home
+  end
+
+  get "/about" do
+    erb :about
+  end
+
+  get "/projects" do
+    erb :projects
+  end
+
+  get "/blog" do
+    erb :blog
+  end
+
   #     send_file 'static/home2.html'
   #   end
-
-
-
-
-
-
-
-
-
 
 
 end
