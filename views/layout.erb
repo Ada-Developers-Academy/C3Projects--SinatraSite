@@ -14,11 +14,7 @@
 	<div id="container">
 		<body>
 
-			<header>
-				<div id="top" class="main_image"> <h1>KARI LONCZAK</h1> </div>
-				<!-- Scroll to Top Fixed Button -->
-				<div id="scroll-to-top"><a href="#top">Scroll to Top</a></div>
-			</header>
+			<%= erb :header %>
 
 			<div id="left-column">
 				<nav>
@@ -51,16 +47,7 @@
 				</section>
 			</div> 
 
-			<footer>
-				<div id="copyright">&copy; Kari Lonczak <%= DateTime.now.year %></div>
-				<ul>
-					<a href=#>Subscribe</a> |
-					<a href=#>Contact</a> |
-					<a href=#>LinkedIn</a> |
-					<a href=#>Instagram</a>
-				</ul>
-				<div class="clear"></div>
-			</footer>
+			<%= erb :footer %>
 
 		</body>
 	</div> 
