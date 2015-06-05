@@ -33,7 +33,7 @@ nav a {
   text-decoration: none;
   text-transform: uppercase;
   color: gray;
-  padding: 3spx;
+  padding: 3px;
 }
 
 nav a:hover {
