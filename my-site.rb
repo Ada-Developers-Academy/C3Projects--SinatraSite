@@ -1,38 +1,40 @@
 require "sinatra"
 require "sinatra/reloader"
+require_relative "lib/projects"
 
 class MySite < Sinatra::Base
   register Sinatra::Reloader
 
   get "/" do
-    send_file 'views/index.html'
-  end
-
-  get "/index.html" do
-    redirect '/'
+    erb :index
   end
 
   get "/about" do
-    send_file 'views/about.html'
+    erb :about
+  end
+
+  get "/contact" do
+    erb :contact
   end
 
   get "/blag" do
-    send_file 'views/blag.html'
+    erb :blag
   end
 
   get "/projects" do
-    send_file 'views/projects.html'
+    @projects = Project.all_projects
+    erb :projects
   end
 
-  get "/projects/solar-system" do
-    send_file 'views/projects/solar-system.html'
+  get "/projects/:project_name" do
+    erb :project_name
   end
 
   get "/projects/set-clone" do
-    send_file 'views/projects/set-clone.html'
+    erb :set_clone
   end
 
   get "/projects/euler-problems" do
-    send_file 'views/projects/euler-problems.html'
+    erb :euler_problems
   end
 end

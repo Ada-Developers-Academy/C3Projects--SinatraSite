@@ -1,0 +1,28 @@
+<section class="projects">
+  <h1>How I've Tried to Take Over the World</h1>
+
+  <% @projects.each do |project| %>
+    <div class="wrapper">
+      <div class="divider"></div><div class="divider"></div><div class="divider"></div>
+    </div>
+    <section class="project-description">
+      <div class="wrapper">
+        <h2><%= project.title %></h2>
+        <h3><%= project.subtitle %></h3>
+      </div>
+
+      <div class="left">
+        <div class="project-photo">
+          <%= project.url_tag(project.image_one) %>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="project-summary">
+          <p><%= project.description %></p>
+        </div>
+      </div>
+    </section>
+  <% end %>
+
+</section>

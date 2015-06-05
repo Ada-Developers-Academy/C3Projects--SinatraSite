@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Dr. Vonn Jerry XLII is a mad scientist with over 10 years of experience being mad and trying to do science." />
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <title>
+      <% default_title = @title || "Dr. Vonn Jerry XLII, mad scientist for hire" %>
+      <% title = "#{ @name ? @name + "-- " : "" }#{ default_title }" %>
+      <%= title %>
+    </title>
+  </head>
+  <body>
+    <%= erb :header %>
+
+    <main>
+      <%= yield %>
+    </main>
+
+    <%= erb :footer %>
+  </body>
+</html>

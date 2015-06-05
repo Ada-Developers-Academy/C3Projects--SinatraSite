@@ -1,0 +1,249 @@
+/* - - - - - - - - - - - - - - header & footer - - - - - - - - - - - - - - - */
+
+.header-footer * {
+  background: #ccc;
+  margin: auto;
+  padding: 0px;
+  text-align: center;
+  width: 460px;
+}
+
+#license {
+  margin: auto;
+  margin-top: 5px;
+  text-align: justify;
+  width: 765px;
+}
+
+#license img {
+  float: left;
+  padding-right: 10px;
+  padding-top: 2px;
+}
+
+/* - - - - - - - - - - - - - - - main body - - - - - - - - - - - - - - - - - */
+body {
+  background: #fff;
+}
+
+main {
+  font-family: "Arial", "Droid Sans", sans-serif;
+  margin: auto;
+  text-align: justify;
+  width: 800px;
+}
+
+main .wrapper {
+  text-align: center;
+}
+
+main .divider {
+  background-color: #c00;
+  border-radius: 50%;
+  display: inline-block;
+  height: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 0px;
+  width: 10px;
+}
+
+a:link, a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  color: #00F;
+}
+
+.copper-links * {
+  font-family: "Copperplate", "Arial Bold", sans-serif;
+}
+
+.copper-links h1 {
+  font-size: 38px;
+}
+
+.copper-links h2 {
+  font-family: "Copperplate", "Arial Bold", sans-serif;
+  font-size: 30px;
+}
+
+.copper-links h3 {
+  font-family: "Copperplate", "Arial Bold", sans-serif;
+  font-size: 20px;
+}
+
+main h1, main h2, main h3 {
+  font-family: "Arial", "Droid Sans", sans-serif;
+  /*font-family: "Copperplate", "Arial Bold", sans-serif;*/
+  /*font-family: "Times", "Georgia", serif;*/
+  margin: 2px;
+  padding: 0px;
+  text-align: center;
+}
+
+main h1 {
+  font-family: "Georgia", "Times", serif;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: normal;
+  margin: 20px;
+}
+
+main h2 {
+  /*font-family: "Copperplate", "Arial Bold", sans-serif;*/
+  font-size: 32px;
+}
+
+main h3 {
+  font-size: 18px;
+}
+
+
+/* - - - - - - - - - - - - - - blag-specific - - - - - - - - - - - - - - - - */
+
+/*.blag-post*/
+article {
+  /* start columns test */
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2; /* Internet Explorererererer? */
+  /* end columns test */
+}
+
+.blag-post h1 {
+  /* start columns test */
+  -webkit-column-span: all; /* Chrome, Safari, Opera */
+  column-span: all;
+  /* end columns test */
+}
+
+#citations div {
+  /* start columns test */
+  -webkit-column-span: all; /* Chrome, Safari, Opera */
+  column-span: all;
+  /* end columns test */
+  margin: auto;
+  padding: 10px;
+  width: 750px;
+}
+
+#citations ol, #citations li {
+  display: inline;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* - - - - - - - - - - - - - - - - contact - - - - - - - - - - - - - - - - - */
+
+#contact img {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /*text-align: center;*/
+}
+
+#contact h3 {
+  margin: 3px;
+  padding: 3px;
+}
+
+#contact a {
+  margin: 10px;
+  padding: 3px;
+}
+
+eggplant purple tan, guava green pink, lychee redbrown yellowwhite,
+a#eggplant:hover {
+  background: #751975;
+  color: #EBE0CC
+}
+
+a#guava:hover {
+  background: #2E8A2E;
+  color: #FF75A3;
+}
+
+a#lychee:hover {
+  background: #CC3300;
+  color: #FFFFE6;
+}
+
+a#banana:hover {
+  background: #FFFF66;
+  color: #855C33;
+}
+
+a#chocolate:hover {
+  background: #855C33;
+  color: #FFFFFF;
+}
+
+/* - - - - - - - - - - - - - - - - projects - - - - - - - - - - - - - - - - - */
+
+.left {
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  width: 400px;
+}
+
+.right {
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  width: 350px;
+}
+
+.project-description {
+  margin: auto;
+  text-align: justify; /*:center;*/
+  width: 800px;
+}
+
+.project-photo {
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+}
+
+.project-summary {
+  /*background: ;*/
+  margin: auto;
+  /*width: 500px;*/
+}
+
+.projects h1, .projects h2, .projects h3 {
+  margin: 2px;
+  padding: 0px;
+  text-align: center;
+}
+
+.projects h1, .projects h3 {
+  margin: 8px 0px;
+  padding: 10px;
+}
+
+.projects h1 {
+  font-size: 36px;
+}
+
+.projects h2 {
+  background: #9EBCDB;
+  display: inline;
+  font-family: "Copperplate", "Arial Bold", sans-serif;
+  font-size: 32px;
+  padding: 0px 20px;
+  text-align: center;
+}
+
+.projects h3 {
+  font-family: "Georgia", "Times", serif;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: normal;
+}
