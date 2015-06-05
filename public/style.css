@@ -73,9 +73,17 @@ h1 {
  padding:20px;
 }
 
-p {
+.posts p {
  font-size: 19px;
 }
+
+
+/* ---- Footer ---- */
+
+footer {
+  padding: 30px 0;
+}
+
 
 /* */
 /* ----  ---- */

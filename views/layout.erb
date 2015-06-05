@@ -10,19 +10,9 @@
     <meta name="author" content="Loraine Kanervisto"> -->
   </head>
 
-  <body>
+  <%= erb :header %>
 
-    <header class="site_header">
-      <h1 class = "title"><em>Loraine Kanervisto</em></h1>
-      <nav class = "navi">
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="about">About Me</a></li>
-          <li><a href="programming">Programming</a></li>
-          <li><a href="writing">Writing</a></li>
-        </ul>
-      </nav>
-    </header>
+  <body>
 
     <div class="primary-content">
       <%= yield %>
@@ -30,14 +20,6 @@
 
   </body>
 
-
-  <footer>
-    Blog posts by Loraine Kanervisto are licensed under a Creative Commons attribution 4.0 International License.
-  </footer
-  </html>
-
-  </html>
-
-
+  <%= erb :footer %>
 
 </html>
