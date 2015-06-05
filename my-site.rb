@@ -8,29 +8,30 @@ class MySite < Sinatra::Base
   # TITLES = ["about", "blog", "projects", "publications in psychology")
 
   get "/" do
+    @title = "Sally A. Moore"
     erb :home
   end
 
   get "/about" do
-    @title = "sally moore - about"
+    @title = "Sally Moore - about"
     @page_title = "about me"
     erb :about
   end
 
   get "/blog" do
-    @title = "sally moore - blog"
+    @title = "Sally Moore - blog"
     @page_title = "blog"
     erb :blog
   end
 
   get "/projects" do
-    @title = "sally moore - projects"
+    @title = "Sally Moore - projects"
     @page_title = "ADA projects"
     erb :projects
   end
 
   get "/pubs" do
-    @title = "sally moore - publications"
+    @title = "Sally Moore - publications"
     @page_title = "publications in psychology"
     erb :publications
   end

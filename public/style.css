@@ -3,8 +3,6 @@ html { width: 960px }
 h1 {
   font-family: 'Open Sans', sans-serif;
   font-size: 50px;
-  /*color: black;
-  background-color: #FFFFFF;*/
   padding: 5px;
   margin: 10px 5px;
 }
@@ -22,10 +20,13 @@ header {
 footer {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 16px;
-  /*color: */
-  margin:  20px 5px 10px 10px;
+  margin:  10px 5px 10px 10px;
   padding: 2px;
   text-decoration: none;
+}
+
+img {
+  margin: 50px 10px;
 }
 
 p {
@@ -42,23 +43,92 @@ li {
   margin-bottom: 10px;
 }
 
+footer img {
+  margin: 5px auto;
+}
+
 footer p {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 14px;
   margin: 0;
 }
 
+.geekwire li {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 24px;
+  margin: 10px 40px;
+}
+
+.projects {
+  color: #FFFFFF;
+  width: 610px;
+  margin: 50px auto;
+}
+
+.bankaccounts {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: -4px;
+  width: 200px;
+	height: 200px;
+	background: #23AC15;
+}
+
+.scrabble {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: -4px;
+	width: 200px;
+	height: 200px;
+	background: #cf1922;
+}
+
+.solarsystem {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: -4px;
+	width: 200px;
+	height: 200px;
+	background: #10807c;
+}
+
+.hangman {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: -4px;
+	width: 200px;
+	height: 200px;
+	background: #10807c;
+}
+
+.menu {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: -4px;
+	width: 200px;
+	height: 200px;
+	background: #d26c1a;
+}
+
+.another {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: -4px;
+	width: 200px;
+	height: 200px;
+	background: #23AC15;
+}
+
 .projects p {
   font-family: 'Roboto Condensed', sans-serif;
-  margin: 8px 0 5px 20px;
-  color: #52527A;
+  margin: 0 auto;
   text-decoration: none;
 }
 
 .projects a {
   font-family: 'Open Sans', sans-serif;
-  margin: 12px 0 0 10px;
-  color: #52527A;
+  color: #FFFFFF;
+  margin: 0 10px;
   text-decoration: none;
   font-weight: bold;
 }
