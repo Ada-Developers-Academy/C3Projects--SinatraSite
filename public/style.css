@@ -22,7 +22,6 @@ Author: Loraine Kanervisto
 
 body {
  font-family: arial, sans-serif;
- font-size: 1.2em;
  background: rgb(52, 46, 46);
 }
 
@@ -45,14 +44,13 @@ a:active {
 h1, h2, h3 {
   font-family: 'IM Fell French Canon', serif;
   color: rgba(0, 0, 0, 0.8);
-  text-align: center;
 }
 
 /* ---- Header and Navigation ---- */
 
 .site_header {
   background-color: rgb(52, 46, 46);
-  height: 140px;
+  height: 135px;
   line-height: 80px;
 }
 
@@ -88,7 +86,14 @@ h1, h2, h3 {
   margin-right: auto;
   }
 
+  .primary-content h1, h2, h3 {
+    padding: 15px 0 15px 5px;
+    }
 
+
+  .primary-content p {
+    font-size: 1.5em;
+  }
 /* ---- Footer ---- */
 
 footer {
