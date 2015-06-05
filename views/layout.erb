@@ -8,7 +8,7 @@
 <body>
 
 <header>
-  <img src="images/sunrise.jpg" alt = "sunrise" height = "200" width = "960">
+  <img src="images/sunrise.jpg" alt = "sunrise" height = "150" width = "960">
     <nav class="nav-link">
       <a class="nav-link" href="/">Home</a>
       <a class="nav-link" href="projects">Projects</a>
@@ -18,19 +18,22 @@
 
 <%= yield %>
 
-
-
 <footer>
-  <nav>
-    <p>
-      Brittany L. Walentin (ɔ)
-      <% t =  Time.now %>
-      <%= t.year %>
-    </p>
-  <a href="/">home</a>
-  <a href="projects">projects</a>
-  <a href="blog">blog</a>
-  <a href="about">about</a>
-  </nav>
+
+<!-- <%= yield :footer %> -->
+<nav>
+<img src="images/cats.jpg" alt = "kitties" height = "75" width = "90">
+
+    Brittany L. Walentin (ɔ)∆
+    <% t =  Time.now %>
+    <%= t.year %>
+<a href="/">home</a>
+<a href="projects">projects</a>
+<a href="blog">blog</a>
+<a href="about">about</a>
+</nav>
+
 </footer>
+
+
 </body>

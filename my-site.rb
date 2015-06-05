@@ -1,5 +1,6 @@
 require "sinatra"
 require "sinatra/reloader" # makes it so we don't have to restart Sinatra
+require "sinatra/content_for"
   # when execute, do it through rackup in terminal
 
 class MySite < Sinatra::Base
@@ -19,5 +20,9 @@ class MySite < Sinatra::Base
 
   get "/projects" do
     erb :projects
+  end
+
+  get "/bananas" do
+    erb :bananas
   end
 end
