@@ -13,9 +13,9 @@ class MySite < Sinatra::Base
     erb :projects
   end
 
-  get "/about" do
-    @title = "About"
-    erb :about
+  get "/contact" do
+    @title = "Contact Me"
+    erb :contact
   end
 
   get "/blog" do
