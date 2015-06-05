@@ -15,10 +15,16 @@
     </div>
   </main>
   <footer>
-      <a href="contact">Contact</a>
+    <% if @contact %>
+      <p>
+        *If you own any of the images I use, rest assured I'm not making any money off them.
+      </p>
+    <% else %>
+        <a href="contact">Contact</a>
         <p>
           *If you own any of the images I use, rest assured I'm not making any money off them.
         </p>
+    <% end %>
   </footer>
   </body>
 </html>

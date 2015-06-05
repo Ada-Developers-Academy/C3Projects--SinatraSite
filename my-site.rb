@@ -23,6 +23,9 @@ class MySite < Sinatra::Base
   end
 
   get "/contact" do
+    @contact = "Contact Me"
+
     erb :contact
+
   end
 end

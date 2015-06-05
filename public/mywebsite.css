@@ -43,6 +43,7 @@ header {
 main {
   width: 860px;
   padding-top: 170px;
+  /*margin-left: 240px;*/
   z-index: 1;
 }
 
@@ -50,7 +51,7 @@ p {
   font-family: Verdana, Arial, sans-serif;
   line-height: 1.6em;
   color: #848484;
-  font-size: 8pt;
+  font-size: 10pt;
 }
 
 h1 {
@@ -73,17 +74,18 @@ section {
   /*float: center;*/
   width: 720px;
   padding: 20px;
+  /*margin-left: px;*/
 }
 
 section p {
   text-align: justify;
 }
 
-/*article {*/
-  /*width: 720px;
-  width: 100%;
-  padding: 20px;
-}*/
+article {
+  width: 620px;
+  margin-left: 240px;
+  /*padding: 150px;*/
+}
 
 article p {
   text-align: justify;
@@ -113,6 +115,10 @@ a:hover {
 }
 
 footer {
+  /*position: relative;*/
+  width: 720px;
+  padding: 20px;
+  margin-left: 100px;
 
 }
 
