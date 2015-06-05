@@ -10,16 +10,20 @@
     <meta name="author" content="Loraine Kanervisto"> -->
   </head>
 
-  <%= erb :header %>
+  <div class="wrapper">
+    <body>
 
-  <body>
+      <%= erb :header %>
 
-    <div class="primary-content">
-      <%= yield %>
-    </div>
+      <div class="primary-content">
+        <%= yield %>
+      </div>
 
-  </body>
+    <%= erb :footer %>
 
-  <%= erb :footer %>
+    </body>
+
+
+  </div>
 
 </html>
