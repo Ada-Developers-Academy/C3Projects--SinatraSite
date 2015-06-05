@@ -4,13 +4,10 @@ html {
   min-width: 960px;
   background: #fff url(../images/gplaypattern_@2X.png) repeat center;
   margin: 5px;
+  font-family: 'Quicksand', sans-serif;
 }
 
 section {
-  text-align: center;
-}
-
-footer {
   text-align: center;
 }
 
@@ -29,7 +26,6 @@ h1 {
 
 nav {
   padding-top: 11px;
-  font-family: 'Quicksand', sans-serif;
   float: right;
 }
 
@@ -40,32 +36,69 @@ nav a {
 }
 
 nav a:hover {
-  color: #7cc6d1;
+  color: #000;
+  background-color: #89E0DB;
 }
 
-/* Main Content ------------------------------------------- */
+/* Home Page ---------------------------------------------- */
 
-#banner img {
-  width: 200px;
+.home {
+  padding-top: 200px;
+  height: 420px;
+  width: 100%;
+}
+
+.home img {
+  float: left;
+  border: 3px solid #56D2CC;  
   -webkit-border-radius: 200px;
   border-radius: 200px;
-  margin-top: 50px;
-  border: 2px solid #000;
+  width: 250px;
+  margin-left: 300px;
 }
 
-#banner img:hover {
+.home img:hover {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+}
+
+.home a:link {
+  text-decoration: none;
+  color: #FF5E76;
+}
+
+.home a:visited {
+  color: #FF5E76;
+}
+
+.home a:hover {
+  color: #000;
+}
+
+.intro {
+  display: block;
+  text-align: right;
+  margin-right: 300px;
+  padding-top: 15px;
+  line-height: 1.4;
+}
+
+.greet {
+  font-family: 'Amatic SC', cursive;
+  font-size: 55px;
+}
+
+.me {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 /* Footer ------------------------------------------------- */
 
 footer {
   padding: 25px;
-  font: 0.7em "Arial";
-}
-
-footer a:link {
-  color: gray;
-  text-decoration: none
+  font-size: 13px;
+  text-transform: uppercase;
+  text-align: center;
 }
