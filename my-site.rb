@@ -4,8 +4,9 @@ require "sinatra/reloader"
 class MySite < Sinatra::Base
   register Sinatra::Reloader
 
-
-  # TITLES = ["about", "blog", "projects", "publications in psychology")
+  def year
+    @year = Time.now.year
+  end
 
   get "/" do
     @title = "Sally A. Moore"
@@ -35,28 +36,5 @@ class MySite < Sinatra::Base
     @page_title = "publications in psychology"
     erb :publications
   end
-
-
-
-  # get "/:name" do
-  #   @page_title = params[:name]
-  # end
-
-
-  # get "/about" do
-  #   send_file 'public/about.erb'
-  # end
-  #
-  # get "/blog" do
-  #   send_file 'public/blog.erb'
-  # end
-  #
-  # get "/projects" do
-  #   send_file 'public/projects.erb'
-  # end
-  #
-  # get "/pubs" do
-  #   send_file 'public/publications.erb'
-  # end
 
 end
