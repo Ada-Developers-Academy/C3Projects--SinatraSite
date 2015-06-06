@@ -63,7 +63,7 @@ ol, ul {
 }
 
 a:hover {
-  color: #E35A88;
+  color: #616C74;
 }
 
 main {
@@ -112,22 +112,15 @@ li {
 }
 
 section {
-  width: 100%;
-  margin-bottom: 20px;
+  margin: 0px 0px 0px 150px;
+  padding: 10px 15% 20px 10%;
 }
 
 section p {
   text-align: justify;
+  padding: 10px 15% 20px 10%;
 }
 
-article {
-  margin: 0px 0px 0px 10%;
-  padding: 20px 10% 20px 15%;
-}
-
-article p {
-  text-align: justify;
-}
 
 footer {
   min-height: 100%
@@ -135,7 +128,6 @@ footer {
   padding: 10px 0px 30px 0px;
   width: 100%;
   text-align: center;
-
 }
 
 footer p {
@@ -148,7 +140,13 @@ footer a {
   font-size: 14pt;
   color: #454544;
   text-align: center;
+  margin-left: 10%;
 }
+
+/*THIS IS HOME'S CSS*/
+
+/*THIS IS PROJECT'S CSS*/
+
 
 /*THIS IS ABOUT'S CSS*/
 
@@ -158,9 +156,23 @@ footer a {
 }
 
 
+/*THIS IS BLOG'S CSS*/
+
+article {
+  margin: 0px 0px 0px 150px;
+  padding: 10px 15% 20px 10%;
+}
+
+article p {
+  text-align: justify;
+}
+
+#blog_header {
+  text-align: center;
+}
 
 
-
+/*THIS IS CONTACT'S CSS*/
 
 
 
