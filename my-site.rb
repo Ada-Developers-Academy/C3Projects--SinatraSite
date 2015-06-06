@@ -26,15 +26,9 @@ class MySite < Sinatra::Base
     erb :projects
   end
 
-  get "/projects/:project_name" do
-    erb :project_name
-  end
-
-  get "/projects/set-clone" do
-    erb :set_clone
-  end
-
-  get "/projects/euler-problems" do
-    erb :euler_problems
+  get "/:project_key" do
+    projects = Project.all_projects
+    @project = projects["/" + params[:project_key]]
+    erb :project_form
   end
 end

@@ -106,7 +106,7 @@ main h3 {
 /* - - - - - - - - - - - - - - blag-specific - - - - - - - - - - - - - - - - */
 
 /*.blag-post*/
-article {
+article.blag_post {
   /* start columns test */
   -webkit-column-count: 2; /* Chrome, Safari, Opera */
   -moz-column-count: 2; /* Firefox */
@@ -246,4 +246,10 @@ a#chocolate:hover {
   font-size: 18px;
   font-style: italic;
   font-weight: normal;
+}
+
+/* - - - - - - - - - - - - - individual projects - - - - - - - - - - - - - - */
+
+.project img {
+  padding: 10px;
 }

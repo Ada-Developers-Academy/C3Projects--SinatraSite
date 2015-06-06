@@ -1,46 +1,80 @@
 class Project
   require "csv"
 
-  attr_reader :title, :subtitle, :description, :image_one_path, :image_one_text,
-    :image_two_path, :image_two_text
+  attr_reader :title, :subtitle, :description, :image_one, :image_two,
+    :local_url, :live_url, :repo_url
 
-  IMAGE_ROOT = "/images/"
+  # Url = Struct.new(name, path, title) # why you no work?
+  def initialize(project_hash)
+    @title = project_hash["title"]
+    @subtitle = project_hash["subtitle"]
+    @description = project_hash["description"]
 
-  def initialize(project_hash) # i forgot how headers work??
-    @title = project_hash[0]
-    @subtitle = project_hash[1]
-    @project_path = project_hash[2]
-    @description =  project_hash[3]
-    @image_one_path = IMAGE_ROOT + project_hash[4]
-    @image_one_text = project_hash[5]
-    @image_two_path = project_hash[6] ? IMAGE_ROOT + project_hash[6] : nil
-    @image_two_text = project_hash[7] ? IMAGE_ROOT + project_hash[7] : nil
-  end
+    @image_one = project_hash["image1"] ? Image.new({
+      path: project_hash["image1"],
+      description: project_hash["image1_text"]
+      }) : nil
 
-  def url_tag(around_what)
-    "<a href=''>#{ around_what }</a>"
-  end
+    @image_two = project_hash["image2"] ? Image.new({
+      path: project_hash["image2"],
+      description: project_hash["image2_text"]
+      }) : nil
 
-  def create_image_tag(path, text)
-    "<img src='#{ path }' alt='#{ text }' title='#{ title }' />"
-  end
-
-  def image_one
-    create_image_tag(image_one_path, image_one_text)
-  end
-
-  def image_two
-    @image_two_path ? create_image_tag(image_two_path, image_two_text) : image_one
+    @local_url = project_hash["local_url"] ? Link.new({
+      name: @title,
+      path: project_hash["local_url"],
+      title: project_hash["local_text"]
+      }) : nil
+    @live_url = project_hash["live_url"] ? Link.new({
+      name: @title,
+      path: project_hash["live_url"],
+      title: project_hash["live_text"]
+      }) : nil
+    @repo_url = project_hash["repo_url"] ? Link.new({
+      name: @title,
+      path: project_hash["repol_url"],
+      title: project_hash["repo_text"]
+      }) : nil
   end
 
   def self.all_projects
-    projects = []
+    projects = {}
 
-    # CSV.open("../../c3-contact-info~.csv", 'r', headers: true)
-    CSV.read("support/projects.csv", headers: true).each do |project|
-      projects.push(Project.new(project))
+    CSV.read("support/projects.csv", { headers: true }).each do |project|
+      proj = Project.new(project)
+
+      projects["#{ proj.local_url.path }"] = proj
     end
 
     return projects
+  end
+end
+
+
+class Link
+  attr_reader :name, :path, :title
+
+  def initialize(link_hash)
+    @name = link_hash[:name]
+    @path = link_hash[:path]
+    @title = link_hash[:title]
+  end
+
+  def html(around_what=nil)
+    "<a href='#{ path }' title='#{ title }'>#{ around_what || name }</a>"
+  end
+end
+
+
+class Image
+  attr_reader :path, :description
+
+  def initialize(image_hash)
+    @path = image_hash[:path]
+    @description = image_hash[:description]
+  end
+
+  def html
+    "<img src='#{ path }' alt='#{ description }' title='#{ description }' />"
   end
 end
