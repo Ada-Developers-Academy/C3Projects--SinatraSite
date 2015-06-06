@@ -5,23 +5,21 @@
   </head>
   <body id="body">
     <header id="header">
-      <h5>let's explore the 90's</h5>
+      fun words to say: memoize, bungalow,..
     </header>
-    <!-- <div id="container"> -->
-      <!-- <div id="header"></div> -->
-      <!-- <div id="body"></div> -->
-      <!-- <div id="footer"></div> -->
-    <!-- </div> -->
+    <div class="page_wrap">
     <nav>
       <a href="/">Home</a>
       <a href="/about">About</a>
       <a href="/blog">Blog</a>
       <a href="/projects">Projects</a>
+      <a href="/music">Music</a>
     </nav>
     <div>
       <%= yield%>
     </div>
-    <footer class="footer">
+  </div>
+    <footer id="footer">
       <p>
         <img id="ninja_gif" src="images/ninja.gif">
         Copyright <%= Time.now.year %> CodingNinja productions

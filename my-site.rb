@@ -21,4 +21,8 @@ class MySite < Sinatra::Base
   get "/projects" do
     erb :projects_page
   end
+
+  get"/music" do
+    erb :music
+  end
 end

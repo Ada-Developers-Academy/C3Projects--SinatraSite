@@ -11,11 +11,13 @@ html {
 /*}*/
 
 
-h1 {
+h1, h5 {
   text-align: center;
   color: #669999;
   font-style: italic;
+  font-size: 30px;
 }
+
 
 #home_page {
   background-image: url("images/beach.jpg");
@@ -23,7 +25,7 @@ h1 {
 }
 
 body {
-  background: #F0F5F5;
+  background: #D1D1C2;
 }
 
 nav {
@@ -67,6 +69,7 @@ ul {
   margin: 0;
   padding: 0;
   text-align: center;
+  list-style: none;
 }
 
 #ninja_gif {
@@ -75,14 +78,17 @@ ul {
   width: 50px;
 }
 
-.foot_note, h5 {
-  font-family: "Futura", Sans-serif;
-  font-size: 10px;
-  font-decoration: italic;
-  background: #75A3A3;
-  opacity: 0.5;
-  text-align: center;
+#pups {
+  height: 250px;
+  width: 345px;
 }
+
+#beast {
+  height: 300px;
+  width: 350px;
+  padding-bottom: 100px;
+}
+
 
 body {
    margin:0;
@@ -94,16 +100,66 @@ body {
    min-height:100%;
    position:relative;
 }
+
 #header {
+  font-family: "Futura", Sans-serif;
+  font-size: 10px;
    padding:10px;
+   background: #75A3A3;
+   opacity: 0.5;
+   text-align: center;
 }
+
 #body {
+   min-height: 100%;
    padding:10px;
    padding-bottom:60px;   /* Height of the footer */
 }
+
 #footer {
-   position:absolute;
-   bottom:0;
-   width:100%;
-   height:60px;   /* Height of the footer */
+  font-family: "Futura", Sans-serif;
+  font-size: 10px;
+  background: #75A3A3;
+  opacity: 0.5;
+  text-align: center;
+  padding: 10px;
+  position: bottom;
+  bottom:0;
+  width:100%;
+  height:100px;   /* Height of the footer */
+}
+
+.page_wrap {
+  min-height: 100%;
+  margin-bottom: -100px;
+}
+
+.page_wrap:after {
+  content: "";
+  display: block;
+}
+
+/*.hip_hop_bkgd {*/
+  /*border: 10px;*/
+  /*background-image: url("images/hiphop.jpg");*/
+  /*padding: 20px;*/
+/*}*/
+
+.hip_hop_bkgd {
+  background: url("images/hiphop.jpg") repeat;
+  border: 2px solid black;
+}
+div.text_box {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity:0.7;
+}
+
+div.text_box, p, .song_list {
+  color: #A3A3C2;
+  font-family: "Impact", Sans-serif;
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
 }
