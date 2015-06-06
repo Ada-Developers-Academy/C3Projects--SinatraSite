@@ -2,7 +2,7 @@
 
 html {
   min-width: 960px;
-  background: #fff url(../images/gplaypattern_@2X.png) repeat center;
+  background: #fff url(../images/gplaypattern_@2X.png) repeat fixed center;
   margin: 5px;
   font-family: 'Quicksand', sans-serif;
 }
@@ -92,7 +92,11 @@ nav a:hover {
 }
 
 .post {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
+  padding: 15px;
+  background: rgba(245,245,245,0.5);
+  border: 1px dashed #FAA;
+
 }
 
 .title {
