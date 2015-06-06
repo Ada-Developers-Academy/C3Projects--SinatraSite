@@ -4,7 +4,6 @@ class Project
   attr_reader :title, :subtitle, :description, :image_one, :image_two,
     :local_url, :live_url, :repo_url
 
-  # Url = Struct.new(name, path, title) # why you no work?
   def initialize(project_hash)
     @title = project_hash["title"]
     @subtitle = project_hash["subtitle"]
@@ -32,7 +31,7 @@ class Project
       }) : nil
     @repo_url = project_hash["repo_url"] ? Link.new({
       name: @title,
-      path: project_hash["repol_url"],
+      path: project_hash["repo_url"],
       title: project_hash["repo_text"]
       }) : nil
   end
@@ -61,7 +60,7 @@ class Link
   end
 
   def html(around_what=nil)
-    "<a href='#{ path }' title='#{ title }'>#{ around_what || name }</a>"
+    "<a href=\"#{ path }\" title=\"#{ title }\">#{ around_what || name }</a>"
   end
 end
 
@@ -75,6 +74,6 @@ class Image
   end
 
   def html
-    "<img src='#{ path }' alt='#{ description }' title='#{ description }' />"
+    "<img src=\"#{ path }\" alt=\"#{ description }\" title=\"#{ description }\" />"
   end
 end

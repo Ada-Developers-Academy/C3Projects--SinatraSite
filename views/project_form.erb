@@ -9,20 +9,16 @@
   </div>
 
   <section class="copper-links">
-    <% def can_has_live_version?%>
-      <% @project.live_url ? true : false %>
+    <% if @project.live_url != nil %>
+      <%= "<h2 class=\"copper-links\">" %>
+      <%= @project.live_url.html("Check out a live version of this!") %></h2>
+      <%= "</h2>" %>
     <% end %>
 
-    <% def can_has_repo_version?%>
-      <% @project.repo_url ? true : false %>
-    <% end %>
-
-    <% if can_has_live_version? %>
-      <h2 class="copper-links"><%= @project.live_url.html("Check out a live version of this!") %></h2>
-    <% end %>
-
-    <% if can_has_repo_version? %>
-      <h2 class="copper-links"><%= @project.repo_url.html("Review the code for this project on GitHub.") %></h2>
+    <% if @project.repo_url != nil %>
+      <%= "<h2 class=\"copper-links\">" %>
+      <%= @project.repo_url.html("Review the code for this project on GitHub.") %>
+      <%= "</h2>" %>
     <% end %>
 
     <p></p>
@@ -42,7 +38,11 @@
 
   <section class="screenshot">
     <div class="wrapper">
-      <%= @project.live_url.html(@project.image_one.html) %>
+      <% if @project.live_url != nil %>
+        <%= @project.live_url.html(@project.image_one.html) %>
+      <% else %>
+        <%= @project.repo_url.html(@project.image_one.html) %>
+      <% end %>
     </div>
   </section>
 
