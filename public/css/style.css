@@ -7,9 +7,6 @@ html {
   font-family: 'Quicksand', sans-serif;
 }
 
-section {
-  text-align: center;
-}
 
 /* Header & Navigation ----------------------------------- */
 
@@ -37,7 +34,7 @@ nav a:hover {
 
 .home {
   padding-top: 135px;
-  height: 480px;
+  height: 430px;
   width: 100%;
   text-align: center;
 }
@@ -87,10 +84,39 @@ nav a:hover {
   line-height: 1.5;
 }
 
+/* Blog --------------------------------------------------- */
+
+.blog {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.post {
+  padding-bottom: 50px;
+}
+
+.title {
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+  font-weight: bold;
+  color: #FF5E76;
+}
+
+.date {
+  font-family: 'The Girl Next Door', cursive;
+  font-size: 22px;
+  font-weight: bold;
+  color: #56D2CC;
+}
+
+.contents {
+  line-height: 1.4;
+}
+
 /* Footer ------------------------------------------------- */
 
 footer {
-  padding: 25px;
+  padding: 50px;
   font-size: 13px;
   text-transform: uppercase;
   text-align: center;
