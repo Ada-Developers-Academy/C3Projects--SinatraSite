@@ -1,13 +1,14 @@
 require "sinatra"
 require "sinatra/reloader"
 require "./lib/project_data"
+require 'csv'
 
 class MySite < Sinatra::Base
   register Sinatra::Reloader
 
   get "/" do
     @title = "Ada Projects"
-    @projects = Projects::Project.all_projects
+    @projects = Projects::Project.all
     erb :index
   end
 
