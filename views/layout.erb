@@ -1,11 +1,28 @@
 <html>
   <head>
-    <title>Brandi Wilson: <%= @title %></title>
+    <!-- <title>Brandi Wilson<%= @title && ": #{@title}" %></title> -->
+    <title>Brandi Wilson<%= ": #{@title}" if @title %></title>
     <link rel="stylesheet" type="text/css" href="styles/amazing.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Amita:700">
+    <!-- NOTE TO SELF: Changing http:// to simply // "tells the browser to fetch the resource using the same protocol as was used to fetch the whole page." -->
   </head>
   <body>
-    <div class="content">
+    <%= erb :header %>
+    <div class="blank-line">
+    </div>
+    <div class="line1">
+    </div>
+    <div class="blank-line">
+    </div>
+    <div class="line2">
+    </div>
+    <div class="blank-line">
+    </div>
+    <div class="line3">
+    </div>
+    <div id="content">
       <%= yield %>
     </div>
+    <%= erb :footer %>
   </body>
 </html>
