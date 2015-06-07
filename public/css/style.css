@@ -1,7 +1,7 @@
 html {
   margin: 0;
   padding: 0;
-  height: 92%;
+  height: 100%;
 }
 
 body {
@@ -16,10 +16,10 @@ body {
 /* my name */
 h1 {
   font-family: 'Arial', sans-serif;
-  /*font-family: 'Creepster', cursive;*/
   font-size: 186px;
   color: #F7F7F7;
   margin: -67px 0 0 0;
+  text-align: center;
 }
 
 /* project titles on project page */
@@ -91,13 +91,38 @@ CONTACT ME DROP-DOWN
   overflow: hidden;
   box-sizing: border-box;
   transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+  text-align: center;
+  font-size: 39px;
 }
 #contact h4 span {
-  font-style: oblique;
-  text-transform: capitalize;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-right: 5px solid;
+  padding-right: 9px;
+}
+#contact ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 #contact ul li {
   text-transform: capitalize;
+  text-align: center;
+  display: inline;
+  border: 3px solid;
+  padding: 10px 17px;
+  margin-right: 25px;
+  font-size: 20px;
+}
+#contact ul li:last-child {
+  margin-right: 0;
+}
+#contact ul li:hover {
+  border-color: #4D3D4D;
+  color: #4D3D4D;
+}
+#contact ul li a {
+  border: none;
 }
 
 #toggle {
@@ -111,9 +136,9 @@ CONTACT ME DROP-DOWN
   cursor: pointer;
   background-color: #C38ACF;
   color: #F7F7F7;
-  width: 93%;
-  margin-top: 212px;
-  padding: 26px 34px;
+  width: 92%;
+  margin-top: 191px;
+  padding: 0 31px 11px 46px;
   transition: all 500ms ease;
   /* typographic styles for label:after to inherit */
   font-family: 'Arial', sans-serif;
@@ -134,11 +159,8 @@ CONTACT ME DROP-DOWN
 #toggle:checked ~ main {
   margin-top: 318px;
 }
-#toggle:checked + label {
-  background:#dd6149;
-}
 #toggle:checked + label:after {
-  content:"Close"
+  content:"ttyl"
 }
 
 
@@ -147,9 +169,8 @@ PROJECT TILES
 */
 #projects {
   width: 960px;
-  height: 524px;
-  margin-top: 78px;
-  padding-top: 36px;
+  height: 554px;
+  margin-top: 45px;
   overflow-y: scroll;
 }
 #projects .project {
@@ -165,10 +186,6 @@ PROJECT TILES
 #projects .project:nth-child(4n) {
   margin-right: 0;
 }
-#projects .project:hover > .project-borders {
-  border-top: 2px solid rgb(147, 104, 156);
-  border-bottom: 2px solid rgb(147, 104, 156);
-}
 #projects .project-borders {
   position: absolute;
   top: 50%;
@@ -178,6 +195,11 @@ PROJECT TILES
   border-top: 2px solid rgba(147, 104, 156, .4);
   border-bottom: 2px solid rgba(147, 104, 156, .4);
   padding: 10px 0;
+}
+#projects .project:hover > .project-borders {
+  border-top: 2px solid rgb(147, 104, 156);
+  border-bottom: 2px solid rgb(147, 104, 156);
+  padding: 14px 0;
 }
 
 /*
