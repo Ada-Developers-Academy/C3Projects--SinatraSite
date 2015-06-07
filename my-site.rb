@@ -24,28 +24,10 @@ class MySite < Sinatra::Base
     erb :blog
   end
 
-  #     send_file 'static/home2.html'
-  #   end
-
 
 end
 
-#   get "/" do
-#     send_file 'static/home2.html'
-#   end
-#
-#   get "/home" do
-#     send_file 'static/home2.html'
-#   end
-#
-#   get "/about" do
-#     send_file 'static/about.html'
-#   end
-#
-#   get "/projects" do
-#     send_file 'static/projects.html'
-#   end
-#
+
 #   get "/blog" do
 #     send_file 'static/blog.html'
 #   end
