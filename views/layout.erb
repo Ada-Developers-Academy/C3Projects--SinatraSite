@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+  <head>
+    <meta charset="utf-8">
+    <title><%= @title %></title>
+    <link rel="stylesheet" type="text/css" href="./static/stylesheet.css">
+  </head>
+
+  <body>
+
+    <div><%= yield %></div>
+
+    <footer>
+      <div id="social_network">
+        <p> SOCIAL NETWORKS:</p>
+        <a href= "https://github.com/vikshab"><img src ="./images/git.png" alt = "github" width = 20 height = 20></a>
+        <a href="https://twitter.com/vikshab2012"><img src ="./images/twit.png" alt = "tweeter" width = 20 height = 20></a>
+        <a href="https://www.linkedin.com"><img src ="./images/linkedin.png" alt = "linkedin" width = 20 height = 20></a>
+        <a href="https://instagram.com/vikshab"><img src ="./images/instagram.png" alt = "instagram" width = 20 height = 20></a>
+      </div>
+      <p id="copyright">
+        <% @time=Time.new%>
+        © Victoria Shabunia <%= @time.year %>
+      </p>
+    </footer>
+  </body>
+</html>
