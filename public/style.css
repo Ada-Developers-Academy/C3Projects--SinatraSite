@@ -21,7 +21,7 @@ Author: Loraine Kanervisto
 }
 
 body {
- font-family: arial, sans-serif;
+ font-family: "Trebuchet MS", Helvetica, sans-serif;
  background: rgb(52, 46, 46);
 }
 
@@ -46,7 +46,7 @@ h1, h2, h3 {
   color: rgba(0, 0, 0, 0.8);
 }
 
-/* ---- Header and Navigation ---- */
+/* ---- HEADER ---- */
 
 .site_header {
   background-color: rgb(52, 46, 46);
@@ -74,9 +74,13 @@ h1, h2, h3 {
   margin-left: 10px;
 }
 
+/*.navi a {
+font-weight: bold;
+}
+
 .navi a:hover {
   color: #fff;
-}
+}*/
 
 /* ---- Posts ---- */
 
@@ -86,14 +90,26 @@ h1, h2, h3 {
   margin-right: auto;
   }
 
-  .primary-content h1, h2, h3 {
-    padding: 15px 0 15px 5px;
-    }
-
-
-  .primary-content p {
-    font-size: 1.5em;
+.text_area h1, h2, h3 {
+  padding: 15px 0;
   }
+
+.text_area h1 {
+  font-size: 2.0em;
+}
+
+.text_area h2 {
+  font-size: 1.8em;
+}
+
+.text_area h3 {
+  font-size: 1.5em;
+}
+
+.text_area p {
+  font-size: 1.3em;
+}
+
 /* ---- Footer ---- */
 
 footer {
