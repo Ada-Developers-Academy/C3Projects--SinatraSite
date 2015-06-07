@@ -44,7 +44,7 @@ a:link{
 }
 
 body {
-  color: #FFFFFF;
+  color: #FFF;
   position: relative;
   margin-right: auto;
   margin-left;
@@ -52,14 +52,40 @@ body {
   padding: 10px;
 }
 
+.main_body {
+  font-family: 'Dosis', sans-serif;
+  background-color: rgba(253, 253, 253, 0.95);
+  padding: 30px;
+  color: #000;
+  width: 700;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
 footer {
   margin-top: 30px;
   text-align: center;
   font-family: 'Dosis', sans-serif;
   font-size: 12px;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   width: 100%;
+}
+
+#top {
+  color: #FFF;
+  font-family: 'Dosis', sans-serif;
+  font-size: 12px;
+  display: inherit;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 6em;
+  background-color: rgba(194, 194, 214, 0.5);
+  text-align: center;
 }
 
 .projects a:link {
@@ -72,17 +98,7 @@ footer {
   text-align: center;
 }
 
-.main_body {
-  font-family: 'Dosis', sans-serif;
-  background-color: rgba(253, 253, 253, 0.95);
-  padding: 30px;
-  color: #000;
-  width: 700;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-  margin-top: 40px;
-}
+
 
 #contacts {
   padding-top: 30px;
