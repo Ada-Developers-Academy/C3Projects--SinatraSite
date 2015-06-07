@@ -6,32 +6,30 @@
 
 
 body {
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: 'Marvel', sans-serif;
 }
 
 
 header {
-  font-family: Verdana, Geneva, sans-serif;
-  padding: 20px;
+  font-family: 'Amatic SC', cursive;
 }
 
 footer {
   margin-top: 50px;
   text-align: center;
-
 }
 
 .site-name {
-  margin: 0 auto;
+  padding: 0;
+  margin: 0;
   text-align: center;
-  font-size: 110px;
+  font-size: 150px;
 }
 
 .photo {
   display: block;
   margin: 0 auto;
   width: 960px;
-  padding: 5px;
 }
 
 .blog-headers {
@@ -42,11 +40,19 @@ footer {
 .links {
   text-align: right;
 }
+
 .links a {
   color: black;
+  font-size: 30px;
   text-decoration: none;
 }
 
 .links a strong {
-  font-size: 30px
+  font-size: 50px;
+}
+
+#middle-name {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 60px;
 }
