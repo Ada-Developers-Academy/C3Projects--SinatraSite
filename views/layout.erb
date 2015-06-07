@@ -1,0 +1,33 @@
+<html>
+<head>
+  <title><%= @title %></title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Dosis|Raleway' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <header>
+    <a id="top_page"></a>
+    <h1><%= @title %></h1>
+      <nav class="navigation">
+        <a href="/">Home</a>
+        <a href="about">About</a>
+        <a href="blog">Blog</a>
+        <a href="projects">Projects</a>
+        <a href="contact">Contact</a>
+      </nav>
+  </header>
+
+  <div class="primary-content">
+    <%= yield %>
+  </div>
+  </div>
+
+  <footer>
+      <a id="top" href="#top_page">Back to Top</a>
+      <% @time = Time.new %>
+      (c) <%= @time.year %> Lila Garcia
+  </footer>
+
+</body>
+</html>

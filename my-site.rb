@@ -4,21 +4,28 @@ require "sinatra/reloader"
 class MySite < Sinatra::Base
   register Sinatra::Reloader
 
-
-  get '/' do
-    send_file 'public/home_page.html'
+  get "/" do
+    @title = "LILA GARCIA"
+    erb :home
   end
 
   get '/about' do
-    send_file 'public/about.html'
+    @title = "About"
+    erb :about
   end
 
   get '/projects' do
-    send_file 'public/projects.html'
+    @title = "Projects"
+    erb :projects
   end
 
   get '/blog' do
-    send_file 'public/blog.html'
+    @title = "Blog"
+    erb :blog
   end
 
+  get '/contact' do
+    @title = "Contact"
+    erb :contact
+  end
 end

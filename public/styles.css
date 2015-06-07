@@ -1,0 +1,105 @@
+
+html {
+  background: url(images/seattle.jpg) no-repeat center center fixed;
+}
+
+header {
+  background-color: rgba(194, 194, 214, 0.5);
+  padding-right: 10px;
+}
+
+h1 {
+  letter-spacing: 1px;
+  display: inline;
+  color: #5C1F99;
+  font-family: 'Dosis', sans-serif;
+  padding: 10px;
+}
+
+h4 {
+  color: #000;
+  font-family: 'Dosis', sans-serif;
+}
+
+h5 {
+  color: #000;
+  font-family: 'Dosis', sans-serif;
+}
+
+#home_intro {
+  margin-left: 800px;
+  font-family: 'Dosis', sans-serif;
+}
+
+.navigation {
+  float: right;
+  color: #00CCFF;
+  font-family: "Tahoma";
+  padding-top: 10px;
+}
+
+a:link{
+  text-decoration: none;
+  padding: 10px;
+}
+
+body {
+  color: #FFF;
+  position: relative;
+  margin-right: auto;
+  margin-left;
+  min-width: 960px;
+  padding: 10px;
+}
+
+.main_body {
+  font-family: 'Dosis', sans-serif;
+  background-color: rgba(253, 253, 253, 0.95);
+  padding: 30px;
+  color: #000;
+  width: 700;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+  font-family: 'Dosis', sans-serif;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+#top {
+  color: #FFF;
+  font-family: 'Dosis', sans-serif;
+  font-size: 12px;
+  display: inherit;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 6em;
+  background-color: rgba(194, 194, 214, 0.5);
+  text-align: center;
+}
+
+.projects a:link {
+  text-align: right;
+  color: #009999;
+}
+
+
+#ada_projects {
+  text-align: center;
+}
+
+
+
+#contacts {
+  padding-top: 30px;
+}
