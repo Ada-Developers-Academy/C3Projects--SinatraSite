@@ -12,6 +12,7 @@ html {
 
 header {
   height: 90px;
+  width: 100%;
 }
 
 nav {
@@ -30,13 +31,11 @@ nav a:hover {
   background-color: #89E0DB;
 }
 
-
 /* Home Page ---------------------------------------------- */
 
 .home {
   padding-top: 135px;
   height: 430px;
-  width: 100%;
   text-align: center;
 }
 
@@ -78,10 +77,20 @@ nav a:hover {
   line-height: 1.5;
 }
 
+/* Page Descriptions (Projects & Photos) -------------------- */
 
-/* Blog --------------------------------------------------- */
 
-.blog {
+.descriptor {
+  font-family: 'The Girl Next Door', cursive;
+  font-size: 20px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+
+/* Blog & Projects ---------------------------------------- */
+
+.blog, .projects {
   max-width: 70%;
   margin: 0 auto;
 }
@@ -102,16 +111,16 @@ nav a:hover {
   line-height: 1.2;
 }
 
-.date {
+.date, .months h4 {
+  margin-top: 5px;
   font-family: 'The Girl Next Door', cursive;
   font-size: 20px;
   font-weight: bold;
-  font-style: italic;
   color: #56D2CC;
 }
 
-.contents {
-  line-height: 1.4;
+.contents, .month1 {
+  line-height: 1.5;
 }
 
 
@@ -119,8 +128,6 @@ nav a:hover {
 
 .projects {
   text-align: center;
-  max-width: 70%;
-  margin: 0 auto;
 }
 
 .timeline {
@@ -156,21 +163,57 @@ td {
   background-color: #FFACAC;
 }
 
-.descriptor {
-  font-family: 'The Girl Next Door', cursive;
-  font-size: 20px;
+.months img, .photography img {
+  height: 180px;
+  border-radius: 5%;
+  border: 2px solid #FF5E76;
+}
+
+.month1 {
+  margin: 15px auto;
+  max-width: 800px;
+}
+
+.months ul {
   line-height: 1.3;
-  margin-bottom: 20px;
+}
+
+.months ul a {
+  text-decoration: none;
+  font-family: 'The Girl Next Door', cursive;
+  font-size: 17px;
+  color: #FF5E76;
+  letter-spacing: 1px;
+}
+
+.months ul a:hover {
+  color: #000;
+  font-weight: bold;
 }
 
 
 /* Photopgraphy ------------------------------------------- */
 
+.photography {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 960px;
+}
+
 .photography img {
+  border: 3px solid #56D2CC;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-/*  opacity: 0.7;
-  filter: alpha(opacity=70); */
+}
+
+.photography img:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.img {
+  display: inline-block;
+  margin: 5px;
 }
 
 
