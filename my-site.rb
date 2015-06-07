@@ -6,7 +6,7 @@ require "sinatra/content_for"
 class MySite < Sinatra::Base
   register Sinatra::Reloader
 
-  get "/" do # what hte user is asking
+  get "/" do # what the user is asking
     erb :index # this is the response
   end
 
@@ -22,7 +22,7 @@ class MySite < Sinatra::Base
     erb :projects
   end
 
-  get "/bananas" do
-    erb :bananas
+  get "/websites" do
+    erb :websites
   end
 end

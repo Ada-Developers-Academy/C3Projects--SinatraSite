@@ -12,10 +12,6 @@ header {
   background-color: #D7CA9F;
 }
 
-.nav-link {
-  display: inline;
-  padding: 15px 10px;
-}
 
 footer {
   background-color: #D7CA9F;
@@ -37,6 +33,10 @@ h3 {
   color: #8E7830;
 }
 
+div {
+  margin-bottom: 30%;
+}
+
 a:link {
   text-decoration: none;
   color: #605A0D;
@@ -48,6 +48,17 @@ a:hover {
   color: #000000;
   text-decoration: underline;
 }
-a:active {
-  color:
+
+.nav-link {
+  display: inline;
+  padding: 15px 10px;
+}
+
+
+/*Section below is for styling photos and related text on about page*/
+.imgtxt {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center;
 }
