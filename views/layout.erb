@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta title="Kari Lonczak">
+		<meta description="Seattleite &amp; Badass Software Engineer.">
+	
+		<!-- Style Sheets -->
+		<link rel="stylesheet" href="./css/styles.css">
+
+		<!-- Fonts -->
+		<link href='//fonts.googleapis.com/css?family=Oxygen:400,300,700|Roboto+Condensed:400,700,300italic|Lato:100,300,400' rel='stylesheet' type='text/css'>	
+	</head>
+
+	<div id="container">
+		<body>
+
+			<%= erb :header %>
+
+			<div id="left-column">
+				<nav>
+					<ul>
+						<a href="/">HOME</a> | 
+						<a href="/about_me">ABOUT ME</a> | 
+						<a href="/places">PLACES</a> |
+						<a href="/pictures">PICTURES</a> |
+						<a href="/projects">PROJECTS</a>
+					</ul>
+				</nav>
+				<div class="clear"></div>
+				
+
+				<div id="left-aside">
+					<img src="./images/madison.jpg">
+					<div class="welcome">WELCOME</div>
+					<p>Banh mi actually gastropub cronut Blue Bottle. Polaroid Truffaut ethical cornhole keytar. Synth kitsch 
+					migas food truck. Bushwick iPhone church-key, freegan pour-over Echo Park listicle crucifix Williamsburg irony 
+					pug farm-to-table VHS Godard you probably haven't heard of them. Neutra literally cred, Truffaut drinking vinegar 
+					fixie tousled banjo post-ironic dreamcatcher lo-fi freegan paleo farm-to-table. Chambray hella swag, before they 
+					sold out messenger bag meggings polaroid pork belly.</p>
+				</div>
+			</div> 
+
+			<div id="right-column">
+				<section>
+					<h2><%= @header %></h2>
+					<%= yield %>
+				</section>
+			</div> 
+
+			<%= erb :footer %>
+
+		</body>
+	</div> 
+</html>

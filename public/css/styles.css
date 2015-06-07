@@ -1,0 +1,250 @@
+/*Google Font References:
+font-family: 'Oxygen', sans-serif;
+	300,400,700
+font-family: 'Roboto Condensed', sans-serif;
+	400,700, 300italic
+font-family: 'Lato', sans-serif;
+	100,300,400
+*/
+
+/******************** BASE STYLES *******************/
+
+/* Box Model */
+* {
+     box-sizing: border-box;
+}
+
+body {
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 300;
+	margin: 50px auto;
+	width: 960px;
+	font-size: 13px;
+}
+
+#container {
+}
+
+.clear {
+	clear: both;
+}
+
+/********************* HEADER *********************/
+
+.main_image {
+	background-image: url("../images/weathervane.jpg");
+	height: 240px;
+	background-position: 50% 45%;
+	border-bottom: 1px solid #B7AE9F;
+
+
+}
+
+h1 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 100;
+	font-size: 40px;
+	display: inline-block;
+	margin: 0;
+	color: #fff; /*white*/
+	padding: 10px;
+}
+
+#scroll-to-top {
+     position: fixed;
+     right: 0;
+     bottom: 0;
+     width: 55px;
+     height: 50px;
+     font-size: 10px;
+     font-weight: 400;
+     opacity: 0.6;
+     text-align: center;
+     padding: 10px;
+     margin: 15px;
+     background-color: whiteSmoke;
+     z-index: 1;
+     border-radius: 10px;
+}
+
+#scroll-to-top a {
+     text-decoration: none;
+     color: #000; /*black*/
+     height: 100%;
+     width: 100%;
+     display: block;
+}
+
+/********************* LEFT-COLUMN *********************/
+
+#left-column {
+	display: inline-block;
+	width: 35%;
+	vertical-align: top;
+	padding: 10px;
+}
+
+nav {
+	border-bottom: 1px solid #B7AE9F;
+}
+
+ul {
+	color: #000; 
+	font-size: 13px;
+	padding-left: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin: 0 auto;
+
+}
+
+a {
+	text-decoration: none;
+	color: #000; 
+	display: inline-block;
+}
+
+a:hover {
+	font-weight: 600;
+/*	FIX HOW THE HOVER MOVES THE WORDS AS THEY GET BIGGER
+*/
+}
+
+#left-aside {
+	padding: 10px;
+}
+
+#left-aside img {
+	height: 250px;
+	padding: 20px;
+	margin: 0 auto;
+	display: block;
+}
+
+.welcome {
+	display: inline-block;
+	font-weight: bold;
+	font-size: 17px;
+	padding-right: 5px;
+}
+
+#left-aside p {
+	font-size: 12px;
+	display: inline;
+}
+
+/****************** RIGHT-COLUMN ****************/
+
+#right-column {
+	display: inline-block;
+	width: 64.5%;
+	vertical-align: top;
+	padding: 20px;
+	border-left: 1px solid #B7AE9F;
+
+}
+
+h2 {
+	font-weight: 400;
+	border-bottom: 1px solid #B7AE9F;
+	padding-bottom: 10px;
+}
+
+/********************* INDEX.ERB *********************/
+
+article {
+	padding: 10px 0;
+	border-bottom: 1px solid #B7AE9F;
+}
+
+#first-article {
+	padding-top: 0;
+}
+
+/********************* ABOUT_ME.ERB *********************/
+
+#about_me img {
+	display: block;
+	margin: 30px auto;
+	width: 300px;
+}
+
+/********************* PLACES.ERB *********************/
+
+#images {
+	width: 100%;
+	margin: 0 auto;
+}
+
+#images img {
+	display: block;
+	width: 100%;
+}
+
+/********************* PICTURES.ERB *********************/
+
+#pictures img {
+	display: block;
+	margin: 10px auto;
+}
+
+/********************* PROJECTS.ERB *********************/
+
+#projects {
+	margin: 0 auto;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+h4 {
+	font-weight: 300;
+	font-style: italic;
+}
+
+#projects > a {
+	display: inline-block;
+	width: 40%;
+	padding: 15px;
+	margin: 20px;
+	font-size: 15px;
+	text-align: center;
+
+	border: 1px solid #000;
+	border-radius: 10px;
+	vertical-align: top;
+}
+
+#projects > a > div {
+	height: 50px;
+
+}
+
+/********************* FOOTER *********************/
+
+footer {
+	background-color: #000;
+	height: 100%;
+	padding: 20px;
+	font-size: 12px;
+	color: #fff;
+}
+
+#copyright {
+	display: inline;
+	padding: 20px;
+	float: left;
+}
+
+footer ul {
+	display: inline-block;
+	float: right;
+	color: #fff;
+}
+
+footer a {
+	color: #fff;
+}
+
+
