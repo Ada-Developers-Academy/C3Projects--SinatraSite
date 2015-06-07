@@ -1,0 +1,14 @@
+<section id="projects">
+  <% @projects.each do |url, project, datestamp, date| %>
+    <a target="_self" href="/<%= url %>" alt="<%= project %> Project Page">
+      <div class="project">
+        <div class="project-borders">
+          <h3><%= project %></h3>
+          <!-- not sure if this use of `<time> is totally semantic` -->
+          <!-- seems to be used primarily for event schedules -->
+          <time datetime="<%= datestamp %>"><%= date %></time>
+        </div>
+      </div>
+    </a>
+  <% end %>
+</section>

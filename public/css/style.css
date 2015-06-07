@@ -1,7 +1,7 @@
 html {
   margin: 0;
   padding: 0;
-  height: 100%;
+  height: 92%;
 }
 
 body {
@@ -9,27 +9,35 @@ body {
   margin: 0 auto;
   min-height: 109%;
   position: relative;
+  font-size: 16px;
+  color: #4D3D4D;
 }
 
+/*my name*/
 h1 {
   font-family: 'Arial', sans-serif;
   /*font-family: 'Creepster', cursive;*/
   font-size: 186px;
   color: #F7F7F7;
-  margin: 0;
-  text-align: center;
+  margin: -67px 0 0 0;
 }
 
+/*project titles on project page*/
 h2 {
-  font-family: 'Lobster', cursive;
+  font-family: 'Arial', sans-serif;
+  font-size: 35px;
+  color: #4D3D4D;
+  margin: 42px 0 5px 0;
 }
 
+/*project titles*/
 h3 {
-  margin: 5px;
+  margin: 5px 5px 10px 5px;
 }
 
+/*contact me link*/
 h6 {
-  margin-top: -35px;
+  margin-top: -11px;
   margin-right: 15px;
   padding: 15px;
   text-align: right;
@@ -38,7 +46,14 @@ h6 {
   color: #F7F7F7;
 }
 h6:hover {
-  color: #000;
+  color: #4D3D4D;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px dotted #4D3D4D;
 }
 
 main {
@@ -46,30 +61,102 @@ main {
 }
 
 header {
-  margin-top: -66px;
+  /*margin-top: -66px;*/
   background-color: #C38ACF;
 }
-
-.projects {
-  margin-top: -50px;
-  /*overflow-y: scroll;*/
+header div {
+  height: 110px;
+  width: 919px;
+  overflow: hidden;
+  margin: 0 auto;
 }
-.projects div {
+header #line {
+  width: 111px;
+  height: 0;
+  border-top: 2px solid #F7F7F7;
+  display: inline-block;
+  position: absolute;
+  right: 188px;
+  top: 128px;
+}
+
+/*
+PROJECT TILES
+*/
+
+#projects {
+  width: 960px;
+  height: 524px;
+  margin-top: -54px;
+  padding-top: 36px;
+  overflow-y: scroll;
+}
+#projects .project {
   width: 215px;
   height: 215px;
-  background-color: #9B9B9B;
+  background-color: #E8E6E8;
   float: left;
-  margin-right: 33px;
-  margin-top: 39px;
+  margin-right: 25px;
+  margin-bottom: 25px;
   text-align: center;
+  position: relative;
 }
-.projects div:nth-child(4n) {
+#projects .project:nth-child(4n) {
   margin-right: 0;
+}
+#projects .project:hover > .project-borders {
+  border-top: 2px solid rgb(147, 104, 156);
+  border-bottom: 2px solid rgb(147, 104, 156);
+}
+#projects .project-borders {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  border-top: 2px solid rgba(147, 104, 156, .4);
+  border-bottom: 2px solid rgba(147, 104, 156, .4);
+  padding: 10px 0;
+}
+
+/*
+PROJECT PAGE
+*/
+
+.wrapper {
+  height: 506px;
+  width: 100%;
+  background-color: rgba(232, 230, 232, 0.4);
+  margin-top: -28px;
+}
+.wrapper section {
+  width: 782px;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+.home-link {
+  display: block;
+  border: none;
+  color: #995C99;
+}
+
+.wrapper .description {
+  overflow-y: scroll;
+}
+
+.wrapper img {
+  width: 100%;
+  height: 113px;
+  background-color: #E1C8E6;
+  border: none;
+  margin-top: 21px;
 }
 
 footer {
-  height: 25px;
+  height: 31px;
   background-color: #C38ACF;
+  color: #665166;
   position: absolute;
   bottom: 0;
   text-align: center;

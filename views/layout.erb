@@ -2,24 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title><%= title %> || "amirahaile &verbar; ADA Projects"</title>
+    <title>amirahaile &verbar; <%= @title %></title>
     <link rel="stylesheet" href="css/normalize.css" type="text/css" charset="utf-8">
     <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8">
 
   </head>
   <body>
     <main>
-      <header>
-        <h1>amirahaile</h1>
-        <h6>get at me, yo.</h6>
-      </header>
+      <%= erb :header %>
 
       <%= yield %>
-
     </main>
 
-    <footer>
-      <small>These projects were completed as part of the <a target="_blank" href="http://www.adadevelopersacdemy.org">Ada Developers Academy</a> program.</small>
-    </footer>
+    <%= erb :footer %>
   </body>
 </html>
