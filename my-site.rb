@@ -5,19 +5,57 @@ class MySite < Sinatra::Base
   register Sinatra::Reloader
 
   get "/" do
-    send_file "public/home_page.html"
+    @title = "home page"
+    erb :home
   end
 
   get "/about" do
-    send_file "public/about.html"
+    @title = "about"
+    erb :about
   end
 
-  get "/blog_post" do
-    send_file "public/blog_post.html"
+  get "/blog" do
+    @title = "blog"
+    erb :blog
   end
 
   get "/projects" do
-    send_file "public/projects.html"
+    @title = "projects"
+    erb :projects
   end
 
+  get "/gallery" do
+    @title = "photo gallery"
+    erb :gallery
+  end
+
+  get "/thailand" do
+    @title = "thailand"
+    erb :thailand
+  end
+
+  get "/california" do
+    @title = "california"
+    erb :california
+  end
+
+  get "/belarus" do
+    @title = "belarus"
+    erb :belarus
+  end
+
+  get "/washington" do
+    @title = "washington"
+    erb :washington
+  end
+
+  get "/new_york" do
+    @title = "new york"
+    erb :new_york
+  end
+
+  get "/canada" do
+    @title = "canada"
+    erb :canada
+  end
 end
