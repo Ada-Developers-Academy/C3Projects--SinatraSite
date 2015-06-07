@@ -1,0 +1,169 @@
+body {
+  width: 920px;
+  font-family: Brushstroke, fantasy;
+  font-size: 18px;
+  padding: 70px;
+  color: #8a6e6c;
+  margin: auto;
+  background: #000;
+  background-image: url("../images/cool.jpg");
+}
+/* _______Styling headers for all pages____________*/
+header {
+  text-align: left;
+  background-image: url("../images/wood3.jpg");
+}
+
+/*____________Styling lists ?????________________*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+ }
+
+ li {
+  display: inline;
+ }
+
+
+/*___________Styling navigation links______________*/
+ #nav {
+   width: 100%;
+   float: right;
+   background-image: url("../images/wood3.jpg");
+   }
+
+ #nav li {
+   float: right;
+   }
+
+ #nav li a {
+   display: block;
+   padding: 8px 15px;
+   text-decoration: none;
+   font-weight: bold;
+   color: white;
+   }
+
+ #nav li a:hover {
+   color: #7994ed;
+   }
+
+ #link a {
+    padding: 8px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #069;
+    }
+
+ #link a:hover {
+   color: #7994ed;
+   }
+/*__________________________________________________*/
+
+
+/* ____________Styling div for all pages____________*/
+div {
+  padding-top: 10px;
+  padding-bottom: 50px;
+  background-image: url("../images/cool.jpg");
+}
+/*___________________________________________________*/
+
+
+
+/*____________Styling HOME page______________________*/
+#home {
+  background-image: url("../images/cool.jpg");
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/*___________________________________________________*/
+
+
+/*____________Styling ABOUT page______________________*/
+
+#about {
+  background-color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+/* _____________Styling BLOG page____________________*/
+#blog {
+  text-align: center;
+  background-color: black;
+  background-image: url("../images/cool.jpg");
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/*___________________________________________________*/
+
+
+/*______________Styling Projects page________________*/
+#projects {
+  background-color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+ #projects_table table, th, td {
+  border: 1px solid #ccc;
+  width: 900px;
+  background-image: url("../images/wood3.jpg");
+}
+
+ #projects th, td {
+  padding: 5px;
+  text-align: center;
+ }
+
+
+
+/*____________Styling photo gallery page_____________*/
+#gallery {
+  text-align: center;
+  background-color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#gallery_board {
+  text-align: center;
+  background-color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#board table, th, td {
+  width: 900px;
+  text-align: center;
+}
+
+#board_td {
+  text-align: center;
+  background-image: url("../images/board1.jpg");
+}
+
+
+#board_click {
+  margin-top: 80px;
+  margin-left: 30px;
+}
+
+/*______________Styling footer______________________*/
+#social_network {
+  text-align: center;
+  font-size: 12px;
+  color: white;
+  background-image: url("../images/wood3.jpg");
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#copyright {
+  text-align: left;
+  color: white;
+}
