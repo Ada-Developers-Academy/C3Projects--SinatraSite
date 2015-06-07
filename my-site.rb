@@ -5,19 +5,37 @@ class MySite < Sinatra::Base
   register Sinatra::Reloader
 
   get '/' do
-    send_file './pages/home.html'
+    @title = "Home Elia Grenier"
+    @page_title = "Elia Grenier | M.Ed. to Dev"
+    erb :home
   end
 
   get '/blog' do
-    send_file './pages/blog.html'
+    @title = "Blog"
+    @page_title = "Life as an Adie"
+    erb :blog
   end
 
   get '/about' do
-    send_file './pages/about.html'
+    @title = "About the Author"
+    @page_title = @title
+    @subheader = "Elia Grenier | M.Ed. to Dev"
+    erb :about
   end
 
   get '/projects' do
-    send_file './pages/projects.html'
+    @title = "Class Projects"
+    @page_title = @title
+    @subheader = "We are using GitHub to collaborate on and turn in our projects"
+    erb :projects
   end
+
+  get '/food' do
+    @title = "Foodie Fun"
+    @page_title = @title
+    @subheader = "I like to cook and eat delicious food"
+    erb :food
+  end
+
 
 end
