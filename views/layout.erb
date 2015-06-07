@@ -2,9 +2,10 @@
 <head>
   <title><%= @title %></title>
   <link rel="stylesheet" type="text/css" href="styles.css">
-<link href='https://fonts.googleapis.com/css?family=Dosis|Raleway' rel='stylesheet' type='text/css'></head>
+  <link href='https://fonts.googleapis.com/css?family=Dosis|Raleway' rel='stylesheet' type='text/css'>
+</head>
+
 <body>
-  <div class="title">
   <header>
     <h1><%= @title %></h1>
       <nav class="navigation">
@@ -14,8 +15,8 @@
         <a href="projects">Projects</a>
         <a href="contact">Contact</a>
       </nav>
-    </div>
-    </header>
+  </header>
+
   <div class="primary-content">
     <%= yield %>
   </div>
@@ -26,5 +27,6 @@
       (c) <%= @time.year %> Lila Garcia
     </p>
   </footer>
+
 </body>
 </html>

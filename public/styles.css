@@ -1,7 +1,6 @@
 
 html {
   background: url(images/seattle.jpg) no-repeat center center fixed;
-
 }
 
 header {
@@ -32,11 +31,6 @@ h5 {
   font-family: 'Dosis', sans-serif;
 }
 
-
-.title {
-  display: inline;
-}
-
 .navigation {
   float: right;
   color: #00CCFF;
@@ -48,7 +42,6 @@ a:link{
   text-decoration: none;
   padding: 10px;
 }
-
 
 body {
   color: #FFFFFF;
@@ -69,21 +62,13 @@ footer {
   width: 100%;
 }
 
-
-.projects {
-  font-family: 'Dosis', sans-serif;
-  text-align: justify;
-}
-
 .projects a:link {
-  color: #000;
+  text-align: right;
+  color: #009999;
 }
 
-.projects a:visited {
 
-}
-
-#ada{
+#ada_projects {
   text-align: center;
 }
 

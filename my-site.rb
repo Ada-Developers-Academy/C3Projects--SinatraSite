@@ -4,7 +4,6 @@ require "sinatra/reloader"
 class MySite < Sinatra::Base
   register Sinatra::Reloader
 
-
   get "/" do
     @title = "LILA GARCIA"
     erb :home
@@ -29,5 +28,4 @@ class MySite < Sinatra::Base
     @title = "Contact"
     erb :contact
   end
-
 end
