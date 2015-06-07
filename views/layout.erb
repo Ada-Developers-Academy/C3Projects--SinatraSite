@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>
+      Just a Ruby Girl, In a Ruby World...
+    </title>
+
+  <%= erb :header %>
+
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+  </head>
+
+    <body>
+      <div class="wrapper">
+
+      <div
+      class="primary-content">
+      <%= yield %>
+      <%= erb :footer %>
+      </div>
+      </div>
+    </body>
+</html>
