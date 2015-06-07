@@ -17,6 +17,17 @@ h1 {
   padding: 10px;
 }
 
+h4 {
+  color: #000;
+  font-family: 'Dosis', sans-serif;
+}
+
+h5 {
+  color: #000;
+  font-family: 'Dosis', sans-serif;
+}
+
+
 .title {
   display: inline;
 }
@@ -68,7 +79,8 @@ footer {
   text-align: center;
 }
 
-.primary-content {
+.main_body {
+  font-family: 'Dosis', sans-serif;
   background-color: rgba(253, 253, 253, 0.95);
   padding: 30px;
   color: #000;
@@ -76,4 +88,8 @@ footer {
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
+}
+
+#contacts {
+  padding-top: 30px;
 }
