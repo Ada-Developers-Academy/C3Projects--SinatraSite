@@ -3,7 +3,6 @@
 html {
   min-width: 960px;
   background: #fff url(../images/gplaypattern_@2X.png) repeat fixed center;
-  /*margin: 5px;*/
   font-family: 'Quicksand', sans-serif;
   font-size: 14px;
 }
@@ -31,6 +30,7 @@ nav a:hover {
   background-color: #89E0DB;
 }
 
+
 /* Home Page ---------------------------------------------- */
 
 .home {
@@ -48,13 +48,6 @@ nav a:hover {
   width: 250px;
   margin-right: 50px;
 }
-
-/*.home img:hover {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  opacity: 0.7;
-  filter: alpha(opacity=70); 
-}*/
 
 .home a {
   text-decoration: none;
@@ -85,10 +78,11 @@ nav a:hover {
   line-height: 1.5;
 }
 
+
 /* Blog --------------------------------------------------- */
 
 .blog {
-  width: 960px;
+  max-width: 70%;
   margin: 0 auto;
 }
 
@@ -120,11 +114,12 @@ nav a:hover {
   line-height: 1.4;
 }
 
+
 /* Projects ----------------------------------------------- */
 
 .projects {
   text-align: center;
-  width: 960px;
+  max-width: 70%;
   margin: 0 auto;
 }
 
@@ -168,6 +163,17 @@ td {
   margin-bottom: 20px;
 }
 
+
+/* Photopgraphy ------------------------------------------- */
+
+.photography img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+/*  opacity: 0.7;
+  filter: alpha(opacity=70); */
+}
+
+
 /* Footer ------------------------------------------------- */
 
 footer {
@@ -176,3 +182,4 @@ footer {
   text-transform: uppercase;
   text-align: center;
 }
+
