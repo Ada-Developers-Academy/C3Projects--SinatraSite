@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>amirahaile &verbar; <%= @title %></title>
+    <link rel="stylesheet" href="css/normalize.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8">
+
+  </head>
+  <body>
+    <input type="checkbox" name="toggle" id="toggle" />
+    <label for="toggle"></label>
+    <!-- contact and main have to be adjacent siblings of input -->
+    <%= erb :contact %>
+
+    <main>
+      <%= erb :header %>
+
+      <%= yield %>
+    </main>
+
+    <%= erb :footer %>
+  </body>
+</html>

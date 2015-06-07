@@ -1,0 +1,255 @@
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  width: 960px;
+  margin: 0 auto;
+  min-height: 109%;
+  position: relative;
+  font-size: 16px;
+  color: #4D3D4D;
+}
+
+/* my name */
+h1 {
+  font-family: 'Arial', sans-serif;
+  font-size: 186px;
+  color: #F7F7F7;
+  margin: -67px 0 0 0;
+  text-align: center;
+}
+
+/* project titles on project page */
+h2 {
+  font-family: 'Arial', sans-serif;
+  font-size: 35px;
+  color: #4D3D4D;
+  margin: 42px 0 5px 0;
+}
+
+/* project titles */
+h3 {
+  margin: 5px 5px 10px 5px;
+}
+
+/* contact me link */
+h6 {
+  margin-top: -11px;
+  margin-right: 15px;
+  padding: 15px;
+  text-align: right;
+  font-family: 'Arial', sans-serif;
+  font-size: 23px;
+  color: #F7F7F7;
+}
+h6:hover {
+  color: #4D3D4D;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px dotted #4D3D4D;
+}
+
+main {
+  padding-bottom: 30px; /* same as footer height */
+  /* contact drop-down */
+  /* property name | duration| timing function(x1, y1, x2, y2) */
+  transition: margin 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+}
+
+header {
+  /*margin-top: -66px;*/
+  background-color: #C38ACF;
+}
+body #line {
+  width: 111px;
+  height: 0;
+  border-top: 2px solid #F7F7F7;
+  display: inline-block;
+  position: absolute;
+  right: 188px;
+  top: 128px;
+}
+
+/*
+CONTACT ME DROP-DOWN
+*/
+#contact {
+  background-color: #C38ACF;
+  color: #E8E8E8;
+  position: absolute;
+  width: 100%;
+  height: 251px;
+  top: -251px; /* negative value of #contact's height */
+  left: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+  text-align: center;
+  font-size: 39px;
+}
+#contact h4 span {
+  font-weight: bold;
+  text-transform: uppercase;
+  border-right: 5px solid;
+  padding-right: 9px;
+}
+#contact ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+#contact ul li {
+  text-transform: capitalize;
+  text-align: center;
+  display: inline;
+  border: 3px solid;
+  padding: 10px 17px;
+  margin-right: 25px;
+  font-size: 20px;
+}
+#contact ul li:last-child {
+  margin-right: 0;
+}
+#contact ul li:hover {
+  border-color: #4D3D4D;
+  color: #4D3D4D;
+}
+#contact ul li a {
+  border: none;
+}
+
+#toggle {
+  position: absolute;
+  appearance: none; /* removes browser styling */
+  display: none;
+}
+#toggle + label {
+  position: absolute;
+  cursor: pointer;  /* removes browser styling */
+  background-color: #C38ACF;
+  color: #F7F7F7;
+  width: 92%;
+  margin-top: 191px;
+  padding: 0 31px 11px 46px;
+  transition: all 500ms ease;
+  /* typographic styles for label:after to inherit */
+  font-family: 'Arial', sans-serif;
+  font-size: 23px;
+  text-align: right;
+  font-weight: bold;
+}
+#toggle + label:after {
+  content:"get at me, yo."
+}
+
+/* the ~ is a general selector that
+   selects the specified element of the same parent
+   that follow #toggle:checked */
+#toggle:checked ~ #contact {
+  top: -251px;
+}
+#toggle:checked ~ main {
+  margin-top: 318px;
+}
+#toggle:checked + label:after {
+  content:"ttyl"
+}
+
+
+/*
+PROJECT TILES
+*/
+#projects {
+  width: 960px;
+  height: 554px;
+  margin-top: 45px;
+  overflow-y: scroll;
+}
+#projects .project {
+  width: 215px;
+  height: 215px;
+  background-color: #E8E6E8;
+  float: left;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+  position: relative;
+}
+#projects .project:nth-child(4n) {
+  margin-right: 0;
+}
+#projects .project-borders {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  border-top: 2px solid rgba(147, 104, 156, .4);
+  border-bottom: 2px solid rgba(147, 104, 156, .4);
+  padding: 10px 0;
+}
+#projects .project:hover > .project-borders {
+  border-top: 2px solid rgb(147, 104, 156);
+  border-bottom: 2px solid rgb(147, 104, 156);
+  padding: 14px 0;
+}
+
+/*
+PROJECT PAGE
+*/
+
+.wrapper {
+  height: 546px;
+  width: 100%;
+  background-color: rgba(232, 230, 232, 0.4);
+  margin-top: 32px;
+}
+.wrapper section {
+  width: 782px;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+.home-link {
+  display: block;
+  border: none;
+  color: #995C99;
+}
+
+.wrapper .description {
+  overflow-y: scroll;
+}
+
+.description img {
+  width: 100%;
+  height: 140px;
+  background-color: #E1C8E6;
+  border: none;
+  margin-top: 21px;
+}
+.description a {
+  display: block;
+  text-align: right;
+  margin-top: -22px;
+  margin-right: 2px;
+  border: none;
+  color: #F7F7F7;
+}
+
+footer {
+  height: 31px;
+  background-color: #C38ACF;
+  color: #665166;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  padding-top: 5px;
+}
