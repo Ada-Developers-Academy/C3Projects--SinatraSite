@@ -103,7 +103,7 @@ nav a:hover {
 
 }
 
-.title {
+.title, .contact h3 {
   font-family: 'Amatic SC', cursive;
   font-size: 30px;
   font-weight: bold;
@@ -178,7 +178,7 @@ td {
   line-height: 1.3;
 }
 
-.months ul a {
+.months ul a, .contact a {
   text-decoration: none;
   font-family: 'The Girl Next Door', cursive;
   font-size: 17px;
@@ -216,6 +216,27 @@ td {
   margin: 5px;
 }
 
+
+/* Contact ------------------------------------------------ */
+
+.contact {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact h3 {
+  margin-top: 25px;
+}
+
+.contact a {
+  color: #56D2CC;
+}
+
+.contact a:hover {
+  color: #000;
+  font-weight: bold;
+}
 
 /* Footer ------------------------------------------------- */
 
