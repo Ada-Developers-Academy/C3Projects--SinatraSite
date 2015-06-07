@@ -5,8 +5,6 @@ class MySite < Sinatra::Base
   register Sinatra::Reloader
 
 
-
-
   get "/" do
     @title = "LILA GARCIA"
     erb :home
