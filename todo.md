@@ -2,14 +2,16 @@
 
 ### Improvements
 
-- [ ] separate logic on `my-site.rb` to other module files
+- [x] separate logic on `my-site.rb` to other module files
 - [ ] insert data for paragraphs on project page
 - [x] separate the header and footer into partials
 - [ ] add pictures to project pages
+- [ ] move data into a CSV file 
 
 ### Bugs
 
 + [ ] `<footer>` disappears when browser height is < 744px
++ [ ] "get at me, yo." should only change color when it is hovered (not the whole `<header>`)
 
 ### Styling Enhancements/Fixes
 

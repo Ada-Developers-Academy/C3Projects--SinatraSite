@@ -1,23 +1,24 @@
 module Projects
   PROJECTS_DATA = [
-    ["sinatra-site", "Sinatra Site", "2015-06-08", "June 2&ndash;8"],
-    ["bank-account", "Bank Account", "2015-05-31", "May 28&ndash;31"],
-    ["scrabble", "Scrabble", "2015-05-27", "May 26&ndash;27"],
-    ["farmar", "FarMar", "2015-05-22", "May 19&ndash;22"],
-    ["hangman", "Hangman", "2015-05-15", "May 14&ndash;15"],
-    ["solar-system", "Solar System", "2015-05-12", "May 12"],
-    ["orange-tree", "Orange Tree", "2015-05-11", "May 11"],
-    ["random-menu-generator", "Random Menu Generator", "2015-05-08", "May 8"],
-    ["calculator", "Calculator", "2015-05-07", "May 7"]
+    ["sinatra-site", "Sinatra Site", "2015-06-08", "June 2&ndash;8", "https://github.com/amirahaile/C3Projects--SinatraSite"],
+    ["bank-account", "Bank Account", "2015-05-31", "May 28&ndash;31", "https://github.com/amirahaile/C3Projects--BankAccounts"],
+    ["scrabble", "Scrabble", "2015-05-27", "May 26&ndash;27", "https://github.com/amirahaile/C3Projects--Scrabble"],
+    ["farmar", "FarMar", "2015-05-22", "May 19&ndash;22", "https://github.com/Ada-Developers-Academy/C3Projects--FarMarFinder"],
+    ["hangman", "Hangman", "2015-05-15", "May 14&ndash;15", "https://github.com/amirahaile/C3Projects--Hangman"],
+    ["solar-system", "Solar System", "2015-05-12", "May 12", "https://github.com/amirahaile/C3Projects--SolarSystem"],
+    ["orange-tree", "Orange Tree", "2015-05-11", "May 11", "https://github.com/amirahaile/C3Projects--OrangeTree"],
+    ["random-menu-generator", "Random Menu Generator", "2015-05-08", "May 8", "https://github.com/amirahaile/C3Projects--RandomMenuGenerator"],
+    ["calculator", "Calculator", "2015-05-07", "May 7", "https://github.com/amirahaile/C3Projects--Calculator"]
   ]
 
   class Project
-    attr_reader :url, :name, :datestamp, :date
-    def initialize(url, name, datestamp, date)
+    attr_reader :url, :name, :datestamp, :date, :github
+    def initialize(url, name, datestamp, date, github)
       @url = url
       @name = name
       @datestamp = datestamp
       @date = date
+      @github = github
     end
 
     # turns the raw data into instances of Project
@@ -30,7 +31,7 @@ module Projects
     end
 
     def self.find_project(project_url)
-      project = PROJECTS_DATA.find { |url, name, datestamp, date| url == project_url}
+      project = PROJECTS_DATA.find { |url, name, datestamp, date, github| url == project_url}
       Project.new(*project)
     end
   end

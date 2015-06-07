@@ -8,8 +8,18 @@
 
   </head>
   <body>
+
+
+    <input type="checkbox" name="toggle" id="toggle" />
+    <label for="toggle"></label>
+    <%= erb :contact %>
+
     <main>
-      <%= erb :header %>
+      <header>
+        <a target="_self" href="/">
+          <h1>amirahaile</h1>
+        </a>
+      </header>
 
       <%= yield %>
     </main>

@@ -3,7 +3,7 @@
 
     <a class="home-link" target="_self" href="/" atl="Homepage">&laquo; Projects</a>
 
-    <h2><%= @project.name %> &raquo;</h2>
+    <a target="_blank" href="<%= @project.github %>"><h2><%= @project.name %> &raquo;</h2></a>
     <time datetime="<%=@project.datestamp %>"><%= @project.date %></time>
 
     <div class="description">

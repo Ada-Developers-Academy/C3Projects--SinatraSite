@@ -13,7 +13,7 @@ body {
   color: #4D3D4D;
 }
 
-/*my name*/
+/* my name */
 h1 {
   font-family: 'Arial', sans-serif;
   /*font-family: 'Creepster', cursive;*/
@@ -22,7 +22,7 @@ h1 {
   margin: -67px 0 0 0;
 }
 
-/*project titles on project page*/
+/* project titles on project page */
 h2 {
   font-family: 'Arial', sans-serif;
   font-size: 35px;
@@ -30,12 +30,12 @@ h2 {
   margin: 42px 0 5px 0;
 }
 
-/*project titles*/
+/* project titles */
 h3 {
   margin: 5px 5px 10px 5px;
 }
 
-/*contact me link*/
+/* contact me link */
 h6 {
   margin-top: -11px;
   margin-right: 15px;
@@ -58,17 +58,14 @@ a {
 
 main {
   padding-bottom: 30px; /* same as footer height */
+  /* contact drop-down */
+  /* property name | duration| timing function(x1, y1, x2, y2) */
+  transition: margin 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
 }
 
 header {
   /*margin-top: -66px;*/
   background-color: #C38ACF;
-}
-header div {
-  height: 110px;
-  width: 919px;
-  overflow: hidden;
-  margin: 0 auto;
 }
 header #line {
   width: 111px;
@@ -81,13 +78,77 @@ header #line {
 }
 
 /*
+CONTACT ME DROP-DOWN
+*/
+#contact {
+  background-color: #C38ACF;
+  color: #E8E8E8;
+  position: absolute;
+  width: 100%;
+  height: 251px;
+  top: -251px; /* negative value of #contact's height */
+  left: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+}
+#contact h4 span {
+  font-style: oblique;
+  text-transform: capitalize;
+}
+#contact ul li {
+  text-transform: capitalize;
+}
+
+#toggle {
+  position: absolute;
+  appearance: none; /* removes browser styling */
+  cursor: pointer;  /* enables pointing hand */
+  display: none;
+}
+#toggle + label {
+  position: absolute;
+  cursor: pointer;
+  background-color: #C38ACF;
+  color: #F7F7F7;
+  width: 93%;
+  margin-top: 212px;
+  padding: 26px 34px;
+  transition: all 500ms ease;
+  /* typographic styles for label:after to inherit */
+  font-family: 'Arial', sans-serif;
+  font-size: 23px;
+  text-align: right;
+  font-weight: bold;
+}
+#toggle + label:after {
+  content:"get at me, yo."
+}
+
+/* the ~ is a general selector that
+   selects the specified element of the same parent
+   that follow #toggle:checked */
+#toggle:checked ~ #contact {
+  top: -251px;
+}
+#toggle:checked ~ main {
+  margin-top: 318px;
+}
+#toggle:checked + label {
+  background:#dd6149;
+}
+#toggle:checked + label:after {
+  content:"Close"
+}
+
+
+/*
 PROJECT TILES
 */
-
 #projects {
   width: 960px;
   height: 524px;
-  margin-top: -54px;
+  margin-top: 78px;
   padding-top: 36px;
   overflow-y: scroll;
 }
