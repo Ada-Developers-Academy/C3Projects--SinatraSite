@@ -67,7 +67,7 @@ header {
   /*margin-top: -66px;*/
   background-color: #C38ACF;
 }
-header #line {
+body #line {
   width: 111px;
   height: 0;
   border-top: 2px solid #F7F7F7;
@@ -128,12 +128,11 @@ CONTACT ME DROP-DOWN
 #toggle {
   position: absolute;
   appearance: none; /* removes browser styling */
-  cursor: pointer;  /* enables pointing hand */
   display: none;
 }
 #toggle + label {
   position: absolute;
-  cursor: pointer;
+  cursor: pointer;  /* removes browser styling */
   background-color: #C38ACF;
   color: #F7F7F7;
   width: 92%;
@@ -207,10 +206,10 @@ PROJECT PAGE
 */
 
 .wrapper {
-  height: 506px;
+  height: 546px;
   width: 100%;
   background-color: rgba(232, 230, 232, 0.4);
-  margin-top: -28px;
+  margin-top: 32px;
 }
 .wrapper section {
   width: 782px;
