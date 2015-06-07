@@ -3,8 +3,8 @@
 
     <a class="home-link" target="_self" href="/" atl="Homepage">&laquo; Projects</a>
 
-    <h2><%= @project %> &raquo;</h2>
-    <time datetime="<%=@datestamp %>"><%= @date %></time>
+    <h2><%= @project.name %> &raquo;</h2>
+    <time datetime="<%=@project.datestamp %>"><%= @project.date %></time>
 
     <div class="description">
       <img src="" alt="">

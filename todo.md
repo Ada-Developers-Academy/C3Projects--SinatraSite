@@ -2,24 +2,25 @@
 
 ### Improvements
 
-+ separate logic on `my-site.rb` to other module files
-+ insert data for paragraphs on project page
-+ separate the header and footer into partials
+- [ ] separate logic on `my-site.rb` to other module files
+- [ ] insert data for paragraphs on project page
+- [x] separate the header and footer into partials
+- [ ] add pictures to project pages
 
 ### Bugs
 
-+ `<footer>` disappears when browser height is < 744px
++ [ ] `<footer>` disappears when browser height is < 744px
 
 ### Styling Enhancements/Fixes
 
-+ project tile borders could expand out on hover  
++ [ ] project tile borders could expand out on hover  
 
       .projects:hover > .project {
         padding: 3px 0;
       }
 
-+ contact header drop-down
++ [ ] contact header drop-down
 
-+ get "get at me, yo." to change the line's hover color too
++ [ ] get "get at me, yo." to change the line's hover color too
 
-+ enable left & right scrolling
++ [ ] enable left & right scrolling
