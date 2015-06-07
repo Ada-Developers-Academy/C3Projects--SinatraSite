@@ -44,6 +44,7 @@ a:link{
   padding: 10px;
 }
 
+
 body {
   color: #FFFFFF;
   position: relative;
@@ -68,7 +69,7 @@ footer {
 }
 
 .projects a:link {
-  color: white;
+  color: #000;
 }
 
 .projects a:visited {
