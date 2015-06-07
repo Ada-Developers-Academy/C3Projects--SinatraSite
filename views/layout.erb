@@ -1,11 +1,11 @@
-<html id="container">
+<html class="container">
   <head>
     <link rel="stylesheet" type="text/css" href="styling.css"/>
     <title>This is a layout</title>
   </head>
-  <body id="body">
-    <header id="header">
-      fun words to say: memoize, bungalow,..
+  <body class="body">
+    <header class="header">
+      fun words to say: bazinga, memoize, bungalow,..
     </header>
     <div class="page_wrap">
     <nav>
@@ -19,10 +19,17 @@
       <%= yield%>
     </div>
   </div>
+<<<<<<< HEAD
     <footer id="footer">
       <p>
         <img id="ninja_gif" src="images/ninja.gif">
         Copyright <%= Time.now.year %> CodingNinja productions
+=======
+    <footer>
+      <p class="footer">
+        <img class="ninja_gif" src="images/ninja.gif">
+        &copy; <%= Time.now.year %> CodingNinja Productions
+>>>>>>> 0fcca94... fixed music img background
       </p>
     </footer>
   </body>

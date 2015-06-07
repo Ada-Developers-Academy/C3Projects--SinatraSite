@@ -1,16 +1,67 @@
-html {
-  min-width: 960px;
+/* General Page Formatting _________________*/
+/* Make footer stick to bottom of page*/
+.container {
+   min-height:100%;
+   min-width: 960;
+   position:relative;
 }
 
-/*h1 {*/
-  /*text-align: center;*/
-  /*font-family: "Papyrus", Fantasy;*/
-  /*font-weight: bold;*/
-  /*font-size: 15px;*/
-  /*color: #8A5CE6;*/
-/*}*/
+.header {
+  font-family: "Futura", Sans-serif;
+  font-size: 10px;
+  padding:10px;
+  background: #75A3A3;
+  opacity: 0.5;
+  text-align: center;
+}
 
+.body {
+  min-height: 100%;
+  padding:10px;
+  padding-bottom:60px;   /* Height of the footer */
+  background: #D1D1C2;
+}
 
+.footer {
+  font-family: "Futura", Sans-serif;
+  font-size: 10px;
+  background: #75A3A3;
+  opacity: 0.5;
+  text-align: center;
+  padding: 10px;
+  position: bottom;
+  width:100%;
+  height:60px;   /* Height of the footer */
+}
+
+.page_wrap {
+  min-height: 100%;
+  margin-bottom: -100px;
+}
+
+.page_wrap:after {
+  content: "";
+  display: block;
+}
+
+/* Fonts for projects page*/
+.pg_font {
+  font-family: "Futura", Sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding: 50px;
+}
+
+/*to center all lists*/
+ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style: none;
+}
+
+/* Headers -------------------------------- */
+/*uniform header text*/
 h1, h5 {
   text-align: center;
   color: #669999;
@@ -18,16 +69,24 @@ h1, h5 {
   font-size: 30px;
 }
 
-
-#home_page {
-  background-image: url("images/beach.jpg");
-  margin: 100px 100px 100px 100px;
+/*specific to music page*/
+h4 {
+  text-decoration: underline;
 }
 
-body {
-  background: #D1D1C2;
+/*text outline and color for music page*/
+.hiphop_header {
+   -webkit-text-stroke: 1px #FFFFFF;
+   color: #669999;
+   text-shadow:
+      3px  3px 0 #000,
+     -1px -1px 0 #000,
+      1px -1px 0 #000,
+     -1px  1px 0 #000,
+      1px  1px 0 #000;
 }
 
+/* Links ------------------------------------*/
 nav {
   text-align: center;
   font-size: 20px;
@@ -53,104 +112,70 @@ a:active {
   color: #4DDB94;
 }
 
-.textwrap {
+/* Images ----------------------------------*/
+.prince {
   float: right;
   margin: 10px;
 }
 
-.gitpg_font {
-  font-family: "Futura", Sans-serif;
-  font-size: 20px;
-  text-align: center;
-  padding: 50px;
-}
-/*to center a list*/
-ul {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  list-style: none;
+/*Beach img for homepage*/
+#home_page {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 500px;
+  width: 750px;
 }
 
-#ninja_gif {
+/*music page imgs*/
+#hill {
+  height: 180px;
+  width: 200px;
+  float: left;
+  margin: 20px;
+}
+
+#beyonce {
+  float: left;
+  margin: 20px;
+  height: 200px;
+  width: 200px;
+}
+
+#missy {
+  float: right;
+  margin: 20px;
+  height: 175px;
+  width: 210px;
+}
+
+/* for footer */
+.ninja_gif {
   margin-left: 15px;
   height: 50px;
   width: 50px;
 }
 
-#pups {
+.dog_meme {
+  float: right;
   height: 250px;
-  width: 345px;
-}
-
-#beast {
-  height: 300px;
   width: 350px;
-  padding-bottom: 100px;
 }
 
-
-body {
-   margin:0;
-   padding:0;
-   height:100%;
+.hiphop_bkgd {
+  background-image: url("images/hiphop.jpg");
+  padding: 20px;
+  margin-bottom: 150px;
 }
 
-#container {
-   min-height:100%;
-   position:relative;
-}
-
-#header {
-  font-family: "Futura", Sans-serif;
-  font-size: 10px;
-   padding:10px;
-   background: #75A3A3;
-   opacity: 0.5;
-   text-align: center;
-}
-
-#body {
-   min-height: 100%;
-   padding:10px;
-   padding-bottom:60px;   /* Height of the footer */
-}
-
-#footer {
-  font-family: "Futura", Sans-serif;
-  font-size: 10px;
-  background: #75A3A3;
-  opacity: 0.5;
-  text-align: center;
-  padding: 10px;
-  position: bottom;
-  bottom:0;
-  width:100%;
-  height:100px;   /* Height of the footer */
-}
-
-.page_wrap {
-  min-height: 100%;
-  margin-bottom: -100px;
-}
-
-.page_wrap:after {
-  content: "";
-  display: block;
-}
-
-/*.hip_hop_bkgd {*/
-  /*border: 10px;*/
-  /*background-image: url("images/hiphop.jpg");*/
-  /*padding: 20px;*/
-/*}*/
-
-.hip_hop_bkgd {
-  background: url("images/hiphop.jpg") repeat;
-  border: 2px solid black;
-}
 div.text_box {
+<<<<<<< HEAD
   margin: 30px;
+=======
+  margin: 100px;
+  padding: 50px;
+  padding-bottom: 200px;
+>>>>>>> 0fcca94... fixed music img background
   background-color: #ffffff;
   border: 1px solid black;
   opacity:0.7;
