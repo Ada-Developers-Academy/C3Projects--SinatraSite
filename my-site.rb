@@ -24,4 +24,7 @@ class MySite < Sinatra::Base
     erb :projects
   end
 
+  get '/resume' do
+    erb :resume
+  end
 end
