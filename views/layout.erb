@@ -2,12 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-<!--     <link rel="stylesheet" type="text/css" href="style.css"> -->
-    <title>Home | Ashley</title>
+    <link rel="stylesheet" type="text/css" href="./images/style.css">
+    <title><%= @title || ":)" %> | Ashley</title>
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="title_bar">
         <ul>
           <li><a href="/home">Home</a></li>
           <li><a href="/projects">Projects</a></li>
@@ -17,14 +17,11 @@
       </nav>
     </header>
 
-    <section>
-      <h1>Home</h1>
-      <p>Hello, World.</p>
-    </section>
+    <div id="page_contents">
+      <%= yield %>
+    </div>
 
-    <footer>
-      <p>This website was created in June 2015 as part of <a href=http://adadevelopersacademy.org/>Ada Developers Academy</a> requirements. </p>
-    </footer>
+    <%= erb :footer %>
 
   </body>
 </html>

@@ -1,0 +1,122 @@
+/*
+Use CSS to...
+Style your headings (<h1>, <h2>, etc.) so they are visually distinct.
+*/
+
+body {
+  font-size: 13px;
+  background-color: #FFFFFF;
+  margin: 0px;
+}
+
+nav.title_bar ul {
+  background-color: rgba(188, 188, 188, .2);
+  padding: 0px 0px 0px 2em;
+  margin: 0px;
+  width: 100%;
+}
+
+nav.title_bar li {
+  display: inline-block;
+}
+
+nav.title_bar a:link {
+  color: gray;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Verdana" sans-serif;
+  font-size: 1em;
+
+  display: inline-block;
+
+  /*width: 100px;*/
+  padding: 1em;
+}
+
+nav.title_bar a:visited {
+  color: gray;
+  padding: 1em;
+}
+
+nav.title_bar a:hover {
+  background-color: rgba(188, 188, 188, .5);
+  padding: 1em;
+}
+
+nav.title_bar a:active {
+  background-color: rgba(188, 188, 188, .8);
+  padding: 1em;
+}
+
+footer {
+  margin-top: 4em;
+  padding: 1em 1em .5em 2%;
+
+  display: inline-block;
+  width: 100%;
+
+  font-family: "Verdana" sans-serif;
+  font-size: .8em;
+  /*background-color: rgba(102, 0, 255, .1);*/
+  background-color: rgba(188, 188, 188, .2);
+}
+
+main {
+  width: 80%;
+  max-width: 550px;
+  padding: 25px;
+  /*margin-left: calc(50% - 300px);*/
+  margin: auto;
+
+  font-family: "Verdana" sans-serif;
+  font-size: 1.5em;
+  line-height: 1.5em;
+
+  /*background-color: rgba(102, 0, 255, .1);*/
+}
+
+div#main_aside {
+  width: calc(100%-(50%-300px));
+  padding-left: calc(50% - 300px);
+
+  /*background-color: rgba(102, 0, 255, .1);*/
+}
+
+#main_aside main {
+/*  margin-left: calc(50% - 300px);
+  margin-right: 0px;*/
+  display: inline-block;
+}
+
+#main_aside aside {
+  width: 20%;
+  min-width: 50px;
+  max-width: 550px;
+
+  font-family: "Verdana" sans-serif;
+  line-height: 1.5em;
+
+  /*background-color: rgba(102, 0, 255, .1);*/
+  display: inline-block;
+  float: right;
+}
+
+img {
+  /*margin: 0px;*/
+}
+
+p.img_caption {
+  font-size: .5em;
+  margin-top: 0em;
+  margin-bottom: 1em;
+  font-style: italic;
+}
+
+#catchingash {
+  width: 200px;
+  display: block;
+}
+
+#bentley_popcorn {
+  width: 200px;
+}
