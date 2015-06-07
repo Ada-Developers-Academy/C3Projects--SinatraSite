@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Lindsey | <%= @title.capitalize %></title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+  </head>
+  <body>
+    <header>
+      <h1>Lindsey Reno</h1>
+      <nav>
+        <a href="/">Home</a>
+        <a href="about">About</a>
+        <a href="projects">Projects</a>
+        <a href="blog">Blog</a>
+        <a href="travels">Travels</a>
+      </nav>
+    </header>
+      <div class= "primary-content">
+        <%= yield %>
+      </div>
+  </body>
+    <footer>
+      <p>Lindsey Reno &#169 <%= Time.now.year %><p>
+    </footer>
+</html>

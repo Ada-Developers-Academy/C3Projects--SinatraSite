@@ -1,0 +1,75 @@
+
+body {
+  margin: auto;
+  width: 960px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    padding: 5px 20px 0px 0px;
+    font-size: 18px;
+}
+
+a:hover {
+    padding: 5px 20px 0px 0px;
+    text-decoration: underline;
+}
+
+header {
+  border-style: none none double;
+}
+
+footer {
+  text-align: center;
+  font-size: 11px;
+  clear: both;
+}
+
+h1 {
+  font-size: 38px;
+  font-weight: lighter;
+}
+
+h3 {
+  font-weight: lighter;
+  text-align: center;
+}
+
+div.home img {
+  width: 960px;
+  heigth: 300px;
+}
+
+div.about img {
+  float: left;
+  margin: 0px 25px;
+}
+
+div.about p {
+  line-height: 1.5em;
+  padding: 25px;
+}
+
+div.projects a:link {
+  font-size: 15px;
+}
+
+div.projects a:hover {
+  text-decoration: underline;
+}
+
+div.travels img {
+  width: 226px;
+  height: 113px;
+}
+
+div.travels h3 {
+  margin: 3px;
+  text-align: center;
+}
+
+div.travels h4 {
+  margin: 5px;
+  font-weight: lighter;
+}
