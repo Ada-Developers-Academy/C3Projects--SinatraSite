@@ -79,39 +79,55 @@ h1, h2, h3, h4, h5, h6 {
   background-color: rgb(255, 255, 255);
   margin-left: auto;
   margin-right: auto;
-	padding-bottom: 20px;
+	padding: 20px 0;
 	border-bottom-left-radius: 35px;
 	border-bottom-right-radius: 35px;
   }
 
-.text_area h1, h2, h3, p, td{
-  padding: 15px 40px 15px 40px;
+.primary-content h1, h2, h3, p, td{
+  padding: 0px 40px;
   }
 
-.first_row {
-	  font-weight: bold;
+.primary-content header {
 }
 
-.text_area h1 {
-  font-size: 2.0em;
+.primary-content h1 {
+  font-size: 2.1em;
+	border-left: 8px solid rgb(73, 77, 163);
 }
 
-.text_area h2 {
-  font-size: 1.8em;
+.primary-content h2 {
+  font-size: 1.9em;
 }
 
-.text_area h3 {
+.primary-content h3 {
+  font-size: 1.7em;
+}
+
+.primary-content h4 {
   font-size: 1.5em;
 }
 
-.text_area p{
+.primary-content h5 {
+  font-size: 1.3em;
+}
+
+.primary-content h6 {
+  font-size: 1.1em;
+}
+
+.primary-content p{
   font-size: 1.1em;
 	line-height: 1.5em;
 }
 
-.text_area img {
+.primary-content img {
 	display: block;
 	margin: 20px auto 20px auto;
+}
+
+.first_row {
+	  font-weight: bold;
 }
 
 /* ---- Footer ---- */
