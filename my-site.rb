@@ -7,19 +7,33 @@ class MySite < Sinatra::Base
   register Sinatra::Reloader # makes line 2 active
 
   get "/" do
-    send_file "static_html/index.html"
+    @pages = %w(home about projects blog contact)
+    @current = "home"
+    erb :index
   end
 
   get "/about" do
-    send_file "static_html/about.html"
-  end
-
-  get "/blog_posts" do
-    send_file "static_html/blog_posts.html"
+    @pages = %w(home about projects blog contact)
+    @current = "about"
+    erb :about
   end
 
   get "/projects" do
-    send_file "static_html/projects.html"
+    @pages = %w(home about projects blog contact)
+    @current = "projects"
+    erb :projects
+  end
+
+  get "/blog" do
+    @pages = %w(home about projects blog contact)
+    @current = "blog"
+    erb :blog
+  end
+
+  get "/contact" do
+    @pages = %w(home about projects blog contact)
+    @current = "contact"
+    erb :contact
   end
 
 end
