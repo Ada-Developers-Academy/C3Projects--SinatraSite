@@ -1,22 +1,15 @@
+ /*---------OVERALL PAGE SETUP--------*/
+
 html {
-  min-width: 960px
+  /*min-width: 960px*/
   font-family: Tahoma, Verdana, Segoe, sans-serif;
 }
 
 body {
    margin:0;
    padding:0;
-   height:100%;
-}
-
-#container {
-   min-height:100%;
-   position:relative;
-}
-
-#body {
-  padding: 10px;
-  padding-bottom: 40px;
+   height:100%
+   background-color: #D7D9E9;
 }
 
 h1, h2, h3, h4 {
@@ -26,70 +19,133 @@ h1, h2, h3, h4 {
 p {
 	font-family: Tahoma, Verdana, Segoe, sans-serif;
 	font-size: 14px;
-	font-style: normal;
-	font-variant: normal;
 	font-weight: 400;
 	line-height: 20px;
 }
 
+/*--------HEADER------------*/
+
 header {
    background:#3D3D3D;
-   padding:10px;
+   padding:5px;
    color: #F5FFF9;
    font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
 }
+
+nav ul {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  margin: 0 auto;
+  overflow: auto;
+  width: 100%;
+}
+
+nav li {
+  font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+  font-size: 1.3em;
+  line-height: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 5px;
+  position: relative;
+  float: left;
+  display: block;
+}
+
 nav a:link{
   color: #F5FFF9;
+  text-decoration: none;
 }
 
 nav a:visited{
   color: #FFF76E;
+  text-decoration: none;
 }
 
-nav a:hover{
+nav a:hover, a:active {
   color: #FFF219;
-}
-
-#sunset {
-  padding: 100px;
-  }
-
-#sidebar {
-  font-family: Tahoma, Verdana, Segoe, sans-serif;
-  font-size: 12px;
-  padding-top: 50px;
-  color: #F5FFF9;
-  background: #B5B5B5;
-  height: 430px;
-  width: 150px;
-  float: right;
-}
-
-img {
-  border
-
+  text-decoration: none;
 }
 
 #social {
   float: right;
-  margin-top: -20px
+  margin-top: -40px
 }
 #social img{
   height: 30px
 }
+
+/*-------HOME PAGE--------*/
+
+#home {
+  position: relative;
+  height: 500px;
+}
+
+#sunset {
+  position: absolute;
+  border: 4px solid #3D3D3D;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+
+#sidebar {
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-size: 13px;
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #3D3D3D;
+  width: 150px;
+  float: right;
+}
+
+/*--------ABOUT ME-----------*/
+
+#about {
+  position: relative;
+  height: 500px;
+  padding: 10px;
+}
+
+#snow {
+  border: 4px solid #3D3D3D;
+  height: 300px;
+  float:left;
+  margin-top: 10px;
+  margin-right: 10px;
+  }
+
+
+
+/*-------FOOTER----------*/
+
+#container{
+  min-height: 100%
+  position: relative;
+}
+
+.page-content {
+  padding-bottom: 60px;
+}
+
 footer {
-   position:absolute;
-   bottom:0;
-   width:100%;
-   height:40px;   /* Height of the footer */
    background:#313975;
+   border-top: 2px solid #3D3D3D;
+   width:100%;
+   height:60px;
+   position:absolute;
+   bottom: 0;
+   left:0;
  }
 
  footer div {
    font-family: Tahoma, Verdana, Segoe, sans-serif;
    font-size: 10px;
    font-weight: bold;
-   padding: 2px;
+   padding: 4px;
    color: #fffff1;
    text-align: right;
 }
@@ -97,6 +153,7 @@ footer {
  footer nav{
    font-family: Tahoma, Verdana, Segoe, sans-serif;
    font-size: 12px;
+   font-weight: bold;
    text-align: left;
    padding: 5px;
  }
