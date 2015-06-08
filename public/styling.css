@@ -123,6 +123,7 @@ a:active {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 100px;
   height: 500px;
   width: 750px;
 }
@@ -169,13 +170,10 @@ a:active {
 }
 
 div.text_box {
-<<<<<<< HEAD
   margin: 30px;
-=======
   margin: 100px;
   padding: 50px;
   padding-bottom: 200px;
->>>>>>> 0fcca94... fixed music img background
   background-color: #ffffff;
   border: 1px solid black;
   opacity:0.7;
