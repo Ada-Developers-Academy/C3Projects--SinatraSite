@@ -1,0 +1,29 @@
+<html class="container">
+  <head>
+    <link rel="stylesheet" type="text/css" href="styling.css"/>
+    <title>This is a layout</title>
+  </head>
+  <body class="body">
+    <header class="header">
+      fun words to say: bazinga, memoize, bungalow,..
+    </header>
+    <div class="page_wrap">
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/blog">Blog</a>
+      <a href="/projects">Projects</a>
+      <a href="/music">Music</a>
+    </nav>
+    <div>
+      <%= yield%>
+    </div>
+  </div>
+    <footer>
+      <p class="footer">
+        <img class="ninja_gif" src="images/ninja.gif">
+        &copy; <%= Time.now.year %> CodingNinja Productions
+      </p>
+    </footer>
+  </body>
+  </html>
