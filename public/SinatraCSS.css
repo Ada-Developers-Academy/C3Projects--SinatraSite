@@ -1,8 +1,19 @@
-.whole-class body{
+/*.whole-class */
+
+body{
   background:#DFE1E1;
   color:#424242;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   width: 960px;
+}
+
+.me-pagelist ul{
+
+  background:#DFE1E1;
+  color:#424242;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  width: 960px;
+
 }
 
 .main h1{
@@ -19,6 +30,7 @@
 
 }
 
+
 .proper div{
   width:200px;
   height:120px;
@@ -30,4 +42,5 @@
   max-width: 100%;
   height: auto;
 }
+
 

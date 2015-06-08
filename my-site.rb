@@ -7,7 +7,7 @@ class MySite < Sinatra::Base
 
 
   get "/" do
-    @marleigh = Marleigh::Page
+    @marleigh = Marleigh::Page.
     erb :index
   end
 
