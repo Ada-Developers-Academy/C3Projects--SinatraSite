@@ -1,8 +1,3 @@
-/*
-Use CSS to...
-Style your headings (<h1>, <h2>, etc.) so they are visually distinct.
-*/
-
 body {
   font-size: 13px;
   background-color: #FFFFFF;
@@ -136,7 +131,6 @@ main {
 }
 
 aside {
-
   width: 20%;
   min-width: 100px;
   padding: 25px;
