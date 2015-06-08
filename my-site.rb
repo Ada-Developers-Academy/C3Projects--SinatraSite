@@ -7,14 +7,13 @@ class MySite < Sinatra::Base
 
 
   get "/" do
-    @marleigh = Marleigh::Page.
+    @marleigh = Marleigh::Page.me
     erb :index
   end
 
   get "/:name" do
-    @name = Marleigh::Page.new(params[:name])
+    @page = Marleigh::Page.new(params[:name])
   end
-
 
   # get "/" do
   #   send_file'static/Home.html'
@@ -24,7 +23,7 @@ class MySite < Sinatra::Base
   #   send_file'static/Me.html'
   # end
 
-  # get "/current_projects" do
+  # get "/projects" do
   #   send_file'static/Projects.html'
   # end
 

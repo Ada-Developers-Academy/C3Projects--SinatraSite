@@ -1,13 +1,11 @@
-
-<body>
- <h1> Hi, I'm marleigh. Clink a link below to learn more about me.</h1>
-<ul class = "me-pagelist">
-  <% @names.each do|name| %>
+<h1> Hi, I'm marleigh. Clink a link below to learn more about me.</h1>
+<ul class="me-pagelist">
+  <% @marleigh.each do|page| %>
     <li>
-      <a href="<% name.page_path%>">
-      <%= name %>
+      <a href="<% page.page_path%>">
+      <%= page.name %>
       </a>
     </li>
   <% end %>
 </ul>
-</body>
+

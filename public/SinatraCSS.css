@@ -1,18 +1,32 @@
-/*.whole-class */
+
 
 body{
   background:#DFE1E1;
   color:#424242;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font: normal normal 20px/50px "Book Antiqua"; 
+
+}
+
+
+.me-pagelist li{
+
+  display: flex;
+  width: 9rem;
+
+}
+
+.whole-page {
+  margin: 0 auto;
   width: 960px;
 }
 
-.me-pagelist ul{
+.foot-excep {
 
+  margin: 0 auto;
+  width: 960px;
   background:#DFE1E1;
   color:#424242;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  width: 960px;
+  font: normal normal 14px/1.2px "Book Antiqua";
 
 }
 

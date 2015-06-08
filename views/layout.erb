@@ -4,10 +4,14 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="SinatraCSS.css">
   </head>
+  
   <body>
-<!--     <div class="whole-page">
-      <%=  %>
-    </div> -->
-    <%= erb :footer %>
+    <div class="whole-page">
+      <%= yield %>
+    </div>
   </body>
+  
+  <footer>
+    <%= erb :footer %>
+  </footer>
 </html>
