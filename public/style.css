@@ -21,25 +21,13 @@ Author: Loraine Kanervisto
 }
 
 body {
- font-family: "Trebuchet MS", Helvetica, sans-serif;
+ font-family: Verdana, Geneva, sans-serif;
  background: rgb(52, 46, 46);
 }
 
-a:link{
-  color: #999;
-  text-decoration: none;
+a {
+	color: rgb(73, 77, 163);
 }
-a:visited {
-  color: #999;
-}
-a:hover {
-  color: #999;
-}
-a:active {
-  color: #999;
-}
-
-/* ---- Headers ---- */
 
 h1, h2, h3 {
   font-family: 'IM Fell French Canon', serif;
@@ -50,8 +38,8 @@ h1, h2, h3 {
 
 .site_header {
   background-color: rgb(52, 46, 46);
-  height: 135px;
-  line-height: 80px;
+  height: 155px;
+  line-height: 90px;
 }
 
 .site_header h1 {
@@ -63,36 +51,42 @@ h1, h2, h3 {
 
 .navi ul {
   list-style: none;
-  background-color: rgb(52, 62, 95);
+  background-color: rgb(210, 210, 210);
   text-align: center;
-  line-height: 60px;
+  line-height: 70px;
   display: block;
 }
 
 .navi li {
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
-/*.navi a {
-font-weight: bold;
+.navi a {
+	font-size: 1.2em;
+	text-decoration: none;
 }
 
 .navi a:hover {
-  color: #fff;
-}*/
+	text-decoration: underline;
+	}
 
 /* ---- Posts ---- */
 
 .primary-content{
-  background-color: rgb(230, 230, 230);
+  background-color: rgb(255, 255, 255);
   margin-left: auto;
   margin-right: auto;
+	padding-bottom: 20px;
   }
 
-.text_area h1, h2, h3 {
-  padding: 15px 0;
+.text_area h1, h2, h3, p, td{
+  padding: 15px 40px 15px 40px;
   }
+
+.first_row {
+	  font-weight: bold;
+}
 
 .text_area h1 {
   font-size: 2.0em;
@@ -106,8 +100,9 @@ font-weight: bold;
   font-size: 1.5em;
 }
 
-.text_area p {
-  font-size: 1.3em;
+.text_area p{
+  font-size: 1.1em;
+	line-height: 1.5em;
 }
 
 .text_area img {
@@ -118,7 +113,8 @@ font-weight: bold;
 /* ---- Footer ---- */
 
 footer {
-  padding: 30px 0;
+	color: #999;
+  margin: 30px auto 30px auto;
 }
 
 
