@@ -1,0 +1,60 @@
+
+
+body{
+  background:#DFE1E1;
+  color:#424242;
+  font: normal normal 20px/50px "Book Antiqua"; 
+
+}
+
+
+.me-pagelist li{
+
+  display: flex;
+  width: 9rem;
+
+}
+
+.whole-page {
+  margin: 0 auto;
+  width: 960px;
+}
+
+.foot-excep {
+
+  margin: 0 auto;
+  width: 960px;
+  background:#DFE1E1;
+  color:#424242;
+  font: normal normal 14px/1.2px "Book Antiqua";
+
+}
+
+.main h1{
+  text-align: center;
+  font:"Verdana";
+  color: #616B6B;
+
+}
+
+.subtitle h2{
+  text-align: left;
+  font:"Georgia";
+  color: #194719;
+
+}
+
+
+.proper div{
+  width:200px;
+  height:120px;
+
+}
+
+.proper img{
+
+  max-width: 100%;
+  height: auto;
+}
+
+
