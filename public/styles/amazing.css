@@ -1,0 +1,123 @@
+body {
+  background-image: url("/images/square_bg.png");
+  background-color: rgba(219, 184, 255, 0.5);
+  margin: 0px 0px;
+  /* NOTE TO SELF:
+  You NEEEED to have the slash before 'images' (or whatever folder)
+  OR IT WILL NOT WORK!!! */
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+header {
+  width: 960px;
+  padding: 10px 30px 15px 30px;
+  margin: 0 auto;
+  background-color: rgb(5, 5, 5);
+  color: rgb(255, 255, 255);
+}
+
+.blank-line {
+  width: 960px;
+  height: 4px;
+  padding: 0 30px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.line1 {
+  width: 960px;
+  height: 14px;
+  padding: 0 30px;
+  margin: 0 auto;
+  background-color: rgb(5, 5, 5);
+}
+
+.line2 {
+  width: 960px;
+  height: 10px;
+  padding: 0 30px;
+  margin: 0 auto;
+  background-color: rgb(5, 5, 5);
+}
+
+.line3 {
+  width: 960px;
+  height: 6px;
+  padding: 0 30px;
+  margin: 0 auto;
+  background-color: rgb(5, 5, 5);
+}
+
+#content {
+  width: 960px;
+  padding: 10px 30px;
+  background-color: rgba(255, 255, 255, 0.75);
+  margin: 0px auto;
+}
+
+#home {
+  text-align: center;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 3em;
+  margin: 0;
+  font-family: 'Amita', cursive;
+  padding: 0;
+  border: 0;
+}
+
+h2 {
+  font-family: Tahoma, Geneva, sans-serif;
+  margin: 0 0 15px 0;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: Tahoma, Geneva, sans-serif;
+}
+
+.contact-link {
+  padding: 10px 0;
+}
+
+header a:link {
+  color: rgb(255, 204, 255);
+  padding: 0 10px 0 0;
+}
+
+footer a:link {
+  color: rgb(255, 204, 255);
+}
+
+header a:visited, footer a:visited {
+  color: rgb(188, 105, 230);
+}
+
+header a:hover, footer a:hover {
+  color: rgb(102, 204, 255);
+}
+
+header a:active, footer a:active {
+  color: rgb(184, 0, 0);
+}
+
+img {
+  /*display: block;*/
+  /*float: left;*/
+  margin: 0 20px 0 0;
+}
+
+footer {
+    width: 960px;
+    padding: 10px 30px 15px 30px;
+    margin: 0 auto;
+    background-color: rgb(5, 5, 5);
+    color: rgb(220, 220, 220);
+}
+
+.footer-text {
+  padding: 0px;
+  line-height: 0.5em;
+}
