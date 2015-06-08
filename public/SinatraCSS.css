@@ -1,12 +1,22 @@
-html {
+body {
+  background:#DFE1E1;
+  color:#424242;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  width: 960px;
+}
 
-
-
-p {font:20px Calibri;}
-
-
-
-
+.main h1{
+  text-align: center;
+  font:"Verdana";
+  color: #616B6B;
 
 }
+
+.subtitle h2{
+  text-align: left;
+  font:"Georgia";
+  color: #194719;
+
+}
+
 
