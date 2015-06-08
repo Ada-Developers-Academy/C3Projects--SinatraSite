@@ -1,5 +1,6 @@
 require "sinatra"
 require "sinatra/reloader"
+require "./lib/recipes.rb"
 
 class MySite < Sinatra::Base
   register Sinatra::Reloader
@@ -23,4 +24,14 @@ class MySite < Sinatra::Base
     @title = "blog"
     erb :blog
   end
+
+  get "/recipes" do
+    @recipies = Recipes::Recipe.all_recipes
+    @title = "recipes"
+    erb :recipes
+  end
 end
+
+
+
+

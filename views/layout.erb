@@ -2,6 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="website.css">
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
 <title>Katie | <%= @title %></title> 
 </head>
 <body>
@@ -11,13 +12,14 @@
       <a href="/blog">blog</a>
       <a href="/projects">projects</a>
       <a href="/coffee">coffee</a>
+      <a href="/recipes">recipes</a>
     </nav>
   </header>
     <%= yield %>
   <footer>
-    <a href="https://github.com/ktrops"><img src="images/github.png" width="100"></a>
-    <a href="https://twitter.com/kjtrops"><img id="twitter" src="images/twitter.png" width="100"></a>
-    <p>Katie Atrops &#174; 2015</p>
+    <a href="https://github.com/ktrops"><img src="images/square_github.png"></a>
+    <a href="https://twitter.com/kjtrops"><img id="twitter" src="images/twitter.png"></a>
+    <p>Katie Atrops &#174; <%= Time.now.year %></p>
 
   </footer>
 </body>
