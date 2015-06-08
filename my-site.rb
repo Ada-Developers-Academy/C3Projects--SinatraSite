@@ -24,6 +24,9 @@ class MySite < Sinatra::Base
     erb :blog
   end
 
+  get "/nineties" do
+    erb :nineties
+  end
 
 end
 

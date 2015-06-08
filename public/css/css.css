@@ -18,7 +18,6 @@ nav {
   left: 0;
   font-size: 20px;
   font-family: "Courier New";
-
 }
 
 a:link {
@@ -49,13 +48,11 @@ h2 {
 h3 {
   font-size: 1.17em;
   font-family: "Courier New", serif;
+}
+
+h3.project-title {
   text-decoration: underline;
 }
-/*
-#container {
-  min-height:100%;
-  position:relative;
-}*/
 
 html, body {
   height: 100%;
@@ -65,16 +62,13 @@ html, body {
 
 body {
   width: 960px;
-  /*height: auto;*/
   min-height: 100%;
   margin: 0 auto;
   font-family: "Courier New", serif;
   color: #F5F5F5;
   background-color: #000000;
   padding:10px;
-  padding-bottom:60px;   /* Height of the footer */
-  /*relative*/
-  /*bottom margin is height of footer*/
+  padding-bottom:60px;
 }
 
 ul {
@@ -85,19 +79,15 @@ ul {
   padding-bottom: 20px;
 }
 
-.home-page-festival-photo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 450px;
-}
-
-.about-me-husky-photo {
+.centered-photos {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 20px;
   width: 450px;
+}
+
+#about-me-husky-photo {
+  padding-top: 20px;
 }
 
 .about-me-section {
@@ -105,40 +95,33 @@ ul {
   text-align: center;
 }
 
-.asian-dad-photo {
-  display: block;
+.travel-journal {
+  display: inline-block;
+  /*margin-top: -17px;*/
   margin-left: auto;
   margin-right: auto;
-  width: 450px;
-}
-
-.netherlands-section, .brazil-section, .mongolia-section, .turkey-section {
-  display: inline-block;
-  margin-top: -17px;
   margin-bottom: 15px;
 }
 
-.netherlands-photo {
+.brazil-section, .netherlands-section, .turkey-section, .mongolia-section{
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+img.country-photo{
   width: 470px;
   height: 282px;
 }
 
-.brazil-photo {
-  height: 282px;
-  position: relative;
-  width: 470px;
+a.music-link:link {
+  text-decoration: underline;
 }
 
-.mongolia-photo {
-  width: 470px;
-  height: 282px;
+#batman-photo, #kirby-photo {
+  margin: 30px auto;
 }
-
-.turkey-photo {
-  width: 470px;
-  height: 282px;
-}
-
 
 footer {
   background: url("../../images/nyc.JPG");
