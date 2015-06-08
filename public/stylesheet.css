@@ -6,15 +6,15 @@ body {
 }
 
 a:link {
-    text-decoration: none;
-    padding: 5px 20px 0px 0px;
-    font-size: 18px;
-    color: #6e7a9b;
+  text-decoration: none;
+  padding: 5px 20px 0px 0px;
+  font-size: 18px;
+  color: #6e7a9b;
 }
 
 a:hover {
-    padding: 5px 20px 0px 0px;
-    text-decoration: underline;
+  padding: 5px 20px 0px 0px;
+  text-decoration: underline;
 }
 
 a:visited {
@@ -45,6 +45,7 @@ h3 {
 div.home img {
   width: 960px;
   heigth: 300px;
+  margin: 10px;
 }
 
 div.about img {
@@ -73,8 +74,10 @@ div.projects a:visited {
 }
 
 div.travels img {
-  width: 226px;
-  height: 113px;
+  width: 208px;
+  height: 104px;
+  margin: 2px;
+  padding: 2px;
 }
 
 div.travels h3 {
