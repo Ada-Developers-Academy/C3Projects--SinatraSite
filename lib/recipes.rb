@@ -1,5 +1,5 @@
 module Recipes
-  RECIPES = [ "Pesto Chicken and Sweet Potato Breakfast Bake", "Lemon Poppyseed Acorn Squash Muffins", "Braised Short Ribs over Roasted Garlic Mashed Cauliflouer",
+  RECIPES = [ "Pesto Chicken and Sweet Potato Breakfast Bake", "Lemon Poppyseed Acorn Squash Muffins", "Braised Short Ribs over Roasted Garlic Mashed Cauliflower",
               "Simple Skirt Steak with Romesco Sauce", "Crockpot Fig Apple Butter", "Guest Post Green Tea Ice Cream with Pistachio Praline", "Guest Post Strawberry Shortcake Skillets",
               "Bacon Braised Collard Greens", "Creamy Sun-Dried Tomato Chicken Pasta", "Breakfast On The Go Sausage Egg Cups"
             ]
