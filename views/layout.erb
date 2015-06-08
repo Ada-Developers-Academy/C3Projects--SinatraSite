@@ -20,12 +20,12 @@
   <footer>
     <% if @contact %>
       <p>
-        If I could figure out how to make a damn copy left symbol I would. Use this content as you wish.&copy;
+        If I could figure out how to make a damn copy left symbol I would. Use this content as you wish. &copy; <%= Time.now.year %>
       </p>
     <% else %>
         <a href="contact">Contact Me</a>
         <p>
-          If I could figure out how to make a damn copy left symbol I would. Use this content as you wish.&copy;
+          If I could figure out how to make a damn copy left symbol I would. Use this content as you wish. &copy; <%= Time.now.year %>
         </p>
     <% end %>
   </footer>
