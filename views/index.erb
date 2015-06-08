@@ -1,6 +1,9 @@
 
       <header>
         <h1>I rode 268 miles during Bike Month in Seattle</h1>
+        <p class = "timestamp"><% t = Time.new(2001, 10, 21) %>
+        <%= t.strftime("Posted on %m/%d/%Y") %>
+        </p>
       </header>
 
       <img src ="images/lorainebike.jpg" alt="Loraine on her bike on the Burke Gilman">

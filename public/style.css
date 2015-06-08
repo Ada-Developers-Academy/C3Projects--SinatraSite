@@ -32,9 +32,34 @@ a {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'IM Fell French Canon', serif;
   color: rgb(0, 0, 0);
+	margin: 10px 0;
 }
 
-/* ---- HEADER ---- */
+h1 {
+  font-size: 2.1em;
+}
+
+h2 {
+  font-size: 1.9em;
+}
+
+h3 {
+  font-size: 1.7em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1.3em;
+}
+
+h6 {
+  font-size: 1.1em;
+}
+
+/* ---- Header ---- */
 
 .site_header {
   background-color: rgb(52, 46, 46);
@@ -70,8 +95,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navi a:hover {
-	color: rgb(52, 46, 46);
-	}
+	text-decoration: underline;
+}
 
 /* ---- Posts ---- */
 
@@ -79,41 +104,20 @@ h1, h2, h3, h4, h5, h6 {
   background-color: rgb(255, 255, 255);
   margin-left: auto;
   margin-right: auto;
-	padding: 20px 0;
+	padding: 20px 40px;
+	/* Fancy curves */
 	border-bottom-left-radius: 35px;
 	border-bottom-right-radius: 35px;
   }
 
-.primary-content h1, h2, h3, p, td{
-  padding: 0px 40px;
-  }
-
 .primary-content header {
+border-left: 5px solid rgb(73, 77, 163);
+padding-left: 10px;
 }
 
-.primary-content h1 {
-  font-size: 2.1em;
-	border-left: 8px solid rgb(73, 77, 163);
-}
-
-.primary-content h2 {
-  font-size: 1.9em;
-}
-
-.primary-content h3 {
-  font-size: 1.7em;
-}
-
-.primary-content h4 {
-  font-size: 1.5em;
-}
-
-.primary-content h5 {
-  font-size: 1.3em;
-}
-
-.primary-content h6 {
-  font-size: 1.1em;
+.timestamp {
+	font-side: 0.9em;
+	font-style: italic;
 }
 
 .primary-content p{
