@@ -10,6 +10,11 @@ class MySite < Sinatra::Base
     erb :index
   end
 
+  # get "/:title" do
+  #   @title = Website::Title.new(params[:title])
+  #   erb :title
+  # end
+
   get "/about" do
     @title = "about"
     erb :about
@@ -29,5 +34,10 @@ class MySite < Sinatra::Base
     @title = "travels"
     erb :travels
   end
-  
+
+  # get "/:name" do
+  #   @image  = Website::Images.new(params[:name])
+  #   erb :pics
+  # end
+
 end

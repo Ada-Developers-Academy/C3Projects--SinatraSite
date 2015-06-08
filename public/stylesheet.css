@@ -5,15 +5,21 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-a:link, a:visited {
+a:link {
     text-decoration: none;
     padding: 5px 20px 0px 0px;
     font-size: 18px;
+    color: #6e7a9b;
 }
 
 a:hover {
     padding: 5px 20px 0px 0px;
     text-decoration: underline;
+}
+
+a:visited {
+  text-decoration: underline;
+  color: #6e7a9b;
 }
 
 header {
@@ -53,10 +59,17 @@ div.about p {
 
 div.projects a:link {
   font-size: 15px;
+  color: #ed175f;
 }
 
 div.projects a:hover {
   text-decoration: underline;
+  color: #01497b;
+}
+
+div.projects a:visited {
+  text-decoration: underline;
+  color: #ed175f;
 }
 
 div.travels img {
@@ -67,9 +80,11 @@ div.travels img {
 div.travels h3 {
   margin: 3px;
   text-align: center;
+  padding: 3px;
 }
 
 div.travels h4 {
   margin: 5px;
   font-weight: lighter;
+  color: #1830de;
 }
