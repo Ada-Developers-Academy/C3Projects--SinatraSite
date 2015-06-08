@@ -1,0 +1,179 @@
+/*this is a reset of all things!*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, output, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+
+body {
+  line-height: 1;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+/*THIS IS WHERE REAL STYLES START HAPPENING*/
+
+.header_wrapper {
+  position: fixed;
+  background-color: #FFF;
+  width: 100%;
+  height: 150px;
+  border-bottom: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  z-index: 10;
+}
+
+#header_text {
+  text-align: right;
+  margin-top: 100px;
+  padding-right: 25px;
+}
+
+.menu {
+  float: left;
+  margin-right: 20px;
+  padding-left: 50px;
+  height: 100%;
+  width: 100px;
+  text-align: center;
+}
+
+.menu a {
+  text-decoration: none;
+  font-family: "Droid Serif";
+  font-size: 28pt;
+  color: #454544;
+  margin: 15px 0 15px 0;
+}
+
+a:hover {
+  color: #616C74;
+}
+
+main {
+  width: 100%;
+  padding-top: 170px;
+  z-index: 5;
+  overflow: auto;
+}
+
+p {
+  font-family: Verdana, Arial, sans-serif;
+  line-height: 1.6em;
+  color: #848484;
+  font-size: 10pt;
+}
+
+h1 {
+  font-family: 'Droid Serif', Verdana, Arial, sans-serif;
+  line-height: 1.6em;
+  color: #454544;
+  text-decoration: none;
+  font-size: 22pt;
+}
+
+h2 {
+  font-family: 'Droid Serif', Verdana, Arial, sans-serif;
+  line-height: 1.6em;
+  color: #454544;
+  text-decoration: none;
+  font-size: 20pt;
+}
+
+h3 {
+  font-family: 'Droid Serif', Verdana, Arial, sans-serif;
+  line-height: 1.6em;
+  color: #454544;
+  text-decoration: none;
+  font-size: 18pt;
+}
+
+li {
+  font-family: Verdana, Arial, sans-serif;
+  line-height: 1.6em;
+  color: #848484;
+  font-size: 10pt;
+}
+
+section {
+  margin: 0px 0px 0px 150px;
+  padding: 10px 15% 20px 10%;
+}
+
+section p {
+  text-align: justify;
+  padding: 10px 15% 20px 10%;
+}
+
+
+footer {
+  min-height: 100%
+  margin: 0 auto -150px 0;
+  padding: 10px 0px 30px 0px;
+  width: 100%;
+  text-align: center;
+}
+
+footer p {
+  margin-left: 10%;
+}
+
+footer a {
+  text-decoration: none;
+  font-family: "Droid Serif";
+  font-size: 14pt;
+  color: #454544;
+  text-align: center;
+  margin-left: 10%;
+}
+
+/*THIS IS HOME'S CSS*/
+
+/*THIS IS PROJECT'S CSS*/
+
+
+/*THIS IS ABOUT'S CSS*/
+
+.ed {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+
+/*THIS IS BLOG'S CSS*/
+
+article {
+  margin: 0px 0px 0px 150px;
+  padding: 10px 15% 20px 10%;
+}
+
+article p {
+  text-align: justify;
+}
+
+#blog_header {
+  text-align: center;
+}
+
+
+/*THIS IS CONTACT'S CSS*/
+
+
+
+

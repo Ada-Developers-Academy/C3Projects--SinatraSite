@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Carly Jugler</title>
+    <link rel="stylesheet" type="text/css" href="mywebsite.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Droid+Serif:regular,italic,bold,bolditalic" type="text/css" />
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Droid+Sans:regular,bold" type="text/css"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" Content-Type: text/html; charset=utf-8 />
+  </head>
+  <body>
+    <div class="header_wrapper">
+    <header class="header">
+      <h1 id="header_text">Carly Jugler</h1>
+    </header>
+  </div>
+    <main>
+    <div class="primary-content">
+      <%= yield %>
+    </div>
+  </main>
+  <footer>
+    <% if @contact %>
+      <p>
+        If I could figure out how to make a damn copy left symbol I would. Use this content as you wish. &copy; <%= Time.now.year %>
+      </p>
+    <% else %>
+        <a href="contact">Contact Me</a>
+        <p>
+          If I could figure out how to make a damn copy left symbol I would. Use this content as you wish. &copy; <%= Time.now.year %>
+        </p>
+    <% end %>
+  </footer>
+  </body>
+</html>
