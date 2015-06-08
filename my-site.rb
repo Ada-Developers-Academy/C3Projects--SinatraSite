@@ -15,24 +15,24 @@ class MySite < Sinatra::Base
     @page = Marleigh::Page.new(params[:name])
   end
 
-  # get "/" do
-  #   send_file'static/Home.html'
-  # end
+  get "/" do
+    send_file'static/Home.html'
+  end
 
-  # get "/about_me" do
-  #   send_file'static/Me.html'
-  # end
+  get "/about_me" do
+    send_file'static/Me.html'
+  end
 
-  # get "/projects" do
-  #   send_file'static/Projects.html'
-  # end
+  get "/projects" do
+    send_file'static/Projects.html'
+  end
 
-  # get "/blog" do
-  #   send_file'static/Blog.html'
-  # end
+  get "/blog" do
+    send_file'static/Blog.html'
+  end
 
-  # get "/espresso" do
-  #   send_file 'static/Espresso.html'
-  # end
+  get "/espresso" do
+    send_file 'static/Espresso.html'
+  end
 
 end
