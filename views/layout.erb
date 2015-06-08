@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= @title || "Brenna Leker" %></title>
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,900,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico">
+  </head>
+  <body>
+  <header>
+    <nav>
+      <img src="images/home.png" alt = "outline of a house">
+      <a href="/"> Home </a>
+      <img src="images/person.png" alt = "outline of a person">
+      <a href="about"> About </a>
+      <img src="images/blog.png" alt = "pencil and idea">
+      <a href="blog"> Blog </a>
+      <img src="images/laptop.png" alt = "laptop">
+      <a href="projects"> Projects </a>
+      <img src="images/contact.svg" alt = "outline of letter">
+      <a href="contact"> Contact </a>
+    </nav>
+    <footer>
+      <p><a href="/">Brenna Leker</a>
+      &#169; <%= Time.now.year %></p>
+    </footer>
+  </header>
+    <div class="content">
+      <%= yield %>
+    </div>
+
+  </body>
+</html>

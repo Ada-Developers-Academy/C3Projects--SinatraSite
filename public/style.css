@@ -1,0 +1,113 @@
+body {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
+  background-color: #7371FC;
+  margin: 0;
+  color: #000;
+}
+
+
+header{
+  width: 20%;
+}
+
+header, footer {
+  margin: 0 auto;
+  float: left;
+  /*background-color: #fff;*/
+  background-image: url("images/crossword.png");
+  text-align: center;
+}
+
+footer {
+  margin-left:40px;
+}
+
+
+nav{
+  margin-bottom: 15px;
+}
+
+nav a, footer a {
+  text-decoration: none;
+}
+
+nav a {
+  margin:30%;
+  font-size: 20px;
+}
+
+nav a:visited, footer a:visited {
+  color: #000;
+}
+
+nav img {
+  width: 40px;
+  margin: 40px 30% 0 30%;
+}
+
+h1, h2 {
+ letter-spacing: 3px;
+}
+
+h1 {
+  font: italic normal 400 3em 'Playfair Display', serif;
+}
+
+.welcome {
+  margin: 10% 0;
+  color: #fff;
+}
+
+.welcome {
+  padding: 1.5%;
+  width: 75%;
+  float: right;
+  text-align: center;
+  color: #fff;
+}
+
+.welcome h1, .welcome h2{
+  color: #fff;
+}
+
+
+.about, .blog, .projects, .contact {
+  width: 56%;
+  float: right;
+}
+
+.projects a{
+  text-decoration: none;
+  color: #000;
+}
+
+.about, .contact{
+  margin: 5% 10% 0 0;
+  padding: 2%;
+  background-color: #fff;
+}
+
+.blog, .projects{
+  margin:0 10% 0 0;
+}
+
+.blog article, .projects article{
+  margin: 5% 0 0 0;
+  padding: 2%;
+  background-color: #fff;
+}
+
+
+.social_media {
+  margin: 50px 0 0 0;
+}
+
+.social_media img{
+  width: 35px;
+  padding: 0 3px;
+}
+
+.about img {
+  width: 300px;
+}
