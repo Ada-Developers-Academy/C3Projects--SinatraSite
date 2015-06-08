@@ -1,4 +1,4 @@
-body {
+.whole-class body{
   background:#DFE1E1;
   color:#424242;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -25,7 +25,7 @@ body {
 
 }
 
-.proper img {
+.proper img{
 
   max-width: 100%;
   height: auto;
