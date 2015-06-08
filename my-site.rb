@@ -19,4 +19,9 @@ class MySite < Sinatra::Base
   get "/blog" do
     send_file'public/Blog.html'
   end
+
+  get "/espresso" do
+    send_file 'public/Espresso.html'
+  end
+
 end
