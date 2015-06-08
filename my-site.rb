@@ -21,4 +21,9 @@ class MySite < Sinatra::Base
     erb :writing
   end
 
+  get '/:name' do
+    @name = params[:name]
+    erb :fourohfour
+  end
+
 end

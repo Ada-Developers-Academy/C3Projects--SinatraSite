@@ -29,9 +29,9 @@ a {
 	color: rgb(73, 77, 163);
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'IM Fell French Canon', serif;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgb(0, 0, 0);
 }
 
 /* ---- HEADER ---- */
@@ -55,6 +55,8 @@ h1, h2, h3 {
   text-align: center;
   line-height: 70px;
   display: block;
+	border-top-left-radius: 35px;
+	border-top-right-radius: 35px;
 }
 
 .navi li {
@@ -68,7 +70,7 @@ h1, h2, h3 {
 }
 
 .navi a:hover {
-	text-decoration: underline;
+	color: rgb(52, 46, 46);
 	}
 
 /* ---- Posts ---- */
@@ -78,6 +80,8 @@ h1, h2, h3 {
   margin-left: auto;
   margin-right: auto;
 	padding-bottom: 20px;
+	border-bottom-left-radius: 35px;
+	border-bottom-right-radius: 35px;
   }
 
 .text_area h1, h2, h3, p, td{
@@ -113,16 +117,6 @@ h1, h2, h3 {
 /* ---- Footer ---- */
 
 footer {
-	color: #999;
+	color: rgb(153,153,153);
   margin: 30px auto 30px auto;
 }
-
-
-/* */
-/* ----  ---- */
-
-/* COLOR GLOSSARY
-
-rgb(46, 48, 89) DEEP BLUE
-rgb(171, 171, 173) LIGHT GREY
-rgb(38, 38, 41)  DARK GREY
