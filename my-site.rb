@@ -28,4 +28,9 @@ class MySite < Sinatra::Base
     @title = "Projects"
     erb :projects
   end
+
+  get "/contact" do
+    @title = "Contact"
+    erb :contact
+  end
 end

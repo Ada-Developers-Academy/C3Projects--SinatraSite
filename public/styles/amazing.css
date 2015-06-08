@@ -50,11 +50,13 @@ header {
 
 #content {
   width: 960px;
-  /*column-count: 10;*/
-  /*-webkit-column-count: 3;*/
   padding: 10px 30px;
   background-color: rgba(255, 255, 255, 0.75);
   margin: 0px auto;
+}
+
+#home {
+  text-align: center;
 }
 
 h1 {
@@ -69,20 +71,24 @@ h1 {
 h2 {
   font-family: Tahoma, Geneva, sans-serif;
   margin: 0 0 15px 0;
-  /*text-transform: uppercase;*/
+  text-transform: uppercase;
 }
 
 h3 {
   font-family: Tahoma, Geneva, sans-serif;
 }
 
+.contact-link {
+  padding: 10px 0;
+}
+
 header a:link {
-  color: rgb(255, 224, 255);
+  color: rgb(255, 204, 255);
   padding: 0 10px 0 0;
 }
 
 footer a:link {
-  color: rgb(255, 224, 255);
+  color: rgb(255, 204, 255);
 }
 
 header a:visited, footer a:visited {
@@ -95,6 +101,12 @@ header a:hover, footer a:hover {
 
 header a:active, footer a:active {
   color: rgb(184, 0, 0);
+}
+
+img {
+  /*display: block;*/
+  /*float: left;*/
+  margin: 0 20px 0 0;
 }
 
 footer {
