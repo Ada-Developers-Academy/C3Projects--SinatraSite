@@ -1,17 +1,19 @@
-html { width: 960px;
+html {
+  width: 960px;
   margin: 0 auto;
   background-color: black;
+  font-family: 'Open Sans', sans-serif;
   }
 
-body {   background-color: #013949;
+body {
+  background-color: #013949;
   color: #CFCFCF;
   margin: 0 auto;
 }
 
 h1 {
-  font-family: 'Open Sans', sans-serif;
   font-size: 50px;
-  padding: 20px 10px;
+  padding: 25px 20px;
   margin: 0 10px;
   color: #FFFFFF;
 }
@@ -19,18 +21,24 @@ h1 {
 header {
   background-image: url("/images/woodtexture.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;;
+  background-size: 100% 100%;
 }
 
 header img {
   float: right;
-  display: inline;
   margin: 10px;
+}
+
+p {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px;
+  padding: 10px;
 }
 
 footer {
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   margin:  10px 5px 10px 10px;
   padding: 2px 10px;
   text-decoration: none;
@@ -39,14 +47,6 @@ footer {
 img {
   display: block;
   margin: 50px auto;
-}
-
-p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  margin: 10px;
-  padding: 10px;
 }
 
 li {
@@ -60,7 +60,6 @@ footer img {
 }
 
 footer p {
-  font-family: 'Roboto Condensed', sans-serif;
   font-size: 14px;
   margin: 0;
 }
@@ -70,13 +69,9 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: #CCCC00;
-}
-
 .internal_nav {
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   font-style: italic;
   background-color: #26788F;
   margin:  0;
@@ -96,7 +91,7 @@ a:hover {
   margin: 50px auto;
 }
 
-.bankaccounts {
+.bankaccounts, .scrabble, .solarsystem, .hangman, .menu, .calculator {
   display: inline-block;
   vertical-align: top;
   margin-right: -4px;
@@ -106,47 +101,18 @@ a:hover {
 }
 
 .scrabble {
-  display: inline-block;
-  vertical-align: top;
-  margin-right: -4px;
-	width: 200px;
-	height: 200px;
 	background: #FFC232;
 }
 
-.solarsystem {
-  display: inline-block;
-  vertical-align: top;
-  margin-right: -4px;
-	width: 200px;
-	height: 200px;
-	background: #FF4E32;
-}
-
-.hangman {
-  display: inline-block;
-  vertical-align: top;
-  margin-right: -4px;
-	width: 200px;
-	height: 200px;
+.solarsystem, .hangman {
 	background: #FF4E32;
 }
 
 .menu {
-  display: inline-block;
-  vertical-align: top;
-  margin-right: -4px;
-	width: 200px;
-	height: 200px;
 	background: #04607A;
 }
 
 .calculator {
-  display: inline-block;
-  vertical-align: top;
-  margin-right: -4px;
-	width: 200px;
-	height: 200px;
 	background: #00912C;
 }
 
@@ -160,24 +126,17 @@ a:hover {
   font-family: 'Open Sans', sans-serif;
   color: #FFFFFF;
   margin: 0 10px;
-  /*text-decoration: none;*/
   font-weight: bold;
-}
-
-.projects a:hover {
-  color: #CCCC00
 }
 
 .internal_nav a {
   margin: 8px 30px 5px 10px;
-  color: #CFCFCF;
-  text-decoration: none;
 }
 
 .internal_nav a:visited {
   color: #E6E6E6;
 }
 
-.internal_nav a:hover {
+a:hover, .internal_nav a:hover {
   color: #CCCC00;
 }

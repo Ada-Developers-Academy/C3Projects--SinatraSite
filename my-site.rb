@@ -37,4 +37,12 @@ class MySite < Sinatra::Base
     erb :publications
   end
 
+  # get "/my_first_form" do
+  #   erb :my_first_form
+  # end
+  #
+  # post "/my_first_form" do
+  #   erb :my_first_form
+  # end
+
 end
