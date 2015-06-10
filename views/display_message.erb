@@ -1,0 +1,18 @@
+<!-- <h3>Your message has been submitted to the outer gods.</h3> -->
+<p>Stardate <%= Time.now %></p>
+<p><%= @name %>, from <%= @reply %></p>
+<p>Re: <%= @subject %></p>
+<div id="tags">
+  Tags:
+  <% if @tags %>
+    <% @tags.each do |tag| %>
+      <%= "#{ tag }" %>
+    <% end %>
+  <% else %>
+    uncategorized message
+  <% end %>
+</div>
+<blockquote>
+  <%= @message %>
+</blockquote>
+<!-- <h2> "#{ @elder_god } thanks you for the delicious message."</h2> -->

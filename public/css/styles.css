@@ -175,6 +175,43 @@ a#chocolate:hover {
   color: #FFFFFF;
 }
 
+/* - - - - - - - - - - - - - - - contact form - - - - - - - - - - - - - - - - */
+
+form, input, textarea {
+  font-size: 12px;
+}
+
+fieldset {
+  border: 0px;
+  display: block;
+}
+
+label, legend {
+  font-family: "Copperplate", sans-serif;
+}
+
+label {
+   font-size: 16px;
+   padding-left: 5px;
+}
+
+legend {
+  font-size: 20px;
+}
+
+#subject {
+  display: inline-block;
+}
+
+#submit {
+  font-family: "Copperplate", sans-serif;
+  display: block;
+  font-size: 18px;
+  margin: 4px;
+  padding: 0px;
+}
+
+
 /* - - - - - - - - - - - - - - - - projects - - - - - - - - - - - - - - - - - */
 
 .left {

@@ -1,0 +1,34 @@
+<h1>contact me</h1>
+
+<form action="/form" method="post" accept-charset="utf-8"> <!--class="wrapper">-->
+  <fieldset>
+    <!-- <legend>Sender info</legend> -->
+    <label for="name">Name</label>
+    <input id="name" type="text" name="form_data[name]" placeholder="Aneda" required />
+
+    <label>Reply-to Address<input id="reply" type="text" name="form_data[reply]"size="50" placeholder="Aneda.Wong@sbemail.com" required /></label>
+    <!--pattern="[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}"-->
+    <!-- regexp source: http://www.regular-expressions.info/email.html -->
+    <!-- or not.... -->
+  </fieldset>
+
+  <fieldset>
+    <!-- <legend>Topics of conversation:</legend> -->
+
+    <p><label for="subject">Subject
+    <textarea id="subject" name="form_data[subject]" cols="100" rows="1" maxlength="80" placeholder="Finding reflections of myself in the abyss." required></textarea></label></p>
+
+    <% checkboxes = %w{work madness science cthulhu} %>
+    <% checkboxes.length.times do |count| %>
+      <% current_item = checkboxes[count] %>
+      <%= "<label><input id='#{ current_item }' type='checkbox' name='form_data[tags][]' value='#{ current_item }' /> #{ current_item.capitalize }-related</label>" %>
+    <% end %>
+  </fielddset>
+
+
+  <p><label>Message
+  <textarea id="message" name="form_data[message]" cols="120" rows="10" maxlength="5000"
+  placeholder="Hi, this is the best wobsite ever! I've always thought we needed more things like this on the webernets. --Aneda"  required></textarea></label></p>
+
+  <button id="submit" type="submit">Send message unto the Great Old Ones.</button>
+</form>
