@@ -4,24 +4,45 @@ require "sinatra/reloader"
 class MySite < Sinatra::Base
   register Sinatra::Reloader
 
+  def year
+    @year = Time.now.year
+  end
+
   get "/" do
-    send_file 'public/home.html'
+    @title = "Sally A. Moore"
+    erb :home
   end
 
   get "/about" do
-    send_file 'public/about.html'
+    @title = "Sally Moore - about"
+    @page_title = "about me"
+    erb :about
   end
 
   get "/blog" do
-    send_file 'public/blog.html'
+    @title = "Sally Moore - blog"
+    @page_title = "blog"
+    erb :blog
   end
 
   get "/projects" do
-    send_file 'public/projects.html'
+    @title = "Sally Moore - projects"
+    @page_title = "ADA projects"
+    erb :projects
   end
 
   get "/pubs" do
-    send_file 'public/publications.html'
+    @title = "Sally Moore - publications"
+    @page_title = "publications in psychology"
+    erb :publications
   end
+
+  # get "/my_first_form" do
+  #   erb :my_first_form
+  # end
+  #
+  # post "/my_first_form" do
+  #   erb :my_first_form
+  # end
 
 end
