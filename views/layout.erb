@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Elsa's Propaganda - <%= @title %></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <%= erb :header %>
+
+    <h2><%= @title %></h2>
+
+    <%= yield %>
+
+    <%= erb :footer %>
+
+  </body>
+</html>
