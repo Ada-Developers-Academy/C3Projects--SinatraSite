@@ -1,0 +1,60 @@
+<article class="project">
+  <h1><%= @project.title %></h1>
+
+  <% moar_project = @project.live_url || @project.repo_url %>
+  <% moar_image = @project.image_two || @project.image_one %>
+
+  <div class="wrapper">
+    <%= moar_project.html(moar_image.html) %>
+  </div>
+
+  <section class="copper-links">
+    <% if @project.live_url != nil %>
+      <%= "<h2 class=\"copper-links\">" %>
+      <%= @project.live_url.html("Check out a live version of this!") %></h2>
+      <%= "</h2>" %>
+    <% end %>
+
+    <% if @project.repo_url != nil %>
+      <%= "<h2 class=\"copper-links\">" %>
+      <%= @project.repo_url.html("Review the code for this project on GitHub.") %>
+      <%= "</h2>" %>
+    <% end %>
+
+    <p></p>
+  </section>
+
+  <div class="wrapper">
+    <div class="divider"></div><div class="divider"></div><div class="divider"></div>
+  </div>
+
+  <section id="why">
+    <h2>Why this project rocked</h2>
+    <p><%= @project.description %></p>
+    <p><%= @project.description %></p>
+    <p><%= @project.description %></p>
+    <p><%= @project.description %></p>
+  </section>
+
+  <section class="screenshot">
+    <div class="wrapper">
+      <% if @project.live_url != nil %>
+        <%= @project.live_url.html(@project.image_one.html) %>
+      <% else %>
+        <%= @project.repo_url.html(@project.image_one.html) %>
+      <% end %>
+    </div>
+  </section>
+
+  <div class="wrapper">
+    <div class="divider"></div><div class="divider"></div><div class="divider"></div>
+  </div>
+
+  <section id="how">
+    <h2>How I took over this world</h2>
+    <p><%= @project.description %></p>
+    <p><%= @project.description %></p>
+    <p><%= @project.description %></p>
+    <p><%= @project.description %></p>
+  </section>
+</article>
