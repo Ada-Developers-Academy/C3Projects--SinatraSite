@@ -1,0 +1,36 @@
+require 'date'
+
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./css/css.css/">
+  </head>
+</html>
+
+<div class="container">
+
+  <body>
+  <header>
+  <h1> Wang </h1>
+
+  <nav class="nav-bar-link">
+    <a href="/home"> Home </a>
+    <a href="/about"> About </a>
+    <a href="/projects"> Projects </a>
+    <a href="/blog"> Travel Journal </a>
+    <a href="/nineties"> I &hearts; the 90s </a>
+  </nav>
+  </header>
+
+  <div id="primary-content">
+    <%= yield %>
+  </div>
+
+  <footer>
+    <p> &copy; <%= Time.now.strftime("%m/%d/%Y %H:%M") %>
+    </p>
+  </footer>
+
+</div>
+
+</body>
+</html>
