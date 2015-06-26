@@ -1,0 +1,64 @@
+body {
+  width: 960px;
+  margin: auto;
+
+  font-family: "Garamond", serif;
+  font-size: 20px;
+  background-color: #faf5e4;
+}
+
+header {
+  align-content: center;
+  background-color: #D7CA9F;
+}
+
+
+footer {
+  background-color: #D7CA9F;
+  display: block;
+}
+
+h1 {
+font-variant: small-caps;
+color: #130F00;
+}
+
+h2 {
+border-bottom-style: solid;
+color: #332700;
+border-color: #332700;
+}
+
+h3 {
+  color: #8E7830;
+}
+
+div {
+  margin-bottom: 30%;
+}
+
+a:link {
+  text-decoration: none;
+  color: #605A0D;
+}
+a:visited {
+  color: #aba346;
+}
+a:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.nav-link {
+  display: inline;
+  padding: 15px 10px;
+}
+
+
+/*Section below is for styling photos and related text on about page*/
+.imgtxt {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center;
+}

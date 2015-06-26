@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" type="text/css" href="bzstyle.css"/>
+  <title>
+    About Brittany
+  </title>
+</head>
+<body>
+
+<header>
+  <!-- picture of hawaii sunrise and links to other pages show up on every page -->
+  <img src="images/sunrise.jpg" alt = "sunrise" height = "150" width = "960">
+    <nav class="nav-link">
+      <a class="nav-link" href="/">Home</a>
+      <a class="nav-link" href="projects">Projects</a>
+      <a class="nav-link" href="blog">Blog</a>
+      <a class="nav-link" href="websites">Websites</a>
+      <a class="nav-link" href="about">About</a>
+    </nav>
+
+<!-- yielding to page-specific content -->
+<%= yield %>
+
+<footer>
+
+  <nav>
+    <img src="images/cats.jpg" alt = "kitties" height = "75" width = "90">
+    Brittany L. Walentin (ɔ)
+    <% t =  Time.now %>
+    <%= t.year %>
+    <a class="nav-link" href="/">home</a>
+    <a class="nav-link" href="projects">projects</a>
+    <a class="nav-link" href="blog">blog</a>
+    <a class="nav-link" href="websites">websites</a>
+    <a class="nav-link" href="about">about</a>
+  </nav>
+
+</footer>
+
+
+</body>
