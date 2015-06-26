@@ -5,19 +5,28 @@ class MySite < Sinatra::Base
   register Sinatra::Reloader
 
   get "/" do
-    send_file './public/index.html'
+    @title = "Brenna"
+    erb :index
   end
 
   get '/about' do
-    send_file './public/about.html'
+    @title = "About Me"
+    erb :about
   end
 
   get '/projects' do
-    send_file './public/projects.html'
+    @title = "Portfolio"
+    erb :projects
   end
 
   get '/blog' do
-  send_file './public/blog.html'
+    @title = "Brainspace"
+    erb :blog
+  end
+
+  get '/contact' do
+    @title = "Get in touch"
+    erb :contact
   end
 
 end
