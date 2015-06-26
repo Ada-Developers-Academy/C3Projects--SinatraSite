@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= @title || "elia grenier" %></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./style/main-style.css">
+  </head>
+  <body>
+    <div id="container">
+    <%= erb :header %>
+    <div class="page-content">
+      <%= yield %>
+    </div>
+    <%= erb :footer %>
+  </div>
+  </body>
+</html>

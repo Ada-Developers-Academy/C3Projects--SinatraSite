@@ -1,0 +1,209 @@
+ /*---------OVERALL PAGE SETUP--------*/
+
+  html {
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+  }
+
+  body {
+     margin:0;
+     padding:0;
+     height:100%
+  }
+
+  h1, h2, h3, h4 {
+  	font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+    padding-left: 5px;
+  }
+
+  p {
+  	font-family: Tahoma, Verdana, Segoe, sans-serif;
+  	font-size: 14px;
+  	font-weight: 400;
+  	line-height: 20px;
+  }
+
+/*--------HEADER------------*/
+
+  header {
+     background:#3D3D3D;
+     padding:5px;
+     color: #F5FFF9;
+     font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+  }
+
+  nav ul {
+    list-style: none;
+    text-align: left;
+    padding: 0;
+    margin: 0 auto;
+    overflow: auto;
+    width: 100%;
+  }
+
+  nav li {
+    font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+    font-size: 1.3em;
+    line-height: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 5px;
+    position: relative;
+    float: left;
+    display: block;
+  }
+
+  nav a:link{
+    color: #F5FFF9;
+    text-decoration: none;
+  }
+  nav a:visited{
+    color: #FFF76E;
+    text-decoration: none;
+  }
+  nav a:hover, a:active {
+    color: #FFF219;
+    text-decoration: none;
+  }
+
+  #social {
+    float: right;
+    margin-top: -40px
+  }
+  #social img{
+    height: 30px
+  }
+
+/*-------HOME PAGE--------*/
+
+  #home {
+    position: relative;
+    width: 75%;
+    height: 525px;
+  }
+
+  #sunset {
+    position: absolute;
+    border: 4px solid #3D3D3D;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #sidebar {
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    font-size: 13px;
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #3D3D3D;
+    width: 20%;
+    float: right;
+  }
+
+/*--------ABOUT ME-----------*/
+
+#about {
+  position: relative;
+  height: 450px;
+  padding: 10px;
+}
+
+#snow {
+  border: 4px solid #3D3D3D;
+  height: 300px;
+  float:left;
+  margin-top: 14px;
+  margin-right: 10px;
+}
+
+  /*-------CLASS PROJECTS-------*/
+  .project {
+    width: 100%;
+    height: 450px;
+    background-color: #D7D9E9;
+  }
+
+  #project1 {
+    margin-left: 30px;
+    margin-top: 10px;
+    float: left;
+    width: 45%
+  }
+
+  #project2 {
+    margin-top: 10px;
+    float: right;
+    width: 45%
+  }
+
+  #project2 ul {
+    list-style-type: circle;
+  }
+
+/*---------BLOG---------*/
+#blogpage {
+  position: relative;
+  height: 900px;
+  margin-left: 20px;
+}
+
+.blog {
+  width: 85%
+}
+
+#shortpost img {
+  border: 3px solid #808080;
+}
+
+/*---------FOODIE---------*/
+#food {
+  width: 100%;
+  height: 500px;
+}
+
+#food img {
+  width:300px;
+  border: 2px solid #3D3D3D;
+  padding: 5px;
+  background-color: #FFFFFF;
+  margin: 20px 10px;
+}
+
+/*-------FOOTER----------*/
+
+#container{
+  min-height: 100%
+  position: relative;
+  background-color: #D7D9E9;
+}
+
+.page-content {
+  padding-bottom: 60px;
+}
+
+footer {
+   background:#313975;
+   border-top: 2px solid #3D3D3D;
+   width:100%;
+   height:60px;
+   position:relative;
+   bottom: 0;
+   left:0;
+ }
+
+ footer div {
+   font-family: Tahoma, Verdana, Segoe, sans-serif;
+   font-size: 10px;
+   font-weight: bold;
+   padding: 4px;
+   color: #fffff1;
+   text-align: right;
+}
+
+ footer nav{
+   font-family: Tahoma, Verdana, Segoe, sans-serif;
+   font-size: 14px;
+   font-weight: bold;
+   text-align: left;
+   padding: 5px;
+ }
