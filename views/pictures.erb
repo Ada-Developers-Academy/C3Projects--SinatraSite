@@ -1,0 +1,6 @@
+<p>
+	<% @pictures.each do |picture| %>
+		<p><img class="landscape-image" src="<%= picture.image_path %>"></p>
+	<% end %>
+	All images &copy; Alice Rhomieux <%= Time.now.year %>
+</p>

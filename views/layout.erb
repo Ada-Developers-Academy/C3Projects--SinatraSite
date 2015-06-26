@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+		<title><%= @title %></title>
+		<meta charset="utf-8">
+		<meta name="description" content="<%= @description %>">
+	</head>
+	<body>
+		<%= erb :header %>
+		<%= erb :nav %>
+
+		<%= yield %>
+
+		<%= erb :footer %>
+	</body>
+</html>
