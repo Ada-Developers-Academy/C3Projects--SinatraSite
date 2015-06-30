@@ -5,22 +5,26 @@ class MySite < Sinatra::Base
   register Sinatra::Reloader
 
   get '/' do
-    send_file 'static/Home.html'
-  end
-  get '/home' do
-    send_file 'static/Home.html'
+    erb :home
   end
 
-  get '/about' do
-    send_file 'static/About.html'
+  get '/home' do
+    erb :home
+  end
+
+  get "/about" do
+    erb :about
   end
 
   get '/blog' do
-    send_file 'static/Blog.html'
+    erb :blog
   end
 
   get '/projects' do
-    send_file 'static/Projects.html'
+    erb :projects
   end
 
+  get '/resume' do
+    erb :resume
+  end
 end
