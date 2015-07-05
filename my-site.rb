@@ -1,22 +1,43 @@
 require "sinatra"
 require "sinatra/reloader"
+require "./lib/website"
 
 class MySite < Sinatra::Base
   register Sinatra::Reloader
 
   get "/" do
-    send_file "static_html/home_page.html"
+    @title = "home"
+    erb :index
   end
 
+  # get "/:title" do
+  #   @title = Website::Title.new(params[:title])
+  #   erb :title
+  # end
+
   get "/about" do
-    send_file "static_html/about_page.html"
+    @title = "about"
+    erb :about
   end
 
   get "/projects" do
-    send_file "static_html/projects_page.html"
+    @title = "projects"
+    erb :projects
   end
 
   get "/blog" do
-    send_file "static_html/blog_page.html"
+    @title = "blog"
+    erb :blog
   end
+
+  get "/travels" do
+    @title = "travels"
+    erb :travels
+  end
+
+  # get "/:name" do
+  #   @image  = Website::Images.new(params[:name])
+  #   erb :pics
+  # end
+
 end

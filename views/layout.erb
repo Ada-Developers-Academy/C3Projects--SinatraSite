@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Lindsey | <%= @title.capitalize %></title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+  </head>
+  <body>
+    <%= erb :header %>
+      <div class= "primary-content">
+        <%= yield %>
+      </div>
+  </body>
+  <%= erb :footer %>
+</html>

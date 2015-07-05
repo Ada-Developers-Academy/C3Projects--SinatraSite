@@ -1,0 +1,93 @@
+
+body {
+  margin: auto;
+  width: 960px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a:link {
+  text-decoration: none;
+  padding: 5px 20px 0px 0px;
+  font-size: 18px;
+  color: #6e7a9b;
+}
+
+a:hover {
+  padding: 5px 20px 0px 0px;
+  text-decoration: underline;
+}
+
+a:visited {
+  text-decoration: underline;
+  color: #6e7a9b;
+}
+
+header {
+  border-style: none none double;
+}
+
+footer {
+  text-align: center;
+  font-size: 11px;
+  clear: both;
+}
+
+h1 {
+  font-size: 38px;
+  font-weight: lighter;
+}
+
+h3 {
+  font-weight: lighter;
+  text-align: center;
+}
+
+div.home img {
+  width: 960px;
+  heigth: 300px;
+  margin: 10px;
+}
+
+div.about img {
+  float: left;
+  margin: 0px 25px;
+}
+
+div.about p {
+  line-height: 1.5em;
+  padding: 25px;
+}
+
+div.projects a:link {
+  font-size: 15px;
+  color: #ed175f;
+}
+
+div.projects a:hover {
+  text-decoration: underline;
+  color: #01497b;
+}
+
+div.projects a:visited {
+  text-decoration: underline;
+  color: #ed175f;
+}
+
+div.travels img {
+  width: 208px;
+  height: 104px;
+  margin: 2px;
+  padding: 2px;
+}
+
+div.travels h3 {
+  margin: 3px;
+  text-align: center;
+  padding: 3px;
+}
+
+div.travels h4 {
+  margin: 5px;
+  font-weight: lighter;
+  color: #1830de;
+}
