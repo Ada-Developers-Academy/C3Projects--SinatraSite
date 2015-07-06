@@ -1,0 +1,13 @@
+<h1>My favorite recipes</h1>
+<div class="links">
+  <h3>Recipes from <a href="http://www.paleomg.com">www.paleomg.com</a></h3>
+  <ul>
+    <% @recipies.each do |recipe| %>
+    <li>
+      <a href="<%= recipe.link_path %>">
+        <%= recipe.name%>
+      </a>
+    </li>
+    <% end %>
+  </ul>
+</div>
