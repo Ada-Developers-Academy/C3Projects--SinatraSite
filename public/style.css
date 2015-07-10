@@ -1,0 +1,146 @@
+/*
+Name: Blog stylesheet
+Date: June 2015
+Description: Ada Dev Academy website project. I'm trying to
+build a better version of my existing blog!
+Version: 1.0
+Author: Loraine Kanervisto
+*/
+
+/* ---- Global ---- */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+ font-family: Verdana, Geneva, sans-serif;
+ background: rgb(52, 46, 46);
+}
+
+a {
+	color: rgb(73, 77, 163);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'IM Fell French Canon', serif;
+  color: rgb(0, 0, 0);
+	margin: 10px 0;
+}
+
+h1 {
+  font-size: 2.1em;
+}
+
+h2 {
+  font-size: 1.9em;
+}
+
+h3 {
+  font-size: 1.7em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1.3em;
+}
+
+h6 {
+  font-size: 1.1em;
+}
+
+/* ---- Header ---- */
+
+.site_header {
+  background-color: rgb(52, 46, 46);
+  height: 155px;
+  line-height: 90px;
+}
+
+.site_header h1 {
+  font-size: 2.5em;
+  color: rgb(255, 255, 255);
+  padding-left: 4px;
+  text-align: center;
+}
+
+.navi ul {
+  list-style: none;
+  background-color: rgb(210, 210, 210);
+  text-align: center;
+  line-height: 70px;
+  display: block;
+	border-top-left-radius: 35px;
+	border-top-right-radius: 35px;
+}
+
+.navi li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.navi a {
+	font-size: 1.2em;
+	text-decoration: none;
+}
+
+.navi a:hover {
+	text-decoration: underline;
+}
+
+/* ---- Posts ---- */
+
+.primary-content{
+  background-color: rgb(255, 255, 255);
+  margin-left: auto;
+  margin-right: auto;
+	padding: 20px 40px;
+	/* Fancy curves */
+	border-bottom-left-radius: 35px;
+	border-bottom-right-radius: 35px;
+  }
+
+.primary-content header {
+border-left: 5px solid rgb(73, 77, 163);
+padding-left: 10px;
+}
+
+.timestamp {
+	font-side: 0.9em;
+	font-style: italic;
+}
+
+.primary-content p{
+  font-size: 1.1em;
+	line-height: 1.5em;
+}
+
+.primary-content img {
+	display: block;
+	margin: 20px auto 20px auto;
+}
+
+.first_row {
+	  font-weight: bold;
+}
+
+td {
+	padding: 13px;
+}
+
+/* ---- Footer ---- */
+
+footer {
+	color: rgb(153,153,153);
+  margin: 30px auto 30px auto;
+}
