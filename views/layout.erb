@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <title><%= @title %></title>
+  </head>
+
+  <body>
+    <%= erb :header %>
+
+    <div id="main_content">
+      <%= yield %>
+    </div>
+
+    <%= erb :footer %>
+
+  </body>
+</html>
